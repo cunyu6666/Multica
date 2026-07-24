@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the chat settings tab — currently the floating-window toggle that
+ *        controls whether the chat FAB/overlay mounts (on by default, client-persisted).
+ * [FROM]: Depends on @multica/core/chat, @multica/ui/components/ui/switch, sonner,
+ *         ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Chat" tab under "My Account".
+ * [HERE]: packages/views/settings/components/chat-tab.tsx - Chat floating window toggle
+ */
 "use client";
 
 import { Switch } from "@multica/ui/components/ui/switch";

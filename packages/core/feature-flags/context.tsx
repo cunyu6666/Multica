@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides React context, provider, and hooks (useFlag, useVariant) for feature flags
+ * [FROM]: Depends on react, ./types, ./service
+ * [TO]: Consumed by UI components that need feature flag gating
+ * [HERE]: packages/core/feature-flags/context.tsx - React integration for feature flag service
+ */
 "use client";
 
 import { createContext, useContext, useMemo, type ReactNode } from "react";

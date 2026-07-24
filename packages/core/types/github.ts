@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides GitHub PR, installation, CI status, and mergeability types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/github/, github/, PR cards, API schema parsing
+ * [HERE]: packages/core/types/github.ts - GitHub integration type definitions
+ */
+
 export type GitHubPullRequestState = "open" | "closed" | "merged" | "draft";
 
 /** Aggregated CI status for a PR's current head SHA, computed server-side from

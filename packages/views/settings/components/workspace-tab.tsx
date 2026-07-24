@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the workspace general settings tab — name, description, context,
+ *        avatar, slug, issue prefix editing with auto-save, plus leave/delete workspace actions.
+ * [FROM]: Depends on @multica/core/api, @multica/core/auth, @multica/core/hooks,
+ *         @multica/core/paths, @multica/core/workspace/*, @multica/ui components,
+ *         ../../common/avatar-upload-control, ../../navigation, ../../i18n, ./settings-layout, ./use-auto-save, ./delete-workspace-dialog
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "General" tab.
+ * [HERE]: packages/views/settings/components/workspace-tab.tsx - Workspace details management with auto-save and danger-zone actions
+ */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";

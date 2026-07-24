@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides display preferences for the issue-detail comment composer (sticky bar).
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage
+ * [TO]: Consumed by comment composer UI in views
+ * [HERE]: packages/core/issues/stores/comment-composer-store.ts - Comment composer sticky preference
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { defaultStorage } from "../../platform/storage";

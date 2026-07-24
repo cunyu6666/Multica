@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides InstructionsEditor — a collapsible markdown instructions
+ *   field that stays compact until the user clicks to write, then expands
+ *   to a full ContentEditor.
+ * [FROM]: Depends on ContentEditor from the editor module, @multica/ui
+ *   (Button, utils), and i18n.
+ * [TO]: Consumed by create-agent dialog and agent configuration surfaces
+ *   for agent instructions authoring.
+ * [HERE]: packages/views/agents/components/instructions-editor.tsx -
+ *   Collapsible markdown instructions editor with preview.
+ */
 "use client";
 
 import { useRef, useState } from "react";

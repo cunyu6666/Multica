@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides VCS provider (Forgejo, Gitea, GitLab) connection types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/settings/integrations/, vcs/, API schema parsing
+ * [HERE]: packages/core/types/vcs.ts - Token-based Git provider integration types
+ */
+
+/**
  * Token-based Git provider integration types (Forgejo, Gitea, GitLab). Unlike
  * GitHub there is no App/installation model: each workspace stores a
  * token-based connection to a provider instance. Pull requests mirrored from any

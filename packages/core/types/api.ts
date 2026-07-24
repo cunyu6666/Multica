@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides API request/response types for issues, projects, members, and tokens
+ * [FROM]: Depends on ./issue, ./workspace, ./project
+ * [TO]: Consumed by API client, mutations, queries, optimistic updates
+ * [HERE]: packages/core/types/api.ts - API request and response type definitions
+ */
+
 import type { Issue, IssueMetadata, IssueStatus, IssuePriority, IssueAssigneeType } from "./issue";
 import type { MemberRole } from "./workspace";
 import type { Project } from "./project";

@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the last-used create-issue mode (agent/manual) preference and
+ * entry point to open the appropriate create modal.
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage, modals
+ * [TO]: Consumed by sidebar buttons, command palette, and keyboard shortcuts
+ * [HERE]: packages/core/issues/stores/create-mode-store.ts - Create mode preference store
+ */
 "use client";
 
 import { create } from "zustand";

@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides the notifications settings tab — per-event inbox toggles (assignments,
+ *        status changes, comments, updates, agent activity) and system notifications,
+ *        plus the browser notification permission setting.
+ * [FROM]: Depends on @multica/core/hooks, @multica/core/notification-preferences/*,
+ *         @multica/core/types, @multica/ui/components/ui/switch, sonner,
+ *         ../../i18n, ./browser-notification-setting, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Notifications" tab.
+ * [HERE]: packages/views/settings/components/notifications-tab.tsx - Notification preference toggles per event group
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

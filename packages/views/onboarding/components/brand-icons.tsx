@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides brand SVG icon components (Google, X, LinkedIn, GitHub, YouTube, OpenAI)
+ * [FROM]: No external dependencies — pure React + SVG
+ * [TO]: Consumed by icon-option-card.tsx and source-backfill modal for source attribution options
+ * [HERE]: packages/views/onboarding/components/brand-icons.tsx - Brand SVG icon exports
+ */
+
 "use client";
 
 import type { SVGProps } from "react";

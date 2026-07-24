@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the labels settings tab — CRUD for workspace labels scoped by
+ *        resource type (issue, agent, skill) with search, color picker, and archive/delete.
+ * [FROM]: Depends on @multica/core/config, @multica/core/feature-flags, @multica/core/hooks,
+ *         @multica/core/labels, @multica/core/types, @multica/ui components,
+ *         ../../common/color-picker, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Labels" tab.
+ * [HERE]: packages/views/settings/components/labels-tab.tsx - Label management with resource-type scoping and color picker
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

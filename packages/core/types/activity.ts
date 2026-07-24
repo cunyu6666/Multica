@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides timeline and activity entry types for the issue timeline
+ * [FROM]: Depends on ./comment, ./attachment
+ * [TO]: Consumed by issues/timeline, activity feed, issue detail views
+ * [HERE]: packages/core/types/activity.ts - Timeline and activity entry type definitions
+ */
+
 import type { CommentAuthorType, Reaction } from "./comment";
 import type { Attachment } from "./attachment";
 

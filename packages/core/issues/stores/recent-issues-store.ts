@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides per-workspace recent issue visit tracking with LRU eviction
+ * and migration from legacy flat storage format.
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage
+ * [TO]: Consumed by recent issues lists and navigation helpers
+ * [HERE]: packages/core/issues/stores/recent-issues-store.ts - Recent issues visit tracker
+ */
 "use client";
 
 import { create } from "zustand";

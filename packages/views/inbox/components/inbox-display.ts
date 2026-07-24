@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides display title and detail formatting utilities for inbox items
+ * [FROM]: Depends on @multica/core/types (InboxItem type)
+ * [TO]: Consumed by inbox row rendering and notification display surfaces
+ * [HERE]: packages/views/inbox/components/inbox-display.ts - Title formatting helpers for inbox items
+ */
+
 import type { InboxItem } from "@multica/core/types";
 
 function singleLine(value: string | null | undefined): string {

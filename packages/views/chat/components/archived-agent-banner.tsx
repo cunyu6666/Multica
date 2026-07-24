@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a banner shown when the active session's agent has been archived (retired)
+ * [FROM]: Depends on ../../i18n
+ * [TO]: Consumed by chat-page.tsx and floating-chat window as a read-only banner above the chat input
+ * [HERE]: packages/views/chat/components/archived-agent-banner.tsx - ArchivedAgentBanner component for retired agent sessions
+ */
 "use client";
 
 import { Archive } from "lucide-react";

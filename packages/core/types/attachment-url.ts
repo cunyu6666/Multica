@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides stable URL helpers for attachment references in markdown bodies
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by useFileUpload, comment composer, markdown rendering
+ * [HERE]: packages/core/types/attachment-url.ts - Attachment stable URL helpers (MUL-3130)
+ */
+
+/**
  * Stable URL helpers for attachment references that get persisted into
  * markdown bodies (issue descriptions, comment bodies, chat messages).
  *

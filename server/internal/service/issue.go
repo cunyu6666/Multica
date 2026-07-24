@@ -1,3 +1,7 @@
+// [WHO]: Provides IssueService, NewIssueService, IssueCreateParams, Create — the single service-layer entry point for creating issues
+// [FROM]: Depends on pkg/db/generated, internal/analytics, internal/events, internal/issueguard, internal/issueposition, internal/metrics, internal/util, pkg/protocol, pgx/v5
+// [TO]: Consumed by handler (POST /issues), Lark /issue command
+// [HERE]: server/internal/service/issue.go - issue creation service handling duplicate guard, numbering, attachment linking, broadcast, analytics, and agent/squad enqueue; transport-agnostic (no http.Request dependency)
 package service
 
 import (

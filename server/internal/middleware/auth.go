@@ -1,3 +1,7 @@
+// [WHO]: Provides Auth — JWT and PAT validation middleware with optional PAT caching and Cloud PAT verification
+// [FROM]: Depends on internal/auth for PATCache/CloudPATVerifier, pkg/db/generated for user/token queries, golang-jwt/jwt/v5 for JWT parsing, internal/util for UUID conversion
+// [TO]: Consumed by router (applied globally before route mounting) for all authenticated endpoints
+// [HERE]: server/internal/middleware/auth.go - primary authentication middleware supporting Bearer tokens (PAT/JWT) and HttpOnly cookie (JWT) with CSRF; sets X-User-ID/X-User-Email for downstream handlers; optional Cloud PAT verification via Fleet service
 package middleware
 
 import (

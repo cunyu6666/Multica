@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the Attachment record type for file uploads
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by comments, chat, issue descriptions, useFileUpload, API schema parsing
+ * [HERE]: packages/core/types/attachment.ts - Attachment record type definition
+ */
+
 export interface Attachment {
   id: string;
   workspace_id: string;

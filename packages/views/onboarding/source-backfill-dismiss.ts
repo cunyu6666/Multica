@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides per-user localStorage dismiss-count tracking for the source-backfill prompt
+ * [FROM]: No external dependencies — pure localStorage with storage event subscription
+ * [TO]: Consumed by SourceBackfillModal to decide when to stop nagging the user
+ * [HERE]: packages/views/onboarding/source-backfill-dismiss.ts - useSourceBackfillDismissCount hook and storage helpers
+ */
+
 "use client";
 
 import { useCallback, useSyncExternalStore } from "react";

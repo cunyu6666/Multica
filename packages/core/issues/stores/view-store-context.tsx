@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides React Context wrapper for dynamically-created issue view stores,
+ * enabling useViewStore/useViewStoreApi hooks within provider trees.
+ * [FROM]: Depends on react, zustand, view-store
+ * [TO]: Consumed by issue list pages that create their own view stores
+ * [HERE]: packages/core/issues/stores/view-store-context.tsx - ViewStore React Context provider
+ */
 "use client";
 
 import { createContext, use } from "react";

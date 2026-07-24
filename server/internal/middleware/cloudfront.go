@@ -1,3 +1,7 @@
+// [WHO]: Provides RefreshCloudFrontCookies — middleware that refreshes CloudFront signed cookies on authenticated requests
+// [FROM]: Depends on internal/auth for CloudFrontSigner and AuthTokenTTL
+// [TO]: Consumed by router (applied to authenticated routes) to prevent CDN 403s from expired cookies
+// [HERE]: server/internal/middleware/cloudfront.go - auto-refreshes CloudFront-Policy/Signature/Key-Pair-Id cookies when missing (expired or first request); no-op when signer is nil (self-hosted)
 package middleware
 
 import (

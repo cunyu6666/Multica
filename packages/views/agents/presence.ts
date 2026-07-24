@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides availability and workload visual configurations for agent
+ *   presence — dot colors, icons, and text classes for online/unstable/
+ *   offline/archived and working/queued/idle states.
+ * [FROM]: Depends on @multica/core/agents (AgentAvailability, Workload
+ *   types) and lucide-react for presence icons.
+ * [TO]: Consumed by agent-presence-indicator, agent-live-peek-card,
+ *   agent-detail-page, and any surface rendering agent presence dots or
+ *   workload chips.
+ * [HERE]: packages/views/agents/presence.ts - Agent presence visual
+ *   configuration for availability and workload dimensions.
+ */
 import {
   AlertCircle,
   Archive,

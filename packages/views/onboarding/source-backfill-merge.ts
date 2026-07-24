@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides questionnaire merge logic for the source-backfill PATCH flow
+ * [FROM]: Depends on @multica/core/onboarding types (QuestionnaireAnswers, Role, UseCase)
+ * [TO]: Consumed by SourceBackfillModal submit/skip handlers to preserve prior answers during PATCH
+ * [HERE]: packages/views/onboarding/source-backfill-merge.ts - mergedQuestionnairePatch and coercion helpers
+ */
+
 import type {
   QuestionnaireAnswers,
   Role,

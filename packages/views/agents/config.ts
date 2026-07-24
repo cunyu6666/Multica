@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides task status configuration mapping statuses to labels,
+ *   icons, and color tokens for agent task rendering.
+ * [FROM]: Depends on lucide-react for status icons.
+ * [TO]: Consumed by agent task UI surfaces that need consistent status
+ *   labels and colors.
+ * [HERE]: packages/views/agents/config.ts - Task status icon/color mapping.
+ */
 import {
   Clock,
   CheckCircle2,

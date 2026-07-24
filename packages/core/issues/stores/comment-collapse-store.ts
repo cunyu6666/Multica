@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides per-issue comment collapse state with workspace-aware persistence.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by issue timeline and comment list components
+ * [HERE]: packages/core/issues/stores/comment-collapse-store.ts - Comment collapse state per issue
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { createWorkspaceAwareStorage, registerForWorkspaceRehydration } from "../../platform/workspace-storage";

@@ -1,6 +1,6 @@
 # server/pkg/
 
-> P2 | Parent: ../AGENTS.md
+> P2 | Parent: ../../AGENTS.md
 
 ## Member List
 

@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Squad, SquadMember, and squad activity types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/squads/, squads/, agent pages, API schema parsing
+ * [HERE]: packages/core/types/squad.ts - Squad and squad member type definitions
+ */
+
 export type SquadMemberType = "agent" | "member";
 
 export type SquadActivityOutcome = "action" | "no_action" | "failed";

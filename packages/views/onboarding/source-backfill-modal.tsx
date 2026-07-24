@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the source-attribution dialog for onboarded users with missing source data
+ * [FROM]: Depends on @multica/core/auth, @multica/core/onboarding, @multica/core/paths, @multica/ui dialog components, ./source-backfill-merge, ./source-backfill-dismiss, ../i18n
+ * [TO]: Consumed by dashboard layout as a self-mounted overlay prompt
+ * [HERE]: packages/views/onboarding/source-backfill-modal.tsx - SourceBackfillModal and SourceBackfillDialogBody
+ */
+
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";

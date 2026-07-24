@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides AgentPresenceIndicator — a dot + optional workload chip
+ *   rendering an agent's availability and workload state from a pre-derived
+ *   detail object.
+ * [FROM]: Depends on @multica/core/agents (AgentPresenceDetail type) and
+ *   @multica/ui (Skeleton), plus availability/workload config from presence.ts.
+ * [TO]: Consumed by agent list rows, detail headers, hover cards, and any
+ *   surface showing agent presence status.
+ * [HERE]: packages/views/agents/components/agent-presence-indicator.tsx -
+ *   Agent availability dot and workload chip indicator.
+ */
 "use client";
 
 import { Skeleton } from "@multica/ui/components/ui/skeleton";

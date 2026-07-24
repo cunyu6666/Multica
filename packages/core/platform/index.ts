@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Re-exports platform abstraction (provider, storage, notifications, auth initializer)
+ * [FROM]: Depends on ./core-provider, ./types, ./auth-initializer, ./storage, ./persist-storage, ./workspace-storage, ./storage-cleanup, ./system-notification
+ * [TO]: Consumed by app/platform layers (web Next.js, desktop Electron) to bootstrap the core
+ * [HERE]: packages/core/platform/index.ts - barrel export for platform primitives
+ */
 export { CoreProvider } from "./core-provider";
 export type { CoreProviderProps, ClientIdentity } from "./types";
 export { AuthInitializer } from "./auth-initializer";

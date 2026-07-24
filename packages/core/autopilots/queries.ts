@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and query options for autopilots, runs, and deliveries
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types
+ * [TO]: Consumed by autopilot views, mutations, and cron preview editor
+ * [HERE]: packages/core/autopilots/queries.ts - query keys + options for autopilot API
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

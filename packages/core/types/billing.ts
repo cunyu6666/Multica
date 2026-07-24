@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides cloud billing types for balance, transactions, topups, and checkout
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by billing/, settings/billing, API schema parsing
+ * [HERE]: packages/core/types/billing.ts - Cloud billing module type definitions
+ */
+
 // Mirrors the multica-cloud Billing module response shapes
 // (multica-cloud/docs/api/billing.md). These types are the contract our
 // frontend consumes via /api/cloud-billing/* — multica-api itself does

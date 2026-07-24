@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides app-level configuration store (CDN, auth, daemon, feature flags)
+ * [FROM]: Depends on zustand, react
+ * [TO]: Consumed by platform providers, feature flag consumers, and app bootstrap
+ * [HERE]: packages/core/config/index.ts - global config Zustand store and feature flag helpers
+ */
 import { createStore } from "zustand/vanilla";
 import { useStore } from "zustand";
 

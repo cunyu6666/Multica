@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides core issue view state (board/list/table/gantt/swimlane) with
+ * filtering, sorting, grouping, column config, and workspace-aware persistence.
+ * [FROM]: Depends on react, zustand, zustand/vanilla, zustand/middleware, types, issues/config, workspace-storage, platform/storage
+ * [TO]: Consumed by all issue list views (board, list, table, gantt, swimlane) and my/actor issues stores
+ * [HERE]: packages/core/issues/stores/view-store.ts - Core issue view state with multi-mode support
+ */
 "use client";
 
 import { useEffect, useRef } from "react";

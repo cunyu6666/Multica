@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides multi-select state for issue list selection (toggle/select/deselect/clear).
+ * [FROM]: Depends on zustand
+ * [TO]: Consumed by issue list bulk action components and toolbar
+ * [HERE]: packages/core/issues/stores/selection-store.ts - Issue multi-selection store
+ */
 "use client";
 
 import { create } from "zustand";

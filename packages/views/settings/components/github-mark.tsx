@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the GitHub Octocat inline SVG icon (lucide-react v1.x dropped brand marks).
+ * [FROM]: None (pure SVG component, no external dependencies).
+ * [TO]: Consumed by GitHubTab (github-tab.tsx) for section headers and sidebar icons.
+ * [HERE]: packages/views/settings/components/github-mark.tsx - Inline GitHub Octocat SVG icon
+ */
 // lucide-react v1.x dropped brand marks (including Github). Inline SVG of
 // the official GitHub octocat mark so the GitHub settings tab keeps a
 // recognizable icon in the sidebar and section headers.

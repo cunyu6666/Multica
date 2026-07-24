@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the umbrella integrations tab — host for Lark, Composio, Slack, and VCS
+ *        sections, with feature-flag and config-based visibility gating.
+ * [FROM]: Depends on @multica/core/api, @multica/core/composio, @multica/core/config,
+ *         @multica/core/feature-flags, ../../i18n, ./settings-layout, ./lark-tab,
+ *         ./composio-tab, ./slack-tab, ./vcs-tab
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Integrations" tab.
+ * [HERE]: packages/views/settings/components/integrations-tab.tsx - Umbrella tab hosting Lark, Composio, Slack, VCS sections
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

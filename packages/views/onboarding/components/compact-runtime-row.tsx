@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides a single-line runtime selection row for Step 3's web CLI expand
+ * [FROM]: Depends on @multica/core/types (AgentRuntime), @multica/core/runtimes, ../../runtimes/components/provider-logo, ../../i18n
+ * [TO]: Consumed by StepPlatformFork (web) and any future runtime picker embedders
+ * [HERE]: packages/views/onboarding/components/compact-runtime-row.tsx - CompactRuntimeRow for runtime selection list
+ */
+
 import { cn } from "@multica/ui/lib/utils";
 import type { AgentRuntime } from "@multica/core/types";
 import { runtimeDisplayName } from "@multica/core/runtimes";

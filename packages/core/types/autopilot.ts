@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides autopilot, trigger, run, and webhook delivery types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by autopilots/, settings/autopilots, webhook UI, API schema parsing
+ * [HERE]: packages/core/types/autopilot.ts - Autopilot and webhook type definitions
+ */
+
 export type AutopilotStatus = "active" | "paused" | "archived";
 
 export type AutopilotExecutionMode = "create_issue" | "run_only";

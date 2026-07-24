@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides a floating batch toolbar for the agents list page with
+ *   archive/restore and bulk access-scope actions, plus confirm dialogs.
+ * [FROM]: Depends on @multica/core (API, hooks, workspace queries),
+ *   @multica/ui (Button, Dialog, motion), i18n, and inspector/access-picker.
+ * [TO]: Consumed by AgentsPage when multiple rows are selected for batch
+ *   operations.
+ * [HERE]: packages/views/agents/components/agent-batch-toolbar.tsx -
+ *   Floating batch-action toolbar for multi-select agent operations.
+ */
 "use client";
 
 import { useCallback, useEffect, useState } from "react";

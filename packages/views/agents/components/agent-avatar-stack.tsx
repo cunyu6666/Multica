@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides an overlapping avatar stack (AgentAvatarStack) for
+ *   rendering multiple agent heads with overflow +N chip.
+ * [FROM]: Depends on @multica/ui (ActorAvatar, avatar-size, utils) and
+ *   @multica/core/workspace/hooks for actor name resolution.
+ * [TO]: Consumed by IssueAgentActivityIndicator and other surfaces that
+ *   need to display a group of agent avatars compactly.
+ * [HERE]: packages/views/agents/components/agent-avatar-stack.tsx -
+ *   Overlapping agent avatar group with overflow chip.
+ */
 "use client";
 
 import { ActorAvatar as ActorAvatarBase } from "@multica/ui/components/common/actor-avatar";

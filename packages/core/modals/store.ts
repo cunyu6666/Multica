@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides global modal state (open/close modals with data payload)
+ * [FROM]: Depends on zustand
+ * [TO]: Consumed by modal index barrel and views that trigger modals
+ * [HERE]: packages/core/modals/store.ts - single-responder modal Zustand store
+ */
 "use client";
 
 import { create } from "zustand";

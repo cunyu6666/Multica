@@ -1,3 +1,7 @@
+// [WHO]: Provides IssueTriggerProbe, IssueTriggerInput, RunEnqueueSource, WillEnqueueRun — prospective issue-write evaluation to decide whether an agent run should be enqueued
+// [FROM]: Depends on pkg/db/generated for Agent/Issue types, pgx/v5/pgtype for UUID handling
+// [TO]: Consumed by handler (issue assign, comment-trigger, status-change paths)
+// [HERE]: server/internal/service/issue_trigger.go - evaluates whether a prospective issue write (assign, status change, creation) should trigger an agent run; uses probe callbacks for access gates and self-loop detection without sinking HTTP enforcement into the service layer
 package service
 
 import (

@@ -1,3 +1,7 @@
+// [WHO]: Provides BuiltinSkills, loadBuiltinSkills, loadBuiltinSkill — loading platform-wide built-in agent skills from embedded filesystem
+// [FROM]: Depends on embed, io/fs for compile-time embedded skill files
+// [TO]: Consumed by service (TaskService.BuiltinSkills) for delivering built-in skills to agents
+// [HERE]: server/internal/service/builtin_skills.go - reads SKILL.md files from embedded builtin_skills directory, converting them to AgentSkillData; sits alongside skill_bundle.go which handles workspace-specific skills
 package service
 
 import (

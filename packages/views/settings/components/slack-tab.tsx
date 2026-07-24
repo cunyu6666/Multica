@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the Slack integration settings tab — listing bot installations,
+ *        disconnect flows, and the per-agent SlackAgentBindButton for BYO-token installs.
+ * [FROM]: Depends on @multica/core/api, @multica/core/auth, @multica/core/hooks,
+ *         @multica/core/slack, @multica/core/types, @multica/ui components,
+ *         ../../common/actor-avatar, ../../platform, ../../i18n
+ * [TO]: Consumed by IntegrationsTab (integrations-tab.tsx) and agent detail pages via SlackAgentBindButton.
+ * [HERE]: packages/views/settings/components/slack-tab.tsx - Slack bot installation management and per-agent bind button
+ */
 "use client";
 
 import { useState } from "react";

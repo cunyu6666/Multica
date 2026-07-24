@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the right-rail editorial aside panel for onboarding Step 3
+ * [FROM]: Depends on ../../i18n (useT)
+ * [TO]: Consumed by StepPlatformFork (web) and StepRuntimeConnect (desktop) layouts
+ * [HERE]: packages/views/onboarding/components/runtime-aside-panel.tsx - RuntimeAsidePanel for Step 3 sidebar
+ */
+
 "use client";
 
 import { useT } from "../../i18n";

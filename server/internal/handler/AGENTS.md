@@ -1,6 +1,6 @@
 # handler/
 
-> P2 | Parent: ../../AGENTS.md
+> P2 | Parent: ../../../AGENTS.md
 
 ## Member List
 
@@ -35,6 +35,7 @@ daemon_workspace.go: handles daemon workspace queries, returning DaemonWorkspace
 daemon_ws.go: handles daemon WebSocket upgrade and message framing, proxying between the daemon process and the server's DaemonHub
 dashboard.go: provides workspace/project dashboard reads — issue counts, active runs, recent activity, and agent health status for the workspace overview
 feedback.go: handles user feedback submission (thumbs up/down, text feedback) with analytics event tracking and optional screenshot attachment upload
+handler.go: provides central Handler struct and New() constructor wiring all routes, plus writeJSON helper, resolveActor, loadIssueForUser, loadAgentForUser, loadSkillForUser, requireDaemonRuntimeAccess, and UUID parsing utilities (parseUUIDOrBadRequest, parseUUID, parseUUIDSafe)
 file.go: handles file operations — upload/download/list/delete for workspace files, with CloudFront signed URL generation for private CDN access and MIME type detection
 github.go: handles GitHub integration — OAuth flow, webhook verification (HMAC-SHA256), repo linking, issue sync, and PR status polling
 heartbeat_scheduler.go: provides HeartbeatScheduler abstraction that decides how runtime heartbeat requests reach the database (direct DB write vs Redis TTL key batching)

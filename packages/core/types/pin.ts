@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides pinned item types for sidebar pinning (issues, projects)
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by sidebar/, pins/, API schema parsing
+ * [HERE]: packages/core/types/pin.ts - Pinned item type definitions
+ */
+
 export type PinnedItemType = "issue" | "project";
 
 /**

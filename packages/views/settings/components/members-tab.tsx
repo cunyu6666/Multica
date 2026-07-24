@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the workspace members settings tab — member listing with role badges,
+ *        invite-by-email, role change, member removal, and pending invitation management.
+ * [FROM]: Depends on @multica/core/api, @multica/core/auth, @multica/core/hooks,
+ *         @multica/core/paths, @multica/core/workspace/queries, @multica/core/types,
+ *         @multica/ui components, ../../common/actor-avatar, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Members" tab.
+ * [HERE]: packages/views/settings/components/members-tab.tsx - Workspace member and invitation management
+ */
 "use client";
 
 import { useState } from "react";

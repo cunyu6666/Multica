@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides issue label types and CRUD request/response shapes
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/labels/, issues/, API schema parsing
+ * [HERE]: packages/core/types/label.ts - Issue label type definitions
+ */
+
+/**
  * Issue labels — workspace-scoped, applied as many-to-many to issues.
  *
  * Labels are lightweight metadata (name + color) distinct from projects:

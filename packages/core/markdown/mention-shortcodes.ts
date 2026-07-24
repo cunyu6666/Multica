@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Converts legacy mention shortcodes to standard markdown link format
+ * [FROM]: No runtime dependencies (pure regex transform)
+ * [TO]: Consumed by @multica/ui/markdown re-export and mobile markdown renderer
+ * [HERE]: packages/core/markdown/mention-shortcodes.ts - idempotent mention shortcode normalizer
+ */
+
+/**
  * Convert legacy mention shortcodes [@ id="UUID" label="LABEL"] to the
  * standard markdown link format [@LABEL](mention://member/UUID).
  *

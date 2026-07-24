@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the durable draft-restore lifecycle hook for chat composers (#5219)
+ * [FROM]: Depends on @multica/core/chat, @multica/core/realtime, @multica/core/types
+ * [TO]: Consumed by chat-page controller and floating ChatWindow for draft restoration after failed sends or deferred cancellation
+ * [HERE]: packages/views/chat/components/use-chat-draft-restore.ts - useChatDraftRestore hook owning the draft-restore state machine
+ */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { chatDraftRestoresOptions } from "@multica/core/chat/queries";

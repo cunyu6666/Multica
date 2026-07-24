@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the floating chat overlay mount point (FAB + window) for the dashboard layout
+ * [FROM]: Depends on @multica/core/chat, @multica/core/paths, ../navigation, ./components/chat-fab, ./components/chat-window
+ * [TO]: Consumed by app shell dashboard layouts
+ * [HERE]: packages/views/chat/floating-chat.tsx - FloatingChat component that gates overlay visibility based on settings and route
+ */
 "use client";
 
 import { useChatStore } from "@multica/core/chat";

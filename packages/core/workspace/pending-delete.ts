@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Tracks workspace IDs whose DELETE was initiated by this client (for realtime event dedup)
+ * [FROM]: No dependencies
+ * [TO]: Consumed by useDeleteWorkspace mutation and realtime workspace:deleted handler
+ * [HERE]: packages/core/workspace/pending-delete.ts - self-initiated delete guard registry
+ */
+
+/**
  * Registry of workspace IDs whose DELETE was initiated by THIS client.
  *
  * Marked in useDeleteWorkspace.onMutate. The realtime `workspace:deleted`

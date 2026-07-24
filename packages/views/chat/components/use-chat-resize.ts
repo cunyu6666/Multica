@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides pointer-drag resize logic for the floating chat window (left edge, top edge, corner)
+ * [FROM]: Depends on @multica/core/chat
+ * [TO]: Consumed by floating-chat.tsx ChatWindow for resizable panel dimensions
+ * [HERE]: packages/views/chat/components/use-chat-resize.ts - useChatResize hook managing drag-based resize state
+ */
 "use client";
 
 import React, { useRef, useCallback, useState, useEffect } from "react";

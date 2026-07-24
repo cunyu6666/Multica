@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides ChainProvider that composes multiple flag providers (first-match-wins)
+ * [FROM]: Depends on ./types (Decision, EvalContext, Provider)
+ * [TO]: Consumed by platform bootstrap to layer static + dynamic flag sources
+ * [HERE]: packages/core/feature-flags/chain-provider.ts - multi-provider composition
+ */
 import type { Decision, EvalContext, Provider } from "./types";
 
 /**

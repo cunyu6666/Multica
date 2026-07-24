@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides hover-card content showing active agent tasks — agent
+ *   avatars, status dots, labels, and live duration for running/queued tasks,
+ *   plus a workspace-scoped variant grouped by issue.
+ * [FROM]: Depends on @multica/core (agent queries, presence derivation,
+ *   workspace hooks), @multica/ui (ActorAvatar), presence config, and i18n.
+ * [TO]: Consumed by IssueAgentActivityIndicator and workspace working chip
+ *   hover cards to surface "what are these agents doing right now?"
+ * [HERE]: packages/views/agents/components/agent-activity-hover-content.tsx -
+ *   Task-level hover content for agent activity surfaces.
+ */
 "use client";
 
 import { useEffect, useState } from "react";

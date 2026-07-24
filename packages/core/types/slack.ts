@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Slack bot installation types and API request/response shapes
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/settings/integrations/, slack/, API schema parsing
+ * [HERE]: packages/core/types/slack.ts - Slack integration type definitions
+ */
+
 /** A Slack bot installation bound to a single Multica agent (MUL-3666).
  *
  * Wire shape mirrors `SlackInstallationResponse` in

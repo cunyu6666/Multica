@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides runtime picker hook with polling and WebSocket-driven refetch
+ * [FROM]: Depends on @multica/core/runtimes/queries, @multica/core/realtime, @tanstack/react-query
+ * [TO]: Consumed by StepRuntimeConnect (desktop) and StepPlatformFork (web) during onboarding Step 3
+ * [HERE]: packages/views/onboarding/components/use-runtime-picker.ts - useRuntimePicker hook for Step 3 runtime selection
+ */
+
 "use client";
 
 import { useCallback, useEffect, useState } from "react";

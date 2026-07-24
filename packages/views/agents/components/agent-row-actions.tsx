@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides row-level actions for an agent — terminate task, copy ID,
+ *   archive, duplicate, and delete with confirm dialogs.
+ * [FROM]: Depends on @multica/core (API, hooks, workspace queries, types),
+ *   @multica/ui (AlertDialog, DropdownMenu, toast), and i18n.
+ * [TO]: Consumed by AgentsPage grid rows and detail page overflow menu.
+ * [HERE]: packages/views/agents/components/agent-row-actions.tsx -
+ *   Per-agent action menu with confirm dialogs for destructive operations.
+ */
 "use client";
 
 import { useState } from "react";

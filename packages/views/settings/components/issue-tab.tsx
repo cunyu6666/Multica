@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the issue settings tab — per-create-mode (quick/manual) field visibility
+ *        toggles that control which fields appear on the issue create dialog toolbar.
+ * [FROM]: Depends on @multica/core/issues/stores/issue-create-settings-store,
+ *         @multica/ui/components/ui/switch, sonner, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Issue" tab under "My Account".
+ * [HERE]: packages/views/settings/components/issue-tab.tsx - Issue create dialog field visibility toggles
+ */
 "use client";
 
 import { Switch } from "@multica/ui/components/ui/switch";

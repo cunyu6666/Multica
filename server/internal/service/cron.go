@@ -1,3 +1,7 @@
+// [WHO]: Provides NextOccurrenceAfterUTC, NextOccurrencesAfterUTC — cron expression evaluation with timezone support
+// [FROM]: Depends on robfig/cron/v3 for cron schedule parsing
+// [TO]: Consumed by scheduler (AutopilotScheduleDispatchJob), handler (ComputeNextRunFromUTC for UI display)
+// [HERE]: server/internal/service/cron.go - timezone-aware cron next-occurrence computation; used by the scheduler to plan future runs and by the UI to display next-run times
 package service
 
 import (

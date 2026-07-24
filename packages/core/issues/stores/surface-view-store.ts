@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides a registry of per-surface issue view states with workspace-aware
+ * persistence and rehydration across workspace switches.
+ * [FROM]: Depends on zustand/vanilla, zustand/middleware, view-store, workspace-storage, platform/storage
+ * [TO]: Consumed by issue surfaces that need independent view state (board, list, etc.)
+ * [HERE]: packages/core/issues/stores/surface-view-store.ts - Per-surface view state registry
+ */
 "use client";
 
 import { createStore, type StoreApi } from "zustand/vanilla";

@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides issue draft persistence with workspace-aware storage, including
+ * last-assignee memory and deep-merge for backward compatibility.
+ * [FROM]: Depends on zustand, zustand/middleware, types, workspace-storage, platform/storage
+ * [TO]: Consumed by create-issue modal and draft management components
+ * [HERE]: packages/core/issues/stores/draft-store.ts - Issue draft store with field defaults merge
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import type {

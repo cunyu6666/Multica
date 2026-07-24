@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides per-workspace memory of last actor/project picked in Quick Create
+ * modal, defaulting these on next open to reduce repetitive picker interactions.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by Quick Create modal components
+ * [HERE]: packages/core/issues/stores/quick-create-store.ts - Quick Create actor/project memory store
+ */
 "use client";
 
 import { create } from "zustand";

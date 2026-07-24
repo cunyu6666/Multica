@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides display preferences for issue-detail sub-issues rows.
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage
+ * [TO]: Consumed by sub-issues panel and row renderers in views
+ * [HERE]: packages/core/issues/stores/sub-issue-display-store.ts - Sub-issue row display preferences
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { defaultStorage } from "../../platform/storage";

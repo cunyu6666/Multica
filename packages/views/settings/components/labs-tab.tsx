@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the Labs/experimental features settings tab — currently a placeholder
+ *        container reserved for future experimental flags.
+ * [FROM]: Depends on @multica/ui/components/ui/empty, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Labs" tab.
+ * [HERE]: packages/views/settings/components/labs-tab.tsx - Placeholder Labs tab for future experimental features
+ */
 "use client";
 
 import { FlaskConical } from "lucide-react";

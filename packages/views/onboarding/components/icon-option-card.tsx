@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides icon-labeled option cards for questionnaire grids with radio/checkbox modes
+ * [FROM]: Depends on @multica/ui/lib/utils
+ * [TO]: Consumed by onboarding Step 1 (About-you) and source-backfill prompt for question rendering
+ * [HERE]: packages/views/onboarding/components/icon-option-card.tsx - IconOptionCard, IconOtherOptionCard, QuestionOption
+ */
+
 "use client";
 
 import type { ReactNode } from "react";

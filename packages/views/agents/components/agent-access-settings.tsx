@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides a standalone AgentAccessSettings settings card wrapping
+ *   the AccessPicker for agent permission management views.
+ * [FROM]: Depends on @multica/core/types, settings-layout components,
+ *   i18n, and inspector/access-picker.
+ * [TO]: Consumed by agent detail settings pages that surface access
+ *   control as a standalone section.
+ * [HERE]: packages/views/agents/components/agent-access-settings.tsx -
+ *   Settings-card wrapper for agent access/permission configuration.
+ */
 "use client";
 
 import type { Agent, MemberWithUser } from "@multica/core/types";

@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the browser notification permission setting — a web-only control
+ *        for requesting/granting the Notification API permission (skipped on desktop/SSR).
+ * [FROM]: Depends on @multica/core/platform, @multica/ui/components/ui/button,
+ *         ../../platform, ../../i18n, ./settings-layout
+ * [TO]: Consumed by NotificationsTab (notifications-tab.tsx) as a nested setting row.
+ * [HERE]: packages/views/settings/components/browser-notification-setting.tsx - Web-only browser notification permission toggle
+ */
 "use client";
 
 import { useEffect, useState } from "react";

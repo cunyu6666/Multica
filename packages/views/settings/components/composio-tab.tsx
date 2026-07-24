@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the Composio integration tab — connectable toolkit catalog with
+ *        search, connect/disconnect flows, expired-token reconnect, and redirect callback handling.
+ * [FROM]: Depends on @multica/core/api, @multica/core/composio, @multica/core/types,
+ *         @multica/ui components, ../../common/composio-toolkit-logo, ../../i18n, ../../navigation
+ * [TO]: Consumed by IntegrationsTab (integrations-tab.tsx) as a nested section.
+ * [HERE]: packages/views/settings/components/composio-tab.tsx - Composio toolkit connection management
+ */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";

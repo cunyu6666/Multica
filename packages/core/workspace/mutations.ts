@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides mutations for workspace CRUD (create, leave, delete)
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types, ../platform/storage, ../platform/storage-cleanup, ./queries, ./pending-delete
+ * [TO]: Consumed by workspace management views and onboarding flows
+ * [HERE]: packages/core/workspace/mutations.ts - workspace CRUD mutations
+ */
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import type { Workspace } from "../types";
 import { api } from "../api";

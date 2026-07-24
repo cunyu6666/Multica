@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides FNV-1a hash and percent-rollout bucketing for feature flags
+ * [FROM]: No external dependencies (uses built-in TextEncoder)
+ * [TO]: Consumed by StaticProvider and server/pkg/featureflag (cross-language parity)
+ * [HERE]: packages/core/feature-flags/hash.ts - deterministic percent-rollout bucketing
+ */
+
+/**
  * FNV-1a 32-bit hash used for deterministic percent-rollout bucketing.
  *
  * The same (key, identifier) pair MUST always produce the same bucket;

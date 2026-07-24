@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides which optional fields each create-issue mode keeps on its toolbar,
+ * with canonical field ordering and workspace-aware persistence.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by create-issue dialogs and settings tab
+ * [HERE]: packages/core/issues/stores/issue-create-settings-store.ts - Create dialog field visibility settings
+ */
 "use client";
 
 import { create } from "zustand";

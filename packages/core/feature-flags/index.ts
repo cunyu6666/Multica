@@ -4,6 +4,12 @@
  * Keep this list minimal — every new export becomes a contract we have to
  * preserve across the monorepo. Add to it only when a real caller appears.
  */
+/**
+ * [WHO]: Public barrel for @multica/core/feature-flags (types, service, providers, hooks, hash)
+ * [FROM]: Depends on ./types, ./service, ./static-provider, ./chain-provider, ./keys, ./context, ./hash
+ * [TO]: Consumed by all feature flag consumers across web, desktop, and mobile
+ * [HERE]: packages/core/feature-flags/index.ts - public API surface for feature flags
+ */
 
 export type {
   Decision,

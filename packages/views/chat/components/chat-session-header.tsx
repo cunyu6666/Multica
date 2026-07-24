@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the session header with archive, delete, pin, and rename actions for a chat session
+ * [FROM]: Depends on @multica/core/chat, @multica/core/paths, @multica/core/types, @multica/core/chat/mutations, ../../i18n
+ * [TO]: Consumed by chat-page.tsx and floating-chat window as the per-session header bar
+ * [HERE]: packages/views/chat/components/chat-session-header.tsx - ChatSessionHeader with session management dropdown
+ */
 "use client";
 
 import { useEffect, useRef, useState } from "react";

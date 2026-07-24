@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query mutations for autopilot CRUD, triggers, and deliveries
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../hooks, ../types, ./queries
+ * [TO]: Consumed by autopilot views for create/update/delete/trigger/replay actions
+ * [HERE]: packages/core/autopilots/mutations.ts - mutations for autopilot API
+ */
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { autopilotKeys } from "./queries";

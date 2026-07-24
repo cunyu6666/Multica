@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides FeatureFlagService - the toggle router that consults providers for flag decisions
+ * [FROM]: Depends on ./types (Decision, EvalContext, Provider)
+ * [TO]: Consumed by React context, diagnostic overlays, and unit tests
+ * [HERE]: packages/core/feature-flags/service.ts - core flag evaluation engine
+ */
 import type { Decision, EvalContext, Provider } from "./types";
 
 /**

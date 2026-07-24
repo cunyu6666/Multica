@@ -1,3 +1,7 @@
+// [WHO]: Provides RateLimit middleware, ParseTrustedProxies — Redis-backed rate limiting with atomic Lua script counters
+// [FROM]: Depends on redis/go-redis/v9 for Redis operations, net for CIDR parsing
+// [TO]: Consumed by router (applied to specific routes) for API rate limiting
+// [HERE]: server/internal/middleware/ratelimit.go - Redis-based rate limiting using atomic Lua script for INCR+EXPIRE; supports trusted proxy CIDR parsing for X-Forwarded-For resolution; sits alongside auth.go as cross-cutting protection middleware
 package middleware
 
 import (

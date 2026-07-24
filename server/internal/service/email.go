@@ -1,3 +1,7 @@
+// [WHO]: Provides EmailService, NewEmailService, SendInviteEmail, SendPasswordResetEmail — email delivery via Resend API and SMTP fallback
+// [FROM]: Depends on resend-go/v2 for Resend API, net/smtp for SMTP fallback, unicode/utf8 for subject sanitization
+// [TO]: Consumed by handler (invitation, password-reset endpoints)
+// [HERE]: server/internal/service/email.go - email sending service with Resend primary and SMTP fallback; includes phishing-prevention subject length limits and HTML/plain multipart generation
 package service
 
 import (

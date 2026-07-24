@@ -1,3 +1,17 @@
+/**
+ * [WHO]: Provides the full agent creation studio with mode chooser (blank/AI),
+ *   template selection, configuration panel, AI builder session, and
+ *   live-draft preview — a multi-step wizard for creating agents from scratch,
+ *   templates, or AI-assisted conversation.
+ * [FROM]: Depends on @multica/core (API, hooks, paths, queries, types),
+ *   @multica/ui (Button, Checkbox, Input, Textarea, motion), chat components,
+ *   navigation, i18n, and agent sub-components (ModelDropdown, RuntimePicker,
+ *   SkillMultiSelect, AvatarUploadControl, SettingsSection).
+ * [TO]: Consumed by apps/web and apps/desktop at /:slug/agents/new and
+ *   squad member add flows.
+ * [HERE]: packages/views/agents/components/agent-creation-studio.tsx -
+ *   Multi-mode agent creation wizard with AI builder integration.
+ */
 "use client";
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";

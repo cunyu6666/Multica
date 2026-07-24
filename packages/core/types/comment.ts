@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides comment, reaction, and comment trigger types
+ * [FROM]: Depends on ./attachment
+ * [TO]: Consumed by issues/comments/, chat, timeline, API schema parsing
+ * [HERE]: packages/core/types/comment.ts - Comment and reaction type definitions
+ */
+
 export type CommentType = "comment" | "status_change" | "progress_update" | "system";
 
 // `system` is used by platform-generated rows (e.g. the parent-issue

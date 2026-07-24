@@ -1,3 +1,7 @@
+// [WHO]: Provides EmptyClaimCache, NewEmptyClaimCache, EmptyClaimCacheTTL — Redis-backed cache for "no queued task" verdicts per runtime
+// [FROM]: Depends on redis/go-redis/v9 for Redis operations
+// [TO]: Consumed by service (TaskService claim path) to skip Postgres scans on steady-state empty daemon polls
+// [HERE]: server/internal/service/empty_claim_cache.go - version-tagged negative cache that prevents idle daemon polls from hitting Postgres; uses per-runtime version counters to close race windows between enqueue and claim
 package service
 
 import (

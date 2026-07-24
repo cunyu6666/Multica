@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for workspace entities (members, agents, squads, skills, invitations)
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types
+ * [TO]: Consumed by workspace views, hooks, and agent/squad management pages
+ * [HERE]: packages/core/workspace/queries.ts - workspace entity query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type { Agent, Squad, Workspace } from "../types";

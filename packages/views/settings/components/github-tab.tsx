@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the GitHub integration settings tab — connection management,
+ *        feature toggles (PR sidebar, co-authored-by, auto-link PRs), and repository shortcut.
+ * [FROM]: Depends on @multica/core/api, @multica/core/github, @multica/core/hooks,
+ *         @multica/ui components, ../../navigation, ../../i18n, ./settings-layout, ./github-mark
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as a top-level tab.
+ * [HERE]: packages/views/settings/components/github-tab.tsx - GitHub settings tab with OAuth connect/disconnect and per-feature switches
+ */
 "use client";
 
 import { useState } from "react";

@@ -1,9 +1,8 @@
+// [WHO]: Provides ContentSecurityPolicy middleware — sets CSP headers with path-aware policy selection
+// [FROM]: Depends on net/http for request handling
+// [TO]: Consumed by router (applied globally) for all HTTP responses
+// [HERE]: server/internal/middleware/csp.go - applies Content-Security-Policy headers; uses stricter policy for attachment preview paths (allows frame-ancestors 'self') vs standard policy for all other paths; sits alongside auth.go and ratelimit.go as cross-cutting security middleware
 package middleware
-
-import (
-	"net/http"
-	"strings"
-)
 
 const cspBaseHeader = "default-src 'self'; " +
 	"script-src 'self'; " +

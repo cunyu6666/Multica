@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the useAutoSave hook — debounced auto-save with request serialization
+ *        to prevent stale overwrites, used by settings forms for name/description/repos fields.
+ * [FROM]: Depends on React hooks (useCallback, useEffect, useRef, useState), ./settings-layout (SettingsSaveStatus type)
+ * [TO]: Consumed by WorkspaceTab (workspace-tab.tsx), RepositoriesTab (repositories-tab.tsx).
+ * [HERE]: packages/views/settings/components/use-auto-save.ts - Debounced auto-save hook with serialized request queue
+ */
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";

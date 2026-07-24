@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the agent overview pane for the workbench — a read-only
+ *   summary of identity, execution, and capability context with an embedded
+ *   inspector for inline editing of name, description, model, runtime,
+ *   thinking, service tier, and labels.
+ * [FROM]: Depends on @multica/core (agents, types), @multica/ui (Input,
+ *   Textarea), settings-layout, auto-save, i18n, and inspector sub-components
+ *   (ModelPicker, RuntimePicker, ThinkingSettingField, etc.).
+ * [TO]: Consumed by AgentDetailPage as the overview tab content.
+ * [HERE]: packages/views/agents/components/agent-overview-pane.tsx -
+ *   Agent overview pane with identity and execution configuration.
+ */
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";

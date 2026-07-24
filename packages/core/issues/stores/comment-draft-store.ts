@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides per-comment draft persistence for comment composers, surviving
+ * virtualization unmount, tab close, and reload with 30-day TTL pruning.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by CommentInput, ReplyInput, and inline edit components in views
+ * [HERE]: packages/core/issues/stores/comment-draft-store.ts - Per-comment draft store with issue-scoped keys and TTL
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { createWorkspaceAwareStorage, registerForWorkspaceRehydration } from "../../platform/workspace-storage";

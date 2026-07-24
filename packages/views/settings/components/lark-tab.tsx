@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides the Lark/Feishu integration settings tab — bot installation listing,
+ *        disconnect flows, per-agent LarkAgentBindButton, and the LarkInstallDialog
+ *        (device-flow QR scan + poll).
+ * [FROM]: Depends on @multica/core/api, @multica/core/auth, @multica/core/hooks,
+ *         @multica/core/lark, @multica/core/types, @multica/ui components, react-qr-code,
+ *         ../../common/actor-avatar, ../../i18n
+ * [TO]: Consumed by IntegrationsTab (integrations-tab.tsx) and agent detail pages via LarkAgentBindButton.
+ * [HERE]: packages/views/settings/components/lark-tab.tsx - Lark/Feishu bot management with device-flow QR install
+ */
 "use client";
 
 import { useEffect, useRef, useState } from "react";

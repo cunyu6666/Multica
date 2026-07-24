@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides actor issues view state (assigned/created scope) with workspace-aware
+ * persistence, list-only default view mode.
+ * [FROM]: Depends on zustand/vanilla, zustand/middleware, view-store, workspace-storage
+ * [TO]: Consumed by Actor tasks panel and list renderers
+ * [HERE]: packages/core/issues/stores/actor-issues-view-store.ts - Actor issues view store
+ */
 "use client";
 
 import { createStore, type StoreApi } from "zustand/vanilla";

@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides in-memory tracking of temporarily expanded resolved threads,
+ * keyed by issue ID; cleared on reload (not persisted).
+ * [FROM]: Depends on zustand
+ * [TO]: Consumed by issue timeline and command palette fold/unfold commands
+ * [HERE]: packages/core/issues/stores/resolved-expand-store.ts - Resolved thread expansion state
+ */
 import { create } from "zustand";
 
 /**

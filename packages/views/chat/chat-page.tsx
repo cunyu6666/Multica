@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the full-page chat surface with resizable panels, thread list, and message input
+ * [FROM]: Depends on @multica/core/chat, @multica/core/types, ../layout/page-header, ./components/*
+ * [TO]: Consumed by apps/web/app and desktop router as the Chat tab route
+ * [HERE]: packages/views/chat/chat-page.tsx - ChatPage component with resizable two-panel layout for sessions and messages
+ */
 "use client";
 
 import { useEffect, useRef, useState } from "react";

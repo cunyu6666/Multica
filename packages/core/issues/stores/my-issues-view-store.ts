@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides my-issues view state with scope (all/assigned/created/agents)
+ * and workspace-aware persistence with deep-merge for card properties.
+ * [FROM]: Depends on zustand/vanilla, zustand/middleware, view-store, workspace-storage
+ * [TO]: Consumed by MyIssues page and list renderers
+ * [HERE]: packages/core/issues/stores/my-issues-view-store.ts - My issues view store with scope
+ */
 "use client";
 
 import { createStore, type StoreApi } from "zustand/vanilla";

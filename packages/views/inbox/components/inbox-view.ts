@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Defines the inbox view type and URL parameter constant
+ * [FROM]: No runtime dependencies — pure type export
+ * [TO]: Consumed by inbox page routing and URL serialization logic
+ * [HERE]: packages/views/inbox/components/inbox-view.ts - InboxView type and archived view param
+ */
+
+/**
  * Which of the inbox's two lists is showing.
  *
  * "inbox" is the default list of active notifications; "archived" is the

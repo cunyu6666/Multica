@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Defines feature flag types (Decision, EvalContext, Provider, Rule, etc.)
+ * [FROM]: No dependencies
+ * [TO]: Consumed by all feature-flag module files and server/pkg/featureflag (type parity)
+ * [HERE]: packages/core/feature-flags/types.ts - flag evaluation types and provider interface
+ */
+
+/**
  * Public types for the @multica/core/feature-flags module.
  *
  * The shape mirrors the Go-side server/pkg/featureflag package on purpose so

@@ -1,3 +1,7 @@
+// [WHO]: Provides AgentReadiness — the single source of truth for whether an agent can accept new work
+// [FROM]: Depends on pkg/db/generated for Agent/Runtime queries
+// [TO]: Consumed by service (shouldSkipDispatch, dispatchRunOnly) and handler (isSquadLeaderReady)
+// [HERE]: server/internal/service/agent_ready.go - unified agent readiness gate shared by autopilot admission, squad-leader enqueue, and issue-assign paths
 package service
 
 import (

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Builds absolute webhook URLs for autopilot webhook triggers
+ * [FROM]: Depends on ../types (AutopilotTrigger)
+ * [TO]: Consumed by autopilot views that display/copy webhook URLs
+ * [HERE]: packages/core/autopilots/webhook.ts - webhook URL resolver with fallback chain
+ */
 import type { AutopilotTrigger } from "../types";
 
 /**

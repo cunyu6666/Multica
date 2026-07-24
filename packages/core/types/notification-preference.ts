@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides notification preference types for per-group mute settings
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by notification-preferences/, settings, API schema parsing
+ * [HERE]: packages/core/types/notification-preference.ts - Notification preference type definitions
+ */
+
 export type NotificationGroupKey =
   | "assignments"
   | "status_changes"

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides StaticProvider - in-memory flag provider populated from source config
+ * [FROM]: Depends on ./types (Decision, EvalContext, Provider, Rule), ./hash
+ * [TO]: Consumed by ChainProvider as the static baseline, and by tests
+ * [HERE]: packages/core/feature-flags/static-provider.ts - static rule-based flag provider
+ */
 import type { Decision, EvalContext, Provider, Rule } from "./types";
 import { inPercent } from "./hash";
 

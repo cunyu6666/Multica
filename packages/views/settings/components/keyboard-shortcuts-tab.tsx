@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the keyboard shortcuts settings tab — searchable action list with
+ *        key capture, conflict detection, reserved/unsafe validation, and reset-all.
+ * [FROM]: Depends on @multica/core/shortcuts, @multica/core/utils, @multica/ui components,
+ *         ../../i18n, ../../common/shortcut-keycaps, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Keyboard Shortcuts" tab.
+ * [HERE]: packages/views/settings/components/keyboard-shortcuts-tab.tsx - Keyboard shortcut customization with live capture
+ */
 "use client";
 
 import { useMemo, useState } from "react";

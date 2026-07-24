@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Computes workspace URL host from deployment config
+ * [FROM]: No dependencies
+ * [TO]: Consumed by onboarding, create-workspace flows, and workspace link builders
+ * [HERE]: packages/core/workspace/workspace-url.ts - workspace URL host resolver
+ */
 // Brand host shown as the workspace URL prefix on the managed Multica Cloud,
 // and the fallback whenever the deployment exposes no app URL. `/api/config`
 // deliberately omits `daemon_app_url` for the managed cloud (and for any

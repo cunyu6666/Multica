@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides custom issue property types and CRUD request/response shapes
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by properties/, issue tables, project views, API schema parsing
+ * [HERE]: packages/core/types/property.ts - Custom issue property type definitions (MUL-4463)
+ */
+
+/**
  * Custom issue properties — workspace-defined, typed fields on issues
  * (MUL-4463). Definitions live in a workspace catalog (managed by owner/admin
  * only); values live on each issue in a bag keyed by definition id, so

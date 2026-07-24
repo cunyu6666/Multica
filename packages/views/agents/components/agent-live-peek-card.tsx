@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides a live "peek" card for an agent showing three real-time
+ *   signals — workload, current issue, and last activity — as a compact
+ *   hover surface.
+ * [FROM]: Depends on @multica/core (agent queries, presence, paths),
+ *   @multica/ui (ActorAvatar, Skeleton), presence config, navigation,
+ *   and i18n.
+ * [TO]: Consumed by squad members tab and other surfaces needing a live
+ *   agent status hover card (companion to AgentProfileCard).
+ * [HERE]: packages/views/agents/components/agent-live-peek-card.tsx -
+ *   Live agent status peek card for squad and mention contexts.
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

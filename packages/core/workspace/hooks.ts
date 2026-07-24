@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides actor name resolution hooks (members, agents, squads)
+ * [FROM]: Depends on react, @tanstack/react-query, ../types, ../hooks, ./queries, ./avatar-url
+ * [TO]: Consumed by board views, issue lists, and any UI that renders actor names/avatars
+ * [HERE]: packages/core/workspace/hooks.ts - actor name/avatar resolution hooks
+ */
 "use client";
 
 import { useCallback, useMemo } from "react";

@@ -1,3 +1,7 @@
+// [WHO]: Provides ownerLookupFor — creates an auth.OwnerLookupFunc that validates Cloud PAT owner IDs against the local user table
+// [FROM]: Depends on internal/auth for OwnerLookupFunc, pkg/db/generated for GetUser query, internal/util for UUID parsing, pgx/v5 for error handling
+// [TO]: Consumed by middleware (Auth, DaemonAuth Cloud PAT branches) to confirm Cloud owner_id maps to a known local user
+// [HERE]: server/internal/middleware/owner_lookup.go - bridges Cloud PAT verification to local user table; used by mcn_ token branches in Auth and DaemonAuth to prevent token acceptance for unknown owners; sits alongside auth.go and daemon_auth.go as supporting infrastructure
 package middleware
 
 import (

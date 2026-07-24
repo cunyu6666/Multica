@@ -1,3 +1,7 @@
+// [WHO]: Provides TaskService, NewTaskService, TxStarter — the central service for task lifecycle management (claim, complete, cancel, notify, finalize)
+// [FROM]: Depends on pkg/db/generated, pkg/protocol, pkg/featureflag, pkg/redact, pkg/skillbundle, pkg/taskfailure, internal/analytics, internal/attribution, internal/events, internal/featureflags, internal/metrics, internal/realtime, internal/runtimeapps, internal/util, pgx/v5
+// [TO]: Consumed by handler (task CRUD endpoints), daemon (claim/poll paths), autopilot service, issue service
+// [HERE]: server/internal/service/task.go - core task service managing the full task lifecycle; coordinates with realtime.Hub for live updates, events.Bus for broadcasting, analytics, feature flags, EmptyClaimCache for daemon poll optimization, and Composio for MCP overlays
 package service
 
 import (

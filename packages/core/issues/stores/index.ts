@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Re-exports all issue-related stores and view state types.
+ * [FROM]: Depends on all sibling store modules in this directory
+ * [TO]: Consumed by views, pages, and components that need issue stores
+ * [HERE]: packages/core/issues/stores/index.ts - Store re-exports barrel
+ */
 export { useIssueSelectionStore } from "./selection-store";
 export {
   useCreateModeStore,

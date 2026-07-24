@@ -1,3 +1,7 @@
+// [WHO]: Provides ClientMetadata middleware, ClientMetadataFromContext, HeaderClientPlatform/Version/OS — client metadata extraction from request headers
+// [FROM]: Depends on net/http for request handling
+// [TO]: Consumed by router (applied globally), request_logger, realtime hub for client-aware logging and metrics
+// [HERE]: server/internal/middleware/client.go - extracts X-Client-Platform/Version/OS headers into request context; best-effort values for observability dimensioning across Web/Desktop/CLI/Daemon clients
 package middleware
 
 import (

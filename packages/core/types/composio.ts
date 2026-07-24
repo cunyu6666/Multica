@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Composio toolkit and connection types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/settings/integrations/, composio/, API schema parsing
+ * [HERE]: packages/core/types/composio.ts - Composio integration type definitions
+ */
+
 /** A Composio toolkit as surfaced by GET /api/integrations/composio/toolkits.
  *
  * Wire shape mirrors `ComposioToolkitResponse` in

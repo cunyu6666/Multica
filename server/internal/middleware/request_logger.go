@@ -1,15 +1,8 @@
+// [WHO]: Provides RequestLogger middleware, SetWebhookTriggerID — structured HTTP request/response logging with webhook token redaction
+// [FROM]: Depends on go-chi/chi/v5/middleware for request ID, net/http for request/response handling
+// [TO]: Consumed by router (applied globally) for audit logging of all HTTP requests
+// [HERE]: server/internal/middleware/request_logger.go - logs HTTP requests with method, path, status, duration, client metadata, and webhook trigger ID; redacts bearer tokens from webhook URLs; sits alongside client.go which provides the client metadata headers it logs
 package middleware
-
-import (
-	"bytes"
-	"context"
-	"log/slog"
-	"net/http"
-	"strings"
-	"time"
-
-	chimw "github.com/go-chi/chi/v5/middleware"
-)
 
 // webhookTriggerIDKeyType is unexported so foreign packages cannot collide on
 // the context key — they go through SetWebhookTriggerID instead.

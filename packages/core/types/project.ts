@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Project, ProjectResource types and CRUD request/response shapes
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/project/, projects/, issues/, API schema parsing
+ * [HERE]: packages/core/types/project.ts - Project and project resource type definitions
+ */
+
 export type ProjectStatus = "planned" | "in_progress" | "paused" | "completed" | "cancelled";
 
 export type ProjectPriority = "urgent" | "high" | "medium" | "low" | "none";

@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the agent detail inspector pane — a tabbed panel with
+ *   Overview, Activity, Instructions, Skills, Env, Integrations, MCP,
+ *   Runtime Config, and Custom Args tabs, plus archive/restore flows and
+ *   optimistic inline updates.
+ * [FROM]: Depends on @multica/core (agent queries, types, feature flags),
+ *   @multica/ui (AlertDialog, motion), all agent tab components, inspector
+ *   sub-components, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the right-side inspector panel.
+ * [HERE]: packages/views/agents/components/agent-detail-inspector.tsx -
+ *   Tabbed inspector pane for agent detail with all configuration surfaces.
+ */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";

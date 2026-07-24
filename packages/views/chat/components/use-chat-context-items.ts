@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides recent issue and project context items as mentionable entries for chat
+ * [FROM]: Depends on @multica/core/chat, @multica/core/issues/queries, @multica/core/projects/queries, ../../editor/extensions/mention-suggestion
+ * [TO]: Consumed by chat input components for the @-mention dropdown
+ * [HERE]: packages/views/chat/components/use-chat-context-items.ts - useChatContextItems hook fetching recent issues/projects as MentionItem[]
+ */
 "use client";
 
 import { useMemo } from "react";

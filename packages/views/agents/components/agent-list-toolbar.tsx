@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the agent list toolbar with search, sort, filter,
+ *   and column-visibility controls for the AgentsPage grid.
+ * [FROM]: Depends on @multica/core/agents (stores, types, presence),
+ *   @multica/core/runtimes, @multica/core/workspace/avatar-url,
+ *   @multica/ui (Button, Input, dropdown/popover components), and i18n.
+ * [TO]: Consumed by AgentsPage as the top toolbar for sorting, filtering,
+ *   and searching the agent list.
+ * [HERE]: packages/views/agents/components/agent-list-toolbar.tsx -
+ *   Sort/filter/search toolbar for the agent collection page.
+ */
 "use client";
 
 import {

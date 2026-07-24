@@ -1,3 +1,7 @@
+// [WHO]: Provides DaemonAuth middleware, DaemonWorkspaceIDFromContext, DaemonIDFromContext, DaemonAuthPathFromContext — authentication for daemon/agent polling endpoints
+// [FROM]: Depends on internal/auth for PATCache/CloudPATVerifier, pkg/db/generated for token/user queries, golang-jwt/jwt/v5 for JWT parsing
+// [TO]: Consumed by router (applied to daemon routes) for agent task claim/poll paths
+// [HERE]: server/internal/middleware/daemon_auth.go - daemon-specific auth supporting daemon_token, PAT, Cloud PAT, and JWT; injects workspace ID, daemon ID, and auth path into context for telemetry and workspace scoping; mirrors auth.go but tailored for daemon poll endpoints
 package middleware
 
 import (

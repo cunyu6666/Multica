@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the self-hosted VCS connections tab — connect/disconnect Forgejo,
+ *        Gitea, or GitLab instances with token auth, webhook secret display, and rotation.
+ * [FROM]: Depends on @multica/core/api, @multica/core/hooks, @multica/core/vcs,
+ *         @multica/core/types, @multica/ui components, sonner, ../../i18n
+ * [TO]: Consumed by IntegrationsTab (integrations-tab.tsx) when vcsIntegrationAvailable is true.
+ * [HERE]: packages/views/settings/components/vcs-tab.tsx - Self-hosted VCS (Forgejo/Gitea/GitLab) connection management
+ */
 "use client";
 
 import { useState } from "react";

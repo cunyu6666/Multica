@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides the personal access tokens settings tab — create tokens with expiry,
+ *        copy token/CLI command, revoke with confirmation, and list existing tokens.
+ * [FROM]: Depends on @multica/core/api, @multica/core/types, @multica/ui/components/ui/*,
+ *         @multica/ui/lib/clipboard, sonner, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Tokens" tab.
+ * [HERE]: packages/views/settings/components/tokens-tab.tsx - Personal access token creation, listing, and revocation
+ */
 "use client";
 
 import { useEffect, useState, useCallback } from "react";

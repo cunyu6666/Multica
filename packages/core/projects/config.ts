@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Defines project status and priority configuration (labels, colors, ordering)
+ * [FROM]: Depends on ../types (ProjectStatus, ProjectPriority)
+ * [TO]: Consumed by project views for rendering status/priority badges
+ * [HERE]: packages/core/projects/config.ts - project status/priority display config
+ */
 import type { ProjectStatus, ProjectPriority } from "../types";
 
 export const PROJECT_STATUS_ORDER: ProjectStatus[] = [

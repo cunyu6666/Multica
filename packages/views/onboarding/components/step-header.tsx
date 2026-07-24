@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the horizontal step indicator progress bar for onboarding
+ * [FROM]: Depends on @multica/core/onboarding (ONBOARDING_STEP_ORDER), @multica/ui/lib/utils, ../../i18n
+ * [TO]: Consumed by OnboardingFlow orchestrator to render step progress at the top of each step
+ * [HERE]: packages/views/onboarding/components/step-header.tsx - StepHeader progress indicator
+ */
+
 "use client";
 
 import {

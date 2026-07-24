@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides editorial radio-style option cards and "Other" text input for questionnaires
+ * [FROM]: Depends on @multica/ui/components/ui/input, @multica/ui/lib/utils, ../../i18n
+ * [TO]: Consumed by StepQuestionnaire (onboarding Step 1) for role/use-case/source selection
+ * [HERE]: packages/views/onboarding/components/option-card.tsx - OptionCard, OtherOptionCard, RadioMark components
+ */
+
 "use client";
 
 import { Input } from "@multica/ui/components/ui/input";

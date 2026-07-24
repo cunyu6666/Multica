@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Lark bot installation types and device-flow install types
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by views/settings/integrations/, lark/, API schema parsing
+ * [HERE]: packages/core/types/lark.ts - Lark integration type definitions
+ */
+
 /** A Lark Bot installation bound to a single Multica agent.
  *
  * Wire shape mirrors `LarkInstallationResponse` in

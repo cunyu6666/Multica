@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides the issue properties settings tab — CRUD for custom issue fields
+ *        (text, number, select, multi-select, date, checkbox, URL) with icon picker,
+ *        color-coded options, search, archive/unarchive, and a 20-property active limit.
+ * [FROM]: Depends on @multica/core/auth, @multica/core/hooks, @multica/core/properties,
+ *         @multica/core/types, @multica/ui components, ../../common/color-picker,
+ *         ../../common/property-icon, ../../i18n, ./settings-layout
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Properties" tab.
+ * [HERE]: packages/views/settings/components/properties-tab.tsx - Custom issue property management with icon and option editors
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

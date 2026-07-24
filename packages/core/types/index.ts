@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Re-exports all type definitions from the types package
+ * [FROM]: Depends on all sibling type modules in ./
+ * [TO]: Consumed by @multica/core public API, views/, apps/web/, apps/desktop/
+ * [HERE]: packages/core/types/index.ts - Barrel re-export for all type definitions
+ */
+
 export type { Issue, IssueStatus, IssuePriority, IssueAssigneeType, IssueMetadata, IssueMetadataValue, IssueReaction } from "./issue";
 export type {
   Agent,

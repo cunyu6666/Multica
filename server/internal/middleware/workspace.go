@@ -1,14 +1,8 @@
+// [WHO]: Provides workspace middleware, MemberFromContext, WorkspaceIDFromContext, SetMemberContext, ResolveWorkspaceIDFromRequest — workspace scoping and member resolution
+// [FROM]: Depends on go-chi/chi/v5 for URL parameter extraction, pkg/db/generated for workspace/member queries, internal/util for UUID parsing
+// [TO]: Consumed by router (applied to workspace-scoped routes) for all workspace-level API endpoints
+// [HERE]: server/internal/middleware/workspace.go - resolves workspace ID from request (context fast path, URL slug, or entity lookup) and injects workspace ID + member into context; single source of truth for workspace targeting shared by middleware-protected routes and public handlers
 package middleware
-
-import (
-	"context"
-	"errors"
-	"net/http"
-
-	"github.com/go-chi/chi/v5"
-	"github.com/multica-ai/multica/server/internal/util"
-	db "github.com/multica-ai/multica/server/pkg/db/generated"
-)
 
 // Context keys for workspace-scoped request data.
 type contextKey int

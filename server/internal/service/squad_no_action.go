@@ -1,3 +1,7 @@
+// [WHO]: Provides HasSquadLeaderNoActionEvaluationForTask — checks whether a squad leader no_action evaluation already exists for a task
+// [FROM]: Depends on pkg/db/generated for database queries, internal/util for UUID conversion
+// [TO]: Consumed by service (squad leader evaluation dedup logic)
+// [HERE]: server/internal/service/squad_no_action.go - lightweight database check preventing duplicate squad leader no_action evaluations for the same task; called before recording new evaluations
 package service
 
 import (

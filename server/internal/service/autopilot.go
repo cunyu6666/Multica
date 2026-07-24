@@ -1,3 +1,7 @@
+// [WHO]: Provides AutopilotService, NewAutopilotService, DefaultAutopilotTriggerTimezone — autopilot lifecycle and trigger management
+// [FROM]: Depends on pkg/db/generated, internal/analytics, internal/attribution, internal/dispatch, internal/events, internal/issueguard, internal/issueposition, internal/metrics, internal/util, pkg/protocol, pgx/v5
+// [TO]: Consumed by handler (autopilot CRUD endpoints), scheduler (AutopilotScheduleDispatchJob)
+// [HERE]: server/internal/service/autopilot.go - core autopilot service managing triggers, runs, and scheduling; coordinates with TaskService for run execution and events.Bus for broadcasting
 package service
 
 import (

@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides a read-only AgentOverviewSummary for the workbench
+ *   Overview tab — agent identity, runtime health, model, and owner
+ *   without any editing controls.
+ * [FROM]: Depends on @multica/core/types, @multica/core/runtimes,
+ *   ActorAvatar, i18n, visibility-badge, and activity-tab for
+ *   AgentPerformanceSummary.
+ * [TO]: Consumed by AgentDetailPage overview as the non-interactive
+ *   summary header above the inspector.
+ * [HERE]: packages/views/agents/components/agent-overview-summary.tsx -
+ *   Read-only agent identity and execution summary.
+ */
 "use client";
 
 import { Bot, Server } from "lucide-react";

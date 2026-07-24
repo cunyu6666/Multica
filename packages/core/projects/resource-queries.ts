@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides query keys and mutations for project resource CRUD
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types, ./queries
+ * [TO]: Consumed by project views that manage resources (issues, agents, etc.)
+ * [HERE]: packages/core/projects/resource-queries.ts - project resource API layer
+ */
 import { queryOptions, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { projectKeys } from "./queries";

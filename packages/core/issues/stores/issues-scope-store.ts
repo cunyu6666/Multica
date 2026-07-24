@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides workspace-scoped issue scope preference (all/members/agents).
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by issues list header and scope filter components in views
+ * [HERE]: packages/core/issues/stores/issues-scope-store.ts - Issue scope toggle store
+ */
 "use client";
 
 import { create } from "zustand";

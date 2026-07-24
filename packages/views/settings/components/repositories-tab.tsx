@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the workspace repositories settings tab — add/remove repository URLs
+ *        and descriptions with auto-save, gated on admin/owner membership.
+ * [FROM]: Depends on @multica/core/api, @multica/core/auth, @multica/core/hooks,
+ *         @multica/core/paths, @multica/core/workspace/queries, @multica/core/types,
+ *         @multica/ui components, sonner, ../../i18n, ./settings-layout, ./use-auto-save
+ * [TO]: Consumed by SettingsPage (settings-page.tsx) as the "Repositories" tab.
+ * [HERE]: packages/views/settings/components/repositories-tab.tsx - Workspace repository URL management with auto-save
+ */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides an inline banner shown when the active agent is offline or unreachable
+ * [FROM]: Depends on @multica/core/agents, ../../i18n
+ * [TO]: Consumed by chat-page.tsx and floating-chat window above the chat input
+ * [HERE]: packages/views/chat/components/offline-banner.tsx - OfflineBanner component for agent offline/unstable states
+ */
 "use client";
 
 import { AlertCircle, WifiOff } from "lucide-react";

@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides the cloud waitlist inline form for users without a runtime
+ * [FROM]: Depends on @multica/core/onboarding (joinCloudWaitlist), @multica/ui form components, ../../i18n
+ * [TO]: Consumed by StepPlatformFork (web cloud fork) and StepRuntimeConnect (desktop empty state)
+ * [HERE]: packages/views/onboarding/components/cloud-waitlist-expand.tsx - CloudWaitlistExpand form component
+ */
+
 "use client";
 
 import { useState } from "react";
