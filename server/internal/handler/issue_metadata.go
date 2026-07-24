@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue metadata CRUD — custom fields, labels, estimates, and issue-level properties with schema validation
+// [FROM]: Depends on pkg/db/generated for issue_metadata queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/metadata/* endpoints
+// [HERE]: server/internal/handler/issue_metadata.go - issue-level KV metadata management; sits adjacent to issue.go (issue CRUD) and label.go (issue labeling)
 import (
 	"encoding/json"
 	"errors"

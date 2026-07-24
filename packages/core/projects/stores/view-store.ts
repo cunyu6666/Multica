@@ -1,5 +1,17 @@
 "use client";
 
+/**
+ * [WHO]: Provides a Zustand persist store for project list view state (compact/comfortable
+ *        view mode, sort field/direction, hidden columns, multi-select filters) with
+ *        workspace-aware storage and safe merge for backward-compatible hydration
+ * [FROM]: Depends on zustand, zustand/middleware (persist, createJSONStorage),
+ *        ../../platform/workspace-storage, ../../platform/storage
+ * [TO]: Consumed by project list/table/grid views for rendering sort state,
+ *        filter chips, column toggles, and view mode switching
+ * [HERE]: packages/core/projects/stores/view-store.ts - Zustand persist store for
+ *         project list view preferences (mode, sort, columns, filters)
+ */
+
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { createWorkspaceAwareStorage, registerForWorkspaceRehydration } from "../../platform/workspace-storage";

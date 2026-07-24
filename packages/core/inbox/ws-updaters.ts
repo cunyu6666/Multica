@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides WebSocket event handlers for invalidating and patching inbox cache
+ *        on new notifications, issue status changes, and issue deletions
+ * [FROM]: Depends on @tanstack/react-query (QueryClient), ./queries (inboxKeys),
+ *        ../types (InboxItem, IssueStatus)
+ * [TO]: Consumed by WebSocket event dispatcher on inbox-related events, and
+ *        workspace-wide ws-updater orchestration
+ * [HERE]: packages/core/inbox/ws-updaters.ts - WebSocket event handlers that patch
+ *         or invalidate inbox caches on server-pushed events
+ */
+
 import type { QueryClient } from "@tanstack/react-query";
 import { inboxKeys } from "./queries";
 import type { InboxItem, IssueStatus } from "../types";

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue table query parsing and execution — converts query strings into SQL filters for the issue list view
+// [FROM]: Depends on pkg/db/generated for issue queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/table/query endpoint
+// [HERE]: server/internal/handler/issue_table_query.go - query string to SQL filter parser; sits adjacent to issue_table_rows.go (row execution) and issue_table_facets.go (facets)
 import (
 	"context"
 	"crypto/sha256"

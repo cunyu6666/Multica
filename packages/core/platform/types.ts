@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides platform type definitions — CoreProviderProps and
+ *         ClientIdentity for configuring the platform layer.
+ * [FROM]: Depends on i18n (LocaleAdapter, LocaleResources, SupportedLocale),
+ *         types/storage (StorageAdapter interface).
+ * [TO]: Consumed by CoreProvider, AuthInitializer, apps/web and apps/desktop
+ *       platform wiring that configure the provider tree.
+ * [HERE]: packages/core/platform/types.ts - Platform-level TypeScript
+ *         interfaces for provider configuration and client identity.
+ */
 import type {
   LocaleAdapter,
   LocaleResources,

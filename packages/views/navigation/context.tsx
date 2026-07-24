@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides NavigationProvider, useNavigation, useOptionalNavigation, useIsNavigating — platform-agnostic navigation adapter
+ * [FROM]: Depends on React context + NavigationAdapter type
+ * [TO]: Consumed by AppLink, sidebar, command palette, and all cross-platform navigation consumers
+ * [HERE]: packages/views/navigation/context.tsx - Navigation context wrapping push/replace in startTransition
+ */
 "use client";
 
 import { createContext, use, useMemo, useTransition } from "react";

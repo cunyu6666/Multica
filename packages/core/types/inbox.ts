@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides inbox domain type definitions — InboxItem, InboxSeverity,
+ *         InboxItemType, and cross-workspace unread summary shapes.
+ * [FROM]: Depends on types/issue (IssueStatus).
+ * [TO]: Consumed by inbox queries/mutations, inbox views, WS event payloads
+ *         (inbox:new, inbox:read, inbox:archived), and notification handlers.
+ * [HERE]: packages/core/types/inbox.ts - Inbox item and notification
+ *         type definitions for the activity feed domain.
+ */
 import type { IssueStatus } from "./issue";
 
 export type InboxSeverity = "action_required" | "attention" | "info";

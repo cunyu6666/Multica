@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides LoginPage — email OTP / Google OAuth / CLI authorize login surface
+ * [FROM]: Depends on @multica/core/auth, @multica/core/api, @multica/ui components, i18n
+ * [TO]: Consumed by web shell (apps/web) and desktop login route
+ * [HERE]: packages/views/auth/login-page.tsx - Multi-step login page (email → code → CLI confirm)
+ */
 "use client";
 
 import { useState, useEffect, useCallback, useRef, type ReactNode } from "react";

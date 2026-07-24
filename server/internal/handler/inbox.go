@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides user inbox/notifications — list/mark-as-read/bulk-dismiss with pagination, filtering by notification type (mention/assign/status_change)
+// [FROM]: Depends on pkg/db/generated for notification queries, internal/middleware for user-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/inbox/* endpoints
+// [HERE]: server/internal/handler/inbox.go - user notification inbox management; sits adjacent to dashboard.go (workspace overview) and comment.go (mention-triggered notifications)
+// [WHO]: Provides user inbox/notifications — list/mark-as-read/bulk-dismiss with pagination, filtering by notification type (mention/assign/status_change)
+// [FROM]: Depends on pkg/db/generated for notification queries, internal/middleware for user-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/inbox/* endpoints
+// [HERE]: server/internal/handler/inbox.go - user notification inbox management; sits adjacent to dashboard.go (workspace overview) and comment.go (mention-triggered notifications)
 import (
 	"context"
 	"encoding/json"

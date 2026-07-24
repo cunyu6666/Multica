@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides AppLink — cross-platform anchor component bridging web Next.js and desktop react-router navigation
+ * [FROM]: Depends on useNavigation() from navigation context
+ * [TO]: Consumed by every in-app link (issue rows, sidebar, breadcrumbs, command palette)
+ * [HERE]: packages/views/navigation/app-link.tsx - Unified link component with push/new-tab/prefetch routing
+ */
 "use client";
 
 import { forwardRef } from "react";

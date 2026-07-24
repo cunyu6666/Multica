@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides pure function for counting unread chat messages across
+ *        sessions, used as the single source of truth for chat unread badges.
+ * [FROM]: Depends on ../types/chat
+ * [TO]: Consumed by views/chat/* components (FAB, sidebar, header), mobile
+ *       surfaces for badge parity
+ * [HERE]: packages/core/chat/unread.ts - Pure unread-count utility for
+ *         aggregate chat badge numbers.
+ */
+
 import type { ChatSession } from "../types/chat";
 
 /**

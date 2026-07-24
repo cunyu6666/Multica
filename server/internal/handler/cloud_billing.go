@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Proxies billing API requests to multica-cloud HTTP service on :8080, forwarding verbatim to /api/v1/billing/* with auth passthrough
+// [FROM]: Depends on internal/cloudruntime for cloud service discovery, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/billing/* proxy endpoints
+// [HERE]: server/internal/handler/cloud_billing.go - billing API proxy to cloud service; sits adjacent to cloud_runtime.go (cloud runtime proxy) and workspace.go (workspace billing settings)
+// [WHO]: Proxies billing API requests to multica-cloud HTTP service on :8080, forwarding verbatim to /api/v1/billing/* with auth passthrough
+// [FROM]: Depends on internal/cloudruntime for cloud service discovery, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/billing/* proxy endpoints
+// [HERE]: server/internal/handler/cloud_billing.go - billing API proxy to cloud service; sits adjacent to cloud_runtime.go (cloud runtime proxy) and workspace.go (workspace billing settings)
 import (
 	"errors"
 	"io"

@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides a typed-confirmation dialog for workspace deletion that
+ *   requires the user to type the workspace name exactly (case-sensitive,
+ *   no trimming) before enabling the destructive action.
+ * [FROM]: Depends on @multica/ui (Dialog, Input, Label, Button),
+ *   @multica/core/utils (isImeComposing), and i18n.
+ * [TO]: Consumed by the workspace settings tab when the user triggers
+ *   workspace deletion.
+ * [HERE]: packages/views/settings/components/delete-workspace-dialog.tsx -
+ *   GitHub-style destructive confirmation dialog for workspace deletion.
+ */
 "use client";
 
 import { useEffect, useState } from "react";

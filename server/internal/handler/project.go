@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides project CRUD — create/list/get/update/archive with project slug validation, member access control, and project-level agent bindings
+// [FROM]: Depends on pkg/db/generated for project queries, internal/middleware for workspace-scoped authz, internal/events for broadcast
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/projects/* endpoints
+// [HERE]: server/internal/handler/project.go - workspace project lifecycle; sits adjacent to workspace.go (workspace CRUD) and project_resource.go (project resource links)
 import (
 	"context"
 	"encoding/json"

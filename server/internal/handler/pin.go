@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides pinned items (issues/projects) for workspace sidebar — create/list/delete pins with PinnedItemResponse carrying pin metadata only (no cross-entity cache invalidation)
+// [FROM]: Depends on pkg/db/generated for pinned_item queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/pins/* endpoints
+// [HERE]: server/internal/handler/pin.go - workspace sidebar pin management; sits adjacent to dashboard.go (workspace overview) and project.go (project listing)
 import (
 	"encoding/json"
 	"net/http"

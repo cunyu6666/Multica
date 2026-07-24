@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides Slack integration — OAuth flow, event webhook verification, message sync, channel linking, and slash command dispatch for Slack workspaces
+// [FROM]: Depends on internal/integrations/slack for Slack API client, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/slack/* endpoints
+// [HERE]: server/internal/handler/slack.go - Slack messaging integration; sits adjacent to github.go (VCS integration) and lark.go (Lark integration)
 import (
 	"encoding/json"
 	"errors"

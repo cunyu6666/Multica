@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides cache invalidation helpers for issue deletion (prune, collect metadata, invalidate parents and dependents)
+ * [FROM]: Depends on @tanstack/react-query, ./queries, ./cache-helpers, ../agents/queries, ../labels/queries, ../inbox/ws-updaters, ./stores/recent-issues-store
+ * [TO]: Consumed by mutations.ts (useDeleteIssue, useBatchDeleteIssues), ws-updaters.ts (onIssueDeleted), and any path that removes an issue from the cache
+ * [HERE]: packages/core/issues/delete-cache.ts - Cache cleanup and invalidation logic for issue deletion events
+ */
 import type {
   InfiniteData,
   QueryClient,

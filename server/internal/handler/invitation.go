@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides workspace member invitation management — create/list/accept/revoke invites with email delivery, token-based invite links, and role assignment (admin/member)
+// [FROM]: Depends on pkg/db/generated for invitation queries, internal/service/email.go for invite email delivery, internal/middleware for admin authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/invitations/* endpoints
+// [HERE]: server/internal/handler/invitation.go - workspace invite lifecycle; sits adjacent to workspace.go (workspace CRUD) and member.go (member management)
+// [WHO]: Provides workspace member invitation management — create/list/accept/revoke invites with email delivery, token-based invite links, and role assignment (admin/member)
+// [FROM]: Depends on pkg/db/generated for invitation queries, internal/service/email.go for invite email delivery, internal/middleware for admin authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/invitations/* endpoints
+// [HERE]: server/internal/handler/invitation.go - workspace invite lifecycle; sits adjacent to workspace.go (workspace CRUD) and member.go (member management)
 import (
 	"encoding/json"
 	"log/slog"

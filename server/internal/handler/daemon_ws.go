@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides daemon WebSocket upgrade and message framing, proxying between the daemon process and the server DaemonHub
+// [FROM]: Depends on gorilla/websocket for WebSocket upgrade, internal/daemonws for message protocol, internal/hub for connection management
+// [TO]: Consumed by server/cmd/server WebSocket upgrade for /daemon/ws endpoint
+// [HERE]: server/internal/handler/daemon_ws.go - WebSocket transport for daemon connections; sits adjacent to daemon.go (connection lifecycle) and daemon_rpc.go (RPC over WS)
+// [WHO]: Provides daemon WebSocket upgrade and message framing, proxying between the daemon process and the server DaemonHub
+// [FROM]: Depends on gorilla/websocket for WebSocket upgrade, internal/daemonws for message protocol, internal/hub for connection management
+// [TO]: Consumed by server/cmd/server WebSocket upgrade for /daemon/ws endpoint
+// [HERE]: server/internal/handler/daemon_ws.go - WebSocket transport for daemon connections; sits adjacent to daemon.go (connection lifecycle) and daemon_rpc.go (RPC over WS)
 import (
 	"net/http"
 	"strings"

@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides contact-sales form submission, recording lead info (name/email/company/message) and sending notification emails
+// [FROM]: Depends on internal/service/email.go for SMTP delivery, internal/analytics for lead event tracking
+// [TO]: Consumed by server/cmd/server route for POST /api/contact-sales public endpoint
+// [HERE]: server/internal/handler/contact_sales.go - sales lead ingestion and notification; sits adjacent to feedback.go (user feedback) and email.go (SMTP delivery)
+// [WHO]: Provides contact-sales form submission, recording lead info (name/email/company/message) and sending notification emails
+// [FROM]: Depends on internal/service/email.go for SMTP delivery, internal/analytics for lead event tracking
+// [TO]: Consumed by server/cmd/server route for POST /api/contact-sales public endpoint
+// [HERE]: server/internal/handler/contact_sales.go - sales lead ingestion and notification; sits adjacent to feedback.go (user feedback) and email.go (SMTP delivery)
 import (
 	"encoding/json"
 	"log/slog"

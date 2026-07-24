@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides WebhookRateLimit sliding-window rate limiter (default 60 req/60s per token) using Redis to prevent hammering from misconfigured senders
+// [FROM]: Depends on Redis client for sliding-window counter, pkg/db/generated for rate limit configuration
+// [TO]: Consumed by webhook_delivery.go and webhook_delivery_worker.go (outbound delivery protection)
+// [HERE]: server/internal/handler/webhook_rate_limiter.go - outbound webhook rate limiting; sits adjacent to webhook_delivery.go (delivery management) and webhook_delivery_worker.go (async worker)
 import (
 	"context"
 	"sync"

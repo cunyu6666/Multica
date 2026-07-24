@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides CLI update request management — frontend creates pending update requests, daemon claims on heartbeat, daemon reports update results
+// [FROM]: Depends on pkg/db/generated for update_request queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/runtime-updates/* endpoints and daemon heartbeat pipeline
+// [HERE]: server/internal/handler/runtime_update.go - daemon-dispatched CLI update management; sits adjacent to runtime.go (runtime lifecycle) and runtime_update_redis_store.go (Redis dispatch)
 import (
 	"context"
 	"encoding/json"

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue move between projects/workspaces, updating position, project references, and broadcasting issue:moved events
+// [FROM]: Depends on pkg/db/generated for issue queries, internal/issueposition for position recalculation, internal/events for broadcast
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/move endpoint
+// [HERE]: server/internal/handler/issue_move.go - cross-project/workspace issue relocation; sits adjacent to issue.go (issue CRUD) and project.go (project management)
 import (
 	"bytes"
 	"encoding/json"

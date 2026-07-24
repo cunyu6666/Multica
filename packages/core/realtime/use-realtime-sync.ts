@@ -1,3 +1,16 @@
+/**
+ * [WHO]: Provides useRealtimeSync hook for subscribing to WebSocket events and patching
+ *        TanStack Query caches, plus exported cache mutation helpers (applyChatDoneToCache,
+ *        applyChatSessionUpdatedToCache, removeChatMessageFromCaches, handleInboxNew, etc.)
+ * [FROM]: Depends on @tanstack/react-query, ../api/ws-client (WSClient), ../auth/store (AuthState),
+ *        ../logger, ../platform/storage-cleanup, ../platform/workspace-storage,
+ *        and issue/chat/inbox/workspace query keys and WS updaters from sibling domain packages
+ * [TO]: Consumed by WSProvider in ./provider.tsx (central sync call site), and by unit tests
+ *        in use-realtime-sync.test.ts / use-realtime-sync-comment.test.tsx /
+ *        use-realtime-sync-ws-instance.test.tsx
+ * [HERE]: packages/core/realtime/use-realtime-sync.ts - Core hook that wires WSClient events
+ *         to query-cache invalidations, optimistic patches, and side-effect routing
+ */
 "use client";
 
 import { useEffect, useRef } from "react";

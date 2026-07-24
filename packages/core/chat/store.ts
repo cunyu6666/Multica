@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides Zustand store for chat state (selected agent, project, active
+ *        session, input drafts, draft attachments, draft-restore ledger, window
+ *        size/visibility, floating-chat toggle).
+ * [FROM]: Depends on zustand, ../types, ../types/attachment,
+ *         ../platform/storage, ../logger
+ * [TO]: Consumed by views/chat/* components,
+ *       packages/views/layout/app-sidebar, packages/views/layout/tab-presentation
+ * [HERE]: packages/core/chat/store.ts - Persisted Zustand store factory for all
+ *         mutable chat state and draft-restore bookkeeping.
+ */
+
 import { create } from "zustand";
 import type { StorageAdapter } from "../types";
 import type { Attachment } from "../types/attachment";

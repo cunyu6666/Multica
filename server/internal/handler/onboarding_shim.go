@@ -1,5 +1,9 @@
 // onboarding_shim.go — DEPRECATED endpoints kept alive for desktop < v3.
 //
+// [WHO]: Provides DEPRECATED BootstrapOnboarding endpoints for desktop < v3 compatibility, creating Helper agents and starter issues via inline DB calls
+// [FROM]: Depends on pkg/db/generated for inline agent/issue creation, internal/middleware for workspace authz
+// [TO]: Consumed by legacy desktop clients (< v3) during workspace creation
+// [HERE]: server/internal/handler/onboarding_shim.go - backward-compatibility shim for old desktop clients; sits adjacent to onboarding.go (current onboarding) and agent.go (agent creation)
 // Background: v3 moved Helper-agent creation and starter-issue seeding to
 // the frontend welcome hook (packages/views/workspace/welcome-after-onboarding.tsx),
 // which calls generic CreateAgent / CreateIssue. Pre-v3 desktop builds

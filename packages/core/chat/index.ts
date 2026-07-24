@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides chat store singleton (useChatStore), chat state management (createChatStore),
+ *        recent context tracking (useRecentContextStore), and module-level registration
+ *        (registerChatStore)
+ * [FROM]: Depends on ./store for Zustand-based ChatState/createChatStore,
+ *        ./recent-context-store for session context tracking
+ * [TO]: Consumed by app-level bootstrap (registerChatStore at boot), chat UI components,
+ *        packages/core/realtime/ (live message sync via removeChatMessageFromCaches),
+ *        and any feature embedding or referencing chat sessions
+ */
+
 export { createChatStore, CHAT_MIN_W, CHAT_MIN_H, CHAT_DEFAULT_W, CHAT_DEFAULT_H, DRAFT_NEW_SESSION } from "./store";
 export type { ChatStoreOptions, ChatState, ChatTimelineItem } from "./store";
 export { useRecentContextStore, selectRecentContexts } from "./recent-context-store";

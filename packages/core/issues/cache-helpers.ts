@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides helpers for applying changes to React Query list caches (bucket operations, position-sorted insert, issue patching in buckets)
+ * [FROM]: Depends on ../types, ./queries
+ * [TO]: Consumed by cache-coordinator.ts, ws-updaters.ts, mutations.ts, and delete-cache.ts for surgical cache patches
+ * [HERE]: packages/core/issues/cache-helpers.ts - Bucket-level cache mutation helpers for list/board views
+ */
 import type {
   Issue,
   IssueStatus,

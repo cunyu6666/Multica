@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides timeline entry sorting utilities for issues (stable ascending sort by created_at with id tie-breaker)
+ * [FROM]: Depends on @multica/core/types
+ * [TO]: Consumed by mutations.ts (useCreateComment) and ws-updaters to maintain correct timeline display order
+ * [HERE]: packages/core/issues/timeline-sort.ts - Timeline sorting utilities for issues
+ */
 import type { TimelineEntry } from "@multica/core/types";
 
 /**

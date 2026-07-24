@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the InboxDetailLabel component that renders a human-readable
+ *   description for each inbox-item type (status change, assignment, comment,
+ *   agent activity, quick-create results).
+ * [FROM]: Depends on @multica/core (issue configs, types, date formatting,
+ *   workspace hooks), issue status/priority icons, inbox-display helpers,
+ *   and i18n.
+ * [TO]: Consumed by InboxListItem and InboxPage to show the detail text
+ *   under each notification title.
+ * [HERE]: packages/views/inbox/components/inbox-detail-label.tsx - Type-
+ *   dispatching label renderer for inbox notification detail rows.
+ */
 "use client";
 
 import { STATUS_CONFIG, PRIORITY_CONFIG } from "@multica/core/issues/config";

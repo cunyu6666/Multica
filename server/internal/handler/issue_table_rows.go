@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides paginated issue table row retrieval with cursor-based pagination, sorting, and filter application for the issue list view
+// [FROM]: Depends on pkg/db/generated for issue queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/table/rows endpoint
+// [HERE]: server/internal/handler/issue_table_rows.go - paginated issue list with cursor-based pagination; sits adjacent to issue_table_query.go (query parsing) and issue_table_facets.go (facets)
 import (
 	"context"
 	"fmt"

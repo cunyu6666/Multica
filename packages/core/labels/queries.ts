@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides React Query query options for labels (list by resource type,
+ *        labels by issue, labels by resource for agents/skills)
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types (LabelResourceType)
+ * [TO]: Consumed by label management views, issue detail label pickers, and
+ *        agent/skill detail pages that show attached labels
+ * [HERE]: packages/core/labels/queries.ts - React Query query options for listing
+ *         labels globally, per issue, and per resource (agent/skill)
+ */
+
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type { LabelResourceType } from "../types";

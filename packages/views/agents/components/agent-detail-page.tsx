@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the Agent detail page with header (avatar, name, presence,
+ *   runtime, model), overview pane with inspector, archive/restore flows,
+ *   optimistic inline updates, and permission-gated actions.
+ * [FROM]: Depends on @multica/core (agent queries, API, auth, hooks, paths,
+ *   permissions, presence map), @multica/ui (dialog, dropdown, skeleton,
+ *   capability-banner), navigation, and agent sub-components.
+ * [TO]: Consumed by apps/web and apps/desktop at the /:slug/agents/:agentId
+ *   route.
+ * [HERE]: packages/views/agents/components/agent-detail-page.tsx - Agent
+ *   detail shell with header, overview pane, and archive confirmation dialog.
+ */
 "use client";
 
 import { useState } from "react";

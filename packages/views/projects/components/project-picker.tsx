@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides a dropdown picker for assigning an issue to a project,
+ *   with project list, current selection indicator, and clear action.
+ * [FROM]: Depends on @multica/core (project queries, hooks, types),
+ *   @multica/ui (dropdown-menu), project-icon, and i18n.
+ * [TO]: Consumed by the issue detail sidebar and create-issue dialog for
+ *   project assignment.
+ * [HERE]: packages/views/projects/components/project-picker.tsx - Inline
+ *   project assignment dropdown for issue context mutation.
+ */
 "use client";
 
 import { useState } from "react";

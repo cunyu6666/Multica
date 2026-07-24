@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides ApiClient — a typed HTTP client with workspace-slug header injection,
+ *        request interceptors, and schema-guarded response parsing via parseWithFallback
+ * [FROM]: Depends on ../types for request/response interfaces, ./schema for
+ *        parseWithFallback, ./schemas for zod schemas, ../logger, ../utils,
+ *        ../platform/workspace-storage
+ * [TO]: Consumed by packages/core/auth/store.ts (login/logout/me), packages/core/issues/
+ *        (CRUD, search, table), packages/core/agents/ (list/get/create/update),
+ *        and every module that makes authenticated HTTP requests to the server
+ * [HERE]: packages/core/api/client.ts - primary HTTP transport layer for the core package
+ */
+
 import type {
   Issue,
   IssuePriority,

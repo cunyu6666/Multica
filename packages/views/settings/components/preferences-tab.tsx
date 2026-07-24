@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides the "Preferences" settings tab with theme, locale/language,
+ *   timezone, and browser notification toggles.
+ * [FROM]: Depends on @multica/ui (Select, Switch, theme-provider),
+ *   @multica/core/i18n (locale support), @multica/core/auth,
+ *   @multica/core/api, timezone-select, and settings-layout.
+ * [TO]: Consumed by SettingsPage as the "preferences" tab content.
+ * [HERE]: packages/views/settings/components/preferences-tab.tsx - User
+ *   preference controls for theme, language, timezone, and notifications.
+ */
 "use client";
 
 import { useMemo } from "react";

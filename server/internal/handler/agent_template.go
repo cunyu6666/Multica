@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides agent template CRUD with predefined templates (code-review, bug-triage, etc.), each bundling default skills and MCP server configs
+// [FROM]: Depends on pkg/db/generated for agent_template queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agent-templates/* endpoints and agent builder flow
+// [HERE]: server/internal/handler/agent_template.go - reusable agent templates for quick creation; sits adjacent to agent_builder.go (interactive creation) and agent.go (agent lifecycle)
 import (
 	"context"
 	"encoding/json"

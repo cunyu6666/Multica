@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides VCS (Git) operations — repo clone/fetch/branch/diff/commit for agent workspaces, with VCS provider abstraction (GitHub/GitLab/Bitbucket)
+// [FROM]: Depends on internal/integrations/vcs for Git operations, pkg/db/generated for repo tracking, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/vcs/* endpoints
+// [HERE]: server/internal/handler/vcs.go - Git/VCS operations for agent workspaces; sits adjacent to vcs_webhook.go (VCS webhooks) and github.go (GitHub integration)
 import (
 	"crypto/rand"
 	"encoding/base64"

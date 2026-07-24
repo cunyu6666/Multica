@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the full agent domain type definitions — Agent, AgentTask,
+ *         runtime/device types, skill types, template types, usage/analytics
+ *         types, and all request/response shapes for agent CRUD operations.
+ * [FROM]: No intra-package type dependencies; this is a leaf type module.
+ * [TO]: Consumed by agent queries/mutations, agent views, WS event payloads
+ *         (agent:status, agent:created, task:*), runtime pages, and the
+ *         agents list/dashboard.
+ * [HERE]: packages/core/types/agent.ts - Comprehensive agent, task, runtime,
+ *         skill, template, and usage type definitions.
+ */
 export type AgentStatus = "idle" | "working" | "blocked" | "error" | "offline";
 
 export type AgentRuntimeMode = "local" | "cloud";

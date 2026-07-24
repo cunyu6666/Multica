@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides autopilot configuration CRUD (create/list/get/update/delete) including cron schedules, issue filters, agent bindings, and squad mode
+// [FROM]: Depends on internal/service for autopilot business logic, pkg/db/generated for autopilot storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/autopilots/* endpoints
+// [HERE]: server/internal/handler/autopilot.go - autopilot schedule and rule management; sits adjacent to autopilot_cron_preview.go (schedule preview) and autopilot_webhook.go (VCS webhook delivery)
 import (
 	"bytes"
 	"context"

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides skill import from ZIP archives — validates archive structure, extracts SKILL.md and supporting files, registers skill in workspace
+// [FROM]: Depends on internal/skill for ZIP validation and extraction, pkg/db/generated for skill registration, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/skills/import endpoint
+// [HERE]: server/internal/handler/skill_import_archive.go - ZIP-based skill import pipeline; sits adjacent to skill_create.go (skill creation) and skill.go (skill CRUD)
 import (
 	"archive/zip"
 	"bytes"

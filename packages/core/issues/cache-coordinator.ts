@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the central cache coordination rules table for how a single issue change propagates through the query cache (apply/rollback/invalidate)
+ * [FROM]: Depends on @tanstack/react-query, ./queries, ./cache-helpers, ../inbox/queries, ../inbox/ws-updaters, ../types, ./surface/membership
+ * [TO]: Consumed by mutations.ts (useUpdateIssue, useBatchUpdateIssues), ws-updaters.ts (onIssueUpdated), and any path that patches issue cache state
+ * [HERE]: packages/core/issues/cache-coordinator.ts - Central rules engine for issue cache mutation, rollback, and invalidation across all cache surfaces
+ */
 import {
   hashKey,
   type InfiniteData,

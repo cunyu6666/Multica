@@ -1,3 +1,8 @@
+// [WHO]: Provides agent runtime handlers (ListAgentRuntimes, UpdateAgentRuntime, DeleteAgentRuntime, GetRuntimeUsage, GetRuntimeUsageByAgent, GetRuntimeUsageByHour, GetRuntimeTaskActivity, ArchiveAgentsAndDeleteRuntime)
+// [FROM]: Depends on pkg/agent for runtime definitions, internal/util for helpers, pgx/pgtype for DB operations, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agent-runtimes/* and usage/activity API endpoints
+// [HERE]: server/internal/handler/runtime.go - handles runtime lifecycle, usage analytics (by agent, by hour), task activity, and deletion with agent archival; supplies runtime data to agent.go for agent-launch decisions
+
 package handler
 
 import (

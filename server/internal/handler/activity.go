@@ -1,3 +1,8 @@
+// [WHO]: Provides issue timeline/activity feed reads, merging activity log entries with comments into a unified TimelineEntry DTO sorted by created_at
+// [FROM]: Depends on pkg/db/generated for activity_log queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/activity endpoint
+// [HERE]: server/internal/handler/activity.go - unifies activity logs and comments into a single timeline feed; sits adjacent to issue.go (owns issue CRUD) and comment.go (owns comment CRUD) which produce the entries this file reads
+
 package handler
 
 import (

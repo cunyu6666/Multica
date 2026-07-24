@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides React Query query options for projects (list and detail)
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by project list views, project detail pages, and any component
+ *        that reads project data or project-scoped issue filters
+ * [HERE]: packages/core/projects/queries.ts - React Query query options for
+ *         listing projects and fetching individual project details
+ */
+
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

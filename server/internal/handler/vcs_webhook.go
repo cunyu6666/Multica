@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides VCS webhook delivery — verifies webhook signatures, parses push/PR events, and dispatches to appropriate issue/task handlers
+// [FROM]: Depends on internal/integrations/vcs for webhook signature verification, pkg/db/generated for repo/issue linkage, internal/middleware for webhook auth
+// [TO]: Consumed by server/cmd/server routes for /webhooks/vcs endpoint
+// [HERE]: server/internal/handler/vcs_webhook.go - VCS webhook receiver and event dispatch; sits adjacent to vcs.go (VCS operations) and autopilot_webhook.go (autopilot webhooks)
 import (
 	"context"
 	"errors"

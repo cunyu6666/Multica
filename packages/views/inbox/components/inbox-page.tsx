@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the main Inbox page with a resizable two-panel layout
+ *   (notification list + issue detail), archive/unarchive flows, batch
+ *   operations, and mobile full-screen list/detail toggle.
+ * [FROM]: Depends on @multica/core (inbox queries/mutations, hooks, paths,
+ *   draft/modal stores), @multica/ui (resizable panels, dropdown, skeleton),
+ *   IssueDetail, and inbox sub-components (InboxList, InboxListItem).
+ * [TO]: Consumed by apps/web and apps/desktop at the /:slug/inbox route.
+ * [HERE]: packages/views/inbox/components/inbox-page.tsx - Inbox orchestrator
+ *   owning list/detail split, URL sync, mutations, and responsive layouts.
+ */
 "use client";
 
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides squad (multi-agent team) CRUD — create/list/get/update/delete squad composition, with squad leader election and member agent coordination
+// [FROM]: Depends on pkg/db/generated for squad/squad_member queries, internal/middleware for workspace-scoped authz, internal/events for broadcast
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/squads/* endpoints
+// [HERE]: server/internal/handler/squad.go - multi-agent team management; sits adjacent to squad_briefing.go (leader protocol briefing) and agent.go (agent lifecycle)
 import (
 	"context"
 	"encoding/json"

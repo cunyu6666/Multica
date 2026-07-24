@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides parseWithFallback — a lenient zod validation boundary that returns
+ *        a caller-supplied fallback on schema mismatch instead of throwing, plus
+ *        setSchemaLogger for wiring a real logger at app boot
+ * [FROM]: Depends on zod (ZodType), ../logger for configurable warning output
+ * [TO]: Consumed by ./client.ts (API response parsing), ./schemas.ts (empty record
+ *        defaults), and any module that validates server JSON before passing it to UI
+ * [HERE]: packages/core/api/schema.ts - safe JSON parsing utilities for API responses
+ */
+
 import type { ZodType } from "zod";
 import { type Logger, noopLogger } from "../logger";
 

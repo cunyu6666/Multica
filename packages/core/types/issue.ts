@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides core Issue domain type definitions — Issue, IssueStatus,
+ *         IssuePriority, IssueAssigneeType, IssueReaction, and IssueMetadata.
+ * [FROM]: Depends on types/label (Label), types/property
+ *         (IssuePropertyValues).
+ * [TO]: Consumed by issue queries/mutations, issue views, WS event payloads,
+ *       inbox items, board/list components, and every consumer of issue data.
+ * [HERE]: packages/core/types/issue.ts - Primary Issue entity and related
+ *         enum/type definitions for the issue-tracking domain.
+ */
 import type { Label } from "./label";
 import type { IssuePropertyValues } from "./property";
 

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue subscriber management — list/add/remove subscribers with SubscriberResponse containing issue_id/user_type/user_id for notification routing
+// [FROM]: Depends on pkg/db/generated for issue_subscriber queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/subscribers/* endpoints
+// [HERE]: server/internal/handler/subscriber.go - issue subscription management; sits adjacent to issue.go (issue CRUD) and inbox.go (notification delivery)
 import (
 	"encoding/json"
 	"net/http"

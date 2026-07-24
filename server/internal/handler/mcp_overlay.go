@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides mergeMCPOverlay that layers per-task MCP config overlays on top of an agent saved mcp_config for the daemon claim wire shape
+// [FROM]: Depends on internal/agent for agent MCP config resolution, pkg/db/generated for task-level MCP overrides
+// [TO]: Consumed by daemon claim pipeline (daemon.go, daemon_rpc.go) when constructing the daemon claim wire shape
+// [HERE]: server/internal/handler/mcp_overlay.go - per-task MCP config layering; sits adjacent to agent.go (agent MCP config) and daemon.go (daemon claim construction)
 import (
 	"bytes"
 	"encoding/json"

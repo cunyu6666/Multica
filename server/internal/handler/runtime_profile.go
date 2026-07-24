@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides runtime profiling — CPU/memory/disk stats collection from daemon heartbeats, exposing runtime health metrics for the dashboard
+// [FROM]: Depends on pkg/db/generated for runtime_profile queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/runtimes/:runtimeId/profile endpoint
+// [HERE]: server/internal/handler/runtime_profile.go - runtime resource utilization metrics; sits adjacent to runtime.go (runtime lifecycle) and dashboard.go (health dashboard)
 import (
 	"encoding/json"
 	"errors"

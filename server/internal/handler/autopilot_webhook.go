@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides VCS webhook delivery for autopilot-triggered runs, verifying webhook signatures and dispatching to the appropriate autopilot/agent pipeline
+// [FROM]: Depends on internal/middleware for authz, pkg/db/generated for autopilot and issue queries, internal/service for run dispatch
+// [TO]: Consumed by server/cmd/server routes for /webhooks/vcs endpoint
+// [HERE]: server/internal/handler/autopilot_webhook.go - VCS webhook receiver for autopilot triggers; sits adjacent to autopilot.go (autopilot CRUD) and vcs_webhook.go (VCS webhook processing)
+// [WHO]: Provides VCS webhook delivery for autopilot-triggered runs, verifying webhook signatures and dispatching to the appropriate autopilot/agent pipeline
+// [FROM]: Depends on internal/middleware for authz, pkg/db/generated for autopilot and issue queries, internal/service for run dispatch
+// [TO]: Consumed by server/cmd/server routes for /webhooks/vcs endpoint
+// [HERE]: server/internal/handler/autopilot_webhook.go - VCS webhook receiver for autopilot triggers; sits adjacent to autopilot.go (autopilot CRUD) and vcs_webhook.go (VCS webhook processing)
 import (
 	"context"
 	"crypto/hmac"

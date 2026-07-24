@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides central Handler struct and New() constructor wiring all routes, plus writeJSON helper, resolveActor, loadIssueForUser, loadAgentForUser, loadSkillForUser, requireDaemonRuntimeAccess, and UUID parsing utilities
+// [FROM]: Depends on internal/dispatch for dispatch injection, pkg/db/generated for DB connector, internal/analytics for event tracking, all internal packages for handler dependencies
+// [TO]: Consumed by server/cmd/server for router initialization via handler.New()
+// [HERE]: server/internal/handler/handler.go - central route wiring and shared handler utilities; sits at the top of the handler package as the constructor all routes depend on
+// [WHO]: Provides central Handler struct and New() constructor wiring all routes, plus writeJSON helper, resolveActor, loadIssueForUser, loadAgentForUser, loadSkillForUser, requireDaemonRuntimeAccess, and UUID parsing utilities
+// [FROM]: Depends on internal/dispatch for dispatch injection, pkg/db/generated for DB connector, internal/analytics for event tracking, all internal packages for handler dependencies
+// [TO]: Consumed by server/cmd/server for router initialization via handler.New()
+// [HERE]: server/internal/handler/handler.go - central route wiring and shared handler utilities; sits at the top of the handler package as the constructor all routes depend on
 import (
 	"context"
 	"crypto/rand"

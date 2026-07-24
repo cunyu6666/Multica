@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides Logger interface, createLogger, and noopLogger - a lightweight, namespace-scoped console logger with colored output and a no-op variant
+ * [FROM]: Depends on browser console API; no external packages
+ * [TO]: Consumed by packages/core/platform/core-provider.tsx, packages/core/platform/auth-initializer.tsx, packages/core/chat/store.ts, packages/core/chat/mutations.ts, packages/core/realtime/provider.tsx, packages/core/realtime/use-realtime-sync.ts, packages/core/api/ws-client.ts, packages/core/api/schema.ts, packages/core/api/client.ts, and packages/views/chat/components/*
+ * [HERE]: packages/core/logger.ts - pure logging utilities; sibling utils.ts holds ID/IME utilities, this file owns structured logging with timestamped, namespaced, color-coded output
+ */
+
 type LogLevel = "debug" | "info" | "warn" | "error";
 
 const COLORS: Record<LogLevel, string> = {

@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides WSProvider React Context and useWS hook for WebSocket connection
+ *        management, including auth-based connection setup, workspace slug tracking,
+ *        and event subscription/unsubscription API
+ * [FROM]: Depends on ../api/ws-client (WSClient), ../types (WSEventType, StorageAdapter),
+ *        ../platform/types (ClientIdentity), ../auth/store (AuthState),
+ *        ../platform/workspace-storage, ../logger, ./use-realtime-sync
+ * [TO]: Consumed by WSProvider wrapper in platform/core-provider.tsx, useWSEvent/useWSReconnect
+ *        in ./hooks.ts, and apps/mobile/data/realtime/ for presence and chat WS updaters
+ * [HERE]: packages/core/realtime/provider.tsx - React Context provider that owns the
+ *         WebSocket connection lifecycle and exposes subscribe/onReconnect to consumers
+ */
 "use client";
 
 import {

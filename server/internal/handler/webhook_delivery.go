@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides webhook delivery to external endpoints — HTTP POST with retry logic, signature generation, and delivery status tracking
+// [FROM]: Depends on pkg/db/generated for webhook delivery records, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by internal event pipeline for outbound webhook dispatch
+// [HERE]: server/internal/handler/webhook_delivery.go - outbound webhook management; sits adjacent to webhook_delivery_worker.go (async delivery) and webhook_rate_limiter.go (rate limiting)
 import (
 	"encoding/json"
 	"errors"

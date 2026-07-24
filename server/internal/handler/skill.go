@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides skill CRUD — create/list/get/update/delete with skill validation, file tree management, and skill metadata (name/description/version) tracking
+// [FROM]: Depends on internal/skill for skill validation and file tree operations, pkg/db/generated for skill storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/skills/* endpoints
+// [HERE]: server/internal/handler/skill.go - workspace skill lifecycle management; sits adjacent to skill_create.go (skill creation) and skill_import_archive.go (ZIP import)
 import (
 	"context"
 	"encoding/json"

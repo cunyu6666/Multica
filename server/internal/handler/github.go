@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides GitHub integration — OAuth flow, webhook verification (HMAC-SHA256), repo linking, issue sync, and PR status polling
+// [FROM]: Depends on internal/integrations/ghsnapshot for GitHub API client, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/github/* endpoints
+// [HERE]: server/internal/handler/github.go - GitHub OAuth and repo integration; sits adjacent to slack.go (Slack integration) and lark.go (Lark integration)
+// [WHO]: Provides GitHub integration — OAuth flow, webhook verification (HMAC-SHA256), repo linking, issue sync, and PR status polling
+// [FROM]: Depends on internal/integrations/ghsnapshot for GitHub API client, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/github/* endpoints
+// [HERE]: server/internal/handler/github.go - GitHub OAuth and repo integration; sits adjacent to slack.go (Slack integration) and lark.go (Lark integration)
 import (
 	"context"
 	"crypto/hmac"

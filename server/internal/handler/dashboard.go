@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides workspace/project dashboard reads — issue counts, active runs, recent activity, and agent health status for the workspace overview
+// [FROM]: Depends on pkg/db/generated for aggregated queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/dashboard endpoint
+// [HERE]: server/internal/handler/dashboard.go - workspace dashboard aggregation; sits adjacent to issue.go (issue queries) and runtime.go (runtime health)
+// [WHO]: Provides workspace/project dashboard reads — issue counts, active runs, recent activity, and agent health status for the workspace overview
+// [FROM]: Depends on pkg/db/generated for aggregated queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/dashboard endpoint
+// [HERE]: server/internal/handler/dashboard.go - workspace dashboard aggregation; sits adjacent to issue.go (issue queries) and runtime.go (runtime health)
 import (
 	"context"
 	"net/http"

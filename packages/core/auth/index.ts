@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides authentication store singleton (useAuthStore), auth state management,
+ *        and URL sanitization utilities (sanitizeNextUrl)
+ * [FROM]: Depends on ./store for Zustand-based AuthState/createAuthStore,
+ *        ./utils for URL sanitization logic
+ * [TO]: Consumed by app-level bootstrap (registerAuthStore at boot), platform/workspace
+ *        storage, and any component or module needing auth state or login/logout flow
+ */
+
 export { createAuthStore } from "./store";
 export type { AuthStoreOptions, AuthState } from "./store";
 export { sanitizeNextUrl } from "./utils";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides IssueDetailPage — full issue detail view with property editing, comments, timeline, and sidebar
+ * [FROM]: Depends on @multica/core/issues mutations/queries, @multica/ui components, editor, navigation, i18n
+ * [TO]: Consumed by issue detail route in web and desktop dashboards
+ * [HERE]: packages/views/issues/components/issue-detail.tsx - Issue detail page with resizable panels, inline editing, and comment thread
+ */
 "use client";
 
 import { useState, useEffect, useCallback, useMemo, useRef, Fragment } from "react";

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides workspace property/schema CRUD — custom property definitions with type validation (text/number/select/date), default values, and visibility scoping
+// [FROM]: Depends on pkg/db/generated for property schema queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/properties/* endpoints
+// [HERE]: server/internal/handler/property.go - workspace custom property schema management; sits adjacent to issue_metadata.go (issue-level properties) and project.go (project schema)
 import (
 	"encoding/json"
 	"errors"

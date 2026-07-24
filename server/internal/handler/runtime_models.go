@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides model list request management — frontend requests available models, daemon claims on heartbeat, daemon returns model list with capabilities
+// [FROM]: Depends on pkg/db/generated for model_list_request queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/models/* endpoints and daemon heartbeat pipeline
+// [HERE]: server/internal/handler/runtime_models.go - daemon-dispatched model capability listing; sits adjacent to runtime_local_skills.go (same dispatch pattern) and runtime_models_redis_store.go (Redis dispatch)
 import (
 	"context"
 	"encoding/json"

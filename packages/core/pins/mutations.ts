@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides React Query mutations for pin management (create, delete, reorder)
+ *        with optimistic updates and rollback for drag-and-drop reordering
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../auth (useAuthStore),
+ *        ./queries (pinKeys), ../hooks (useWorkspaceId), ../types (PinnedItem, PinnedItemType)
+ * [TO]: Consumed by navigation sidebar pin controls for pinning/unpinning items
+ *        and reordering via drag-and-drop
+ * [HERE]: packages/core/pins/mutations.ts - React Query mutations for creating,
+ *         deleting, and reordering user-pinned items
+ */
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { useAuthStore } from "../auth";

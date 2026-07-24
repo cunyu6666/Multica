@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides app configuration endpoint returning AppConfig (CDN domain, signed CDN flag, feature flags, analytics keys) for client bootstrap
+// [FROM]: Depends on pkg/featureflag for feature flag resolution, internal/auth for JWT config, internal/util for server metadata
+// [TO]: Consumed by server/cmd/server route for /api/config public endpoint
+// [HERE]: server/internal/handler/config.go - public config endpoint for client bootstrap; sits adjacent to auth.go (auth configuration) and client_usage.go (client telemetry)
+// [WHO]: Provides app configuration endpoint returning AppConfig (CDN domain, signed CDN flag, feature flags, analytics keys) for client bootstrap
+// [FROM]: Depends on pkg/featureflag for feature flag resolution, internal/auth for JWT config, internal/util for server metadata
+// [TO]: Consumed by server/cmd/server route for /api/config public endpoint
+// [HERE]: server/internal/handler/config.go - public config endpoint for client bootstrap; sits adjacent to auth.go (auth configuration) and client_usage.go (client telemetry)
 import (
 	"net/http"
 	"net/url"

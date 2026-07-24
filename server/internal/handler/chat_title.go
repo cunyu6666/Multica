@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides chat session title generation and management, using LLM or heuristic title extraction from the first message
+// [FROM]: Depends on pkg/db/generated for chat session queries, pkg/llm for LLM-based title generation
+// [TO]: Consumed by server/cmd/server routes for chat session title endpoints
+// [HERE]: server/internal/handler/chat_title.go - chat session title management; sits adjacent to chat.go (message CRUD) and chat_history.go (message retrieval)
+// [WHO]: Provides chat session title generation and management, using LLM or heuristic title extraction from the first message
+// [FROM]: Depends on pkg/db/generated for chat session queries, pkg/llm for LLM-based title generation
+// [TO]: Consumed by server/cmd/server routes for chat session title endpoints
+// [HERE]: server/internal/handler/chat_title.go - chat session title management; sits adjacent to chat.go (message CRUD) and chat_history.go (message retrieval)
 import (
 	"context"
 	"errors"

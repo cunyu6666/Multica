@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides PageHeader — shared page header shell with mobile sidebar trigger
+ * [FROM]: Depends on @multica/ui/sidebar
+ * [TO]: Consumed by workspace pages (issues, dashboard, settings, etc.)
+ * [HERE]: packages/views/layout/page-header.tsx - Top-level header bar rendered under dashboard shell
+ */
 "use client";
 
 import { cn } from "@multica/ui/lib/utils";

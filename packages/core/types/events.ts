@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides WebSocket event type definitions — the full WSEventType
+ *         union, typed payload interfaces, and the WSEventPayloadMap/WSEventPayload
+ *         lookup system for type-safe WS event handling.
+ * [FROM]: Depends on domain types: issue, label, property, agent, inbox,
+ *         comment, activity, workspace, project.
+ * [TO]: Consumed by WSProvider/WSClient (realtime layer), all WS event
+ *       handlers, and any component that subscribes to real-time events.
+ * [HERE]: packages/core/types/events.ts - Complete WebSocket event protocol
+ *         types mapping every server event to its typed payload.
+ */
 import type { Issue, IssueMetadata, IssueReaction } from "./issue";
 import type { IssueProperty, IssuePropertyValues } from "./property";
 import type { Agent } from "./agent";

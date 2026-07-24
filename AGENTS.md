@@ -52,3 +52,31 @@ make check            # Full verification pipeline
 ```
 
 See CLAUDE.md for the authoritative rules and common commands.
+
+## DIP Navigation
+
+### P1 — Root
+
+- [P1: This File](./AGENTS.md)
+- [CLAUDE.md](./CLAUDE.md) — Authoritative conventions, state rules, package boundaries, API compatibility
+
+### P2 — Module Maps
+
+- [P2: server/internal/handler/](./server/internal/handler/AGENTS.md) — HTTP handlers (agents, chat, issues, runtimes, skills, integrations, VCS, daemon)
+- [P2: server/internal/service/](./server/internal/service/AGENTS.md) — Business logic (agent readiness, autopilots, email, issue/task lifecycle, skills, squads)
+- [P2: server/internal/middleware/](./server/internal/middleware/AGENTS.md) — Auth, rate limiting, CSP, request logging, workspace scoping
+- [P2: server/pkg/](./server/pkg/AGENTS.md) — Agent CLI integrations, sqlc DB layer, feature flags, LLM, WebSocket protocol, redaction
+- [P2: packages/core/](./packages/core/AGENTS.md) — Headless business logic, React Query hooks, Zustand stores, API client
+- [P2: packages/ui/](./packages/ui/AGENTS.md) — Atomic UI components (shadcn/Base UI), hooks, styles
+- [P2: packages/views/](./packages/views/AGENTS.md) — Shared business pages, layout, navigation, i18n
+- [P2: apps/web/](./apps/web/AGENTS.md) — Next.js App Router, middleware, MDX schemas
+- [P2: apps/mobile/](./apps/mobile/AGENTS.md) — Expo/React Native mobile app
+- [P2: apps/desktop/](./apps/desktop/AGENTS.md) — Electron desktop app
+
+### P3 — File Contracts
+
+- `packages/core/` — 62 文件: 根级 6 + 子目录 barrel 6 + 扩展 50 (api client/schema/ws-client/schemas, issues queries/mutations/ws-updaters/store/cache-helpers, chat queries/mutations/store/unread, realtime provider/use-realtime-sync/hooks, inbox queries/mutations/ws-updaters, labels/pins/projects queries+mutations, auth store/utils, platform 8 files, types 6 files, dashboard queries, projects draft/view-store)
+- `server/internal/handler/` — 86 文件: 全部生产环境 .go 文件（含 auth, issue, chat, agent, runtime, workspace 等所有 handler）
+- `server/internal/service/` — 10 文件: agent_ready, autopilot, builtin_skills, cron, email, empty_claim_cache, issue, issue_trigger, squad_no_action, task
+- `server/internal/middleware/` — 9 文件: auth, client, cloudfront, csp, daemon_auth, owner_lookup, ratelimit, request_logger, workspace
+- `packages/views/` — 43 文件: 根级 4 + 子目录 barrel 6 + 扩展 33 (layout dashboard-guard/page-header, navigation context/app-link, auth login-page/use-logout, issues detail/list-row, chat input/window, dashboard page, settings 5 files, members 2 files, inbox 4 files, agents 4 files, onboarding 5 files, projects 2 files)

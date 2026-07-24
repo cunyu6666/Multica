@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides autopilot issue trigger preview — given a cron schedule and issue filter, previews which issues would be enqueued and from which source (assign/create/label/promote)
+// [FROM]: Depends on internal/service/issue_trigger.go for RunEnqueueSource enum and trigger evaluation, pkg/db/generated for issue queries
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/autopilots/preview/trigger endpoint
+// [HERE]: server/internal/handler/issue_trigger.go - autopilot trigger preview; sits adjacent to issue.go (issue CRUD) and autopilot.go (autopilot management)
 import (
 	"context"
 	"encoding/json"

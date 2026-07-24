@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides batch issue utilities (common field derivation across a selection of issues)
+ * [FROM]: Depends on ../types
+ * [TO]: Consumed by batch toolbar and property picker components to determine shared status/priority/assignee across selected issues
+ * [HERE]: packages/core/issues/batch.ts - Batch issue operations for deriving common fields across a multi-issue selection
+ */
 import type {
   Issue,
   IssueStatus,

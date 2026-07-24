@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides the member detail page showing a team member's profile
+ *   header (avatar, name, role, email) and their active issues panel.
+ * [FROM]: Depends on @multica/core (hooks, paths, workspace queries),
+ *   @multica/ui (Skeleton), layout/page-header, workspace-avatar,
+ *   actor-avatar, and actor-issues-panel.
+ * [TO]: Consumed by the app routing layer under /:slug/members/:userId.
+ * [HERE]: packages/views/members/member-detail-page.tsx - Full-page member
+ *   detail with breadcrumb, profile header, and issues panel.
+ */
 "use client";
 
 import { ChevronRight, UserRound } from "lucide-react";

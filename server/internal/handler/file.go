@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides file operations — upload/download/list/delete for workspace files, with CloudFront signed URL generation for private CDN access and MIME type detection
+// [FROM]: Depends on internal/storage for file storage, internal/cloudruntime for CloudFront signed URLs, pkg/db/generated for file metadata
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/files/* endpoints
+// [HERE]: server/internal/handler/file.go - workspace file storage with CDN integration; sits adjacent to comment.go (attachment handling) and cloud_runtime.go (CloudFront integration)
+// [WHO]: Provides file operations — upload/download/list/delete for workspace files, with CloudFront signed URL generation for private CDN access and MIME type detection
+// [FROM]: Depends on internal/storage for file storage, internal/cloudruntime for CloudFront signed URLs, pkg/db/generated for file metadata
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/files/* endpoints
+// [HERE]: server/internal/handler/file.go - workspace file storage with CDN integration; sits adjacent to comment.go (attachment handling) and cloud_runtime.go (CloudFront integration)
 import (
 	"context"
 	"fmt"

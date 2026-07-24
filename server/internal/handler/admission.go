@@ -1,3 +1,8 @@
+// [WHO]: Provides unified execution-admission contract (MUL-4525) with DispatchStatus/AdmissionResult shape used by all synchronous enqueue entry points
+// [FROM]: Depends on internal/dispatch for dispatch routing, pkg/agentfailure for canonical failure reason taxonomy
+// [TO]: Consumed by comment.go (mentions), issue.go (assign/promote), autopilot.go (manual run), and direct chat handlers
+// [HERE]: server/internal/handler/admission.go - answers whether a named execution target gets queued/coalesced/deferred/blocked with a stable code; sits adjacent to dispatch.go (actual enqueue) and issue.go (issue-driven triggers)
+
 package handler
 
 import (

@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides cloud runtime provisioning — create/list/get/destroy Fleet API proxy to multica-cloud, with runtime status tracking and cloud-signed CDN cookie refresh
+// [FROM]: Depends on internal/cloudruntime for Fleet API client, pkg/db/generated for runtime tracking, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/runtimes/* cloud endpoints
+// [HERE]: server/internal/handler/cloud_runtime.go - cloud runtime lifecycle and Fleet API proxy; sits adjacent to runtime.go (local runtime management) and cloud_billing.go (cloud billing proxy)
+// [WHO]: Provides cloud runtime provisioning — create/list/get/destroy Fleet API proxy to multica-cloud, with runtime status tracking and cloud-signed CDN cookie refresh
+// [FROM]: Depends on internal/cloudruntime for Fleet API client, pkg/db/generated for runtime tracking, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/runtimes/* cloud endpoints
+// [HERE]: server/internal/handler/cloud_runtime.go - cloud runtime lifecycle and Fleet API proxy; sits adjacent to runtime.go (local runtime management) and cloud_billing.go (cloud billing proxy)
 import (
 	"bytes"
 	"context"

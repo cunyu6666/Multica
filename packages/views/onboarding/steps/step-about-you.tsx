@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the "About you" questionnaire step (Step 1) with role
+ *   (single-select) and use case (multi-select) on one screen, with optional
+ *   answering, skip markers, and fire-and-forget persistence.
+ * [FROM]: Depends on @multica/core/onboarding (types, answers),
+ *   @multica/ui (Button, scroll-fade), DragStrip, StepHeader,
+ *   icon-option-card, and i18n.
+ * [TO]: Consumed by OnboardingFlow as the first persisted step after Welcome.
+ * [HERE]: packages/views/onboarding/steps/step-about-you.tsx - Role and use
+ *   case questionnaire feeding the Helper agent's user-context block.
+ */
 "use client";
 
 import { useRef } from "react";

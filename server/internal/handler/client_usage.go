@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides client usage telemetry endpoint that records feature usage events with client metadata (platform/version/OS) for analytics dashboards
+// [FROM]: Depends on internal/analytics for event tracking, internal/middleware for ClientMetadata extraction
+// [TO]: Consumed by server/cmd/server routes for /api/client-usage endpoint
+// [HERE]: server/internal/handler/client_usage.go - client telemetry ingestion; sits adjacent to config.go (client bootstrap config) and dashboard.go (analytics dashboard reads)
+// [WHO]: Provides client usage telemetry endpoint that records feature usage events with client metadata (platform/version/OS) for analytics dashboards
+// [FROM]: Depends on internal/analytics for event tracking, internal/middleware for ClientMetadata extraction
+// [TO]: Consumed by server/cmd/server routes for /api/client-usage endpoint
+// [HERE]: server/internal/handler/client_usage.go - client telemetry ingestion; sits adjacent to config.go (client bootstrap config) and dashboard.go (analytics dashboard reads)
 import (
 	"encoding/json"
 	"errors"

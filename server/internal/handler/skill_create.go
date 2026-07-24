@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides skill creation with workspace scoping, skill file validation (SKILL.md required), and skill package ZIP upload/extract
+// [FROM]: Depends on internal/skill for skill validation and ZIP extraction, pkg/db/generated for skill storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/skills/create endpoint
+// [HERE]: server/internal/handler/skill_create.go - skill creation with file validation; sits adjacent to skill.go (skill CRUD) and skill_import_archive.go (ZIP archive import)
 import (
 	"context"
 	"encoding/json"

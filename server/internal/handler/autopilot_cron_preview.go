@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides cron schedule preview endpoint that parses 5-field cron expressions in IANA timezones and returns next N occurrence timestamps with rejection codes
+// [FROM]: Depends on internal/service/cron.go for NextOccurrenceAfterUTC cron parsing
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/autopilots/preview/cron endpoint
+// [HERE]: server/internal/handler/autopilot_cron_preview.go - validates and previews cron schedules before saving; sits adjacent to autopilot.go (autopilot CRUD) and service/cron.go (cron parsing)
 import (
 	"net/http"
 	"time"

@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides React Query query options for dashboard analytics data (usage daily,
+ *        usage by agent, agent runtime, run-time daily) with stale-time caching and
+ *        placeholder-data for smooth range transitions
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by dashboard views (packages/views/dashboard/) for KPI cards and
+ *        chart series across all four dashboard tabs
+ * [HERE]: packages/core/dashboard/queries.ts - React Query options for workspace
+ *         usage analytics and agent runtime metrics with 60s stale-time
+ */
+
 import { keepPreviousData, queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

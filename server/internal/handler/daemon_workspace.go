@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides daemon workspace queries, returning DaemonWorkspaceResponse with workspace ID/name/slug for the connected runtime workspace context
+// [FROM]: Depends on pkg/db/generated for workspace queries, internal/middleware for daemon auth context
+// [TO]: Consumed by daemon WebSocket pipeline for runtime workspace resolution
+// [HERE]: server/internal/handler/daemon_workspace.go - daemon-scoped workspace lookups; sits adjacent to daemon.go (connection management) and daemon_rpc.go (RPC delegation)
+// [WHO]: Provides daemon workspace queries, returning DaemonWorkspaceResponse with workspace ID/name/slug for the connected runtime workspace context
+// [FROM]: Depends on pkg/db/generated for workspace queries, internal/middleware for daemon auth context
+// [TO]: Consumed by daemon WebSocket pipeline for runtime workspace resolution
+// [HERE]: server/internal/handler/daemon_workspace.go - daemon-scoped workspace lookups; sits adjacent to daemon.go (connection management) and daemon_rpc.go (RPC delegation)
 import (
 	"crypto/sha256"
 	"encoding/json"

@@ -1,3 +1,8 @@
+// [WHO]: Provides RequireHumanActor middleware that rejects machine-authenticated requests (mat_ task tokens, mcn_ cloud-node PATs) for human-only endpoints
+// [FROM]: Depends on X-Actor-Source header set by Auth middleware to distinguish machine vs human actors
+// [TO]: Consumed by server/cmd/server routes wrapping human-only endpoints (settings, profile, sensitive operations)
+// [HERE]: server/internal/handler/actor_guards.go - security gate that prevents machine principals from accessing human-authorized endpoints; sits adjacent to admission.go (execution admission) and auth.go (identity establishment)
+
 package handler
 
 import (

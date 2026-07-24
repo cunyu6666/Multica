@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the multi-step onboarding flow shell that orchestrates
+ *   Welcome, About You, Workspace creation, and Runtime Connect / Platform
+ *   Fork steps, with server-persisted questionnaire re-entry and three
+ *   distinct exit shapes (skip-existing, runtime-skipped, full).
+ * [FROM]: Depends on @multica/core (onboarding store/types, auth, platform,
+ *   workspace queries), @multica/core/types, navigation, and step components.
+ * [TO]: Consumed by the workspace layout shell when !hasOnboarded, gating
+ *   access to the main app until onboarding completes.
+ * [HERE]: packages/views/onboarding/onboarding-flow.tsx - Step router and
+ *   state manager for the new-user onboarding journey.
+ */
 "use client";
 
 import { useCallback, useState } from "react";

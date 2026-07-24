@@ -1,3 +1,8 @@
+// [WHO]: Provides issue management handlers (ListIssues, CreateIssue, GetIssue, UpdateIssue, DeleteIssue, ListIssueSubscribers, GetIssueUsage, issue table/metadata operations)
+// [FROM]: Depends on internal/issueguard for issue state guards, internal/middleware for authz, internal/service for business logic, internal/analytics for event tracking
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/* endpoints
+// [HERE]: server/internal/handler/issue.go - handles issue CRUD, subscriber management, usage tracking, table views, and metadata; sits adjacent to workspace.go (issues belong to workspaces) and chat.go (issues can spawn tasks)
+
 package handler
 
 import (

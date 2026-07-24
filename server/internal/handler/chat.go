@@ -1,3 +1,8 @@
+// [WHO]: Provides chat session handlers (CreateChatSession, ListChatSessions, GetChatSession, UpdateChatSession, DeleteChatSession, ListChatMessages, ListChatDraftRestores) and GC-check
+// [FROM]: Depends on internal/middleware for request-scoped auth, internal/service for business logic, internal/analytics for event tracking, pgx for DB queries
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/chat-sessions/* and /api/chat/* endpoints
+// [HERE]: server/internal/handler/chat.go - handles chat session CRUD, message listing, draft restores, and session rename; relies on agent.go for agent-backed sessions and issue.go for task-linked conversations
+
 package handler
 
 import (

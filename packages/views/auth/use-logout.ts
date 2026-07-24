@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides useLogout — complete logout hook clearing workspace storage, cookies, Query cache, and auth store
+ * [FROM]: Depends on @multica/core/auth, @multica/core/workspace, @multica/core/platform, @tanstack/react-query
+ * [TO]: Consumed by app sidebar, NoAccessPage, and any entry point needing full session teardown
+ * [HERE]: packages/views/auth/use-logout.ts - Unified logout flow preventing stale-session re-auth
+ */
 "use client";
 
 import { useCallback } from "react";

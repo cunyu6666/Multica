@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides Lark (Feishu) integration — OAuth flow, webhook verification, message sync, and bot command dispatch for Lark workspaces
+// [FROM]: Depends on internal/integrations/lark for Lark API client, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/lark/* endpoints
+// [HERE]: server/internal/handler/lark.go - Lark/Feishu messaging integration; sits adjacent to github.go (VCS integration) and slack.go (Slack integration)
 import (
 	"encoding/json"
 	"errors"

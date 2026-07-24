@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides lenient zod schemas for all API endpoint responses (issues, agents,
+ *        autopilots, billing, inbox, users, webhooks, etc.) — intentionally permissive
+ *        so installed desktop clients survive backend contract drift without white-screening
+ * [FROM]: Depends on zod, ../types for interface types, ../runtimes/cloud-runtime for
+ *        CloudRuntimeNode, ../feedback/types for CreateFeedbackResponse
+ * [TO]: Consumed by ./client.ts (schema-guarded response parsing), ./schema.ts
+ *        (parseWithFallback targets), and every module that parses server JSON
+ * [HERE]: packages/core/api/schemas.ts - zod validation schemas for API response bodies
+ */
+
 import { z } from "zod";
 import type {
   Agent,

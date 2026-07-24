@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides Redis-backed implementation of LocalSkillListStore/LocalSkillImportStore with distributed locking and TTL keys for multi-node dispatch
+// [FROM]: Depends on Redis client for distributed locks and TTL keys, pkg/db/generated for fallback queries
+// [TO]: Consumed by runtime_local_skills.go (skill request resolution) and daemon heartbeat pipeline (claim routing)
+// [HERE]: server/internal/handler/runtime_local_skills_redis_store.go - Redis dispatch store for local skills; sits adjacent to runtime_local_skills.go (request handlers) and runtime_models_redis_store.go (same Redis pattern)
 import (
 	"context"
 	"encoding/json"

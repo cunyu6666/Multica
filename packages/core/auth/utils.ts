@@ -1,4 +1,14 @@
 /**
+ * [WHO]: Provides URL sanitization utilities (sanitizeNextUrl) for validating
+ *        post-login redirect URLs against open redirect attacks
+ * [FROM]: No runtime dependencies — pure function
+ * [TO]: Consumed by packages/core/auth/index.ts (re-exported), auth UI components
+ *        that handle redirect-after-login flows
+ * [HERE]: packages/core/auth/utils.ts - Safe redirect URL validation helper
+ *         that only allows single-slash relative paths
+ */
+
+/**
  * Validate a post-login redirect URL and return it only if safe to follow.
  *
  * Only single-slash relative paths (e.g. `/invite/abc`) are accepted. Returns

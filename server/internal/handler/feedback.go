@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides user feedback submission (thumbs up/down, text feedback) with analytics event tracking and optional screenshot attachment upload
+// [FROM]: Depends on internal/analytics for event tracking, pkg/db/generated for feedback storage, internal/storage for attachment handling
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/feedback endpoint
+// [HERE]: server/internal/handler/feedback.go - user feedback ingestion with analytics; sits adjacent to contact_sales.go (lead capture) and client_usage.go (telemetry)
+// [WHO]: Provides user feedback submission (thumbs up/down, text feedback) with analytics event tracking and optional screenshot attachment upload
+// [FROM]: Depends on internal/analytics for event tracking, pkg/db/generated for feedback storage, internal/storage for attachment handling
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/feedback endpoint
+// [HERE]: server/internal/handler/feedback.go - user feedback ingestion with analytics; sits adjacent to contact_sales.go (lead capture) and client_usage.go (telemetry)
 import (
 	"encoding/json"
 	"log/slog"

@@ -1,3 +1,16 @@
+/**
+ * [WHO]: Provides React Query mutations for project lifecycle (create, update, delete)
+ *        with optimistic updates on the list and detail caches, plus cross-store
+ *        cleanup (recent context, issue surface view) on delete
+ * [FROM]: Depends on @tanstack/react-query, ../api, ./queries (projectKeys),
+ *        ../hooks (useWorkspaceId), ../chat/recent-context-store,
+ *        ../issues/stores/surface-view-store, ../issues/surface/scope, ../types
+ * [TO]: Consumed by project create/edit dialogs, project settings pages, and
+ *        project list actions for CRUD operations
+ * [HERE]: packages/core/projects/mutations.ts - React Query mutations for project
+ *         CRUD with optimistic list/detail patching and related store cleanup on delete
+ */
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { projectKeys } from "./queries";

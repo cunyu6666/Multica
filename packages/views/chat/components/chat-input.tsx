@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides ChatInput — rich message composer with file upload, draft management, @mentions, and slash commands
+ * [FROM]: Depends on @multica/core/chat store, content editor, i18n, upload gate, shortcuts
+ * [TO]: Consumed by ChatWindow (floating) and chat page (tabbed) composer surfaces
+ * [HERE]: packages/views/chat/components/chat-input.tsx - Shared composer handling draft persistence, uploads, and send flow
+ */
 "use client";
 
 import type { ReactNode } from "react";

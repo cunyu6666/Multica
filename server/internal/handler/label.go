@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue label CRUD — create/list/update/delete/rename with label color management, merge-on-rename deduplication, and usage counting
+// [FROM]: Depends on pkg/db/generated for label queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/labels/* endpoints
+// [HERE]: server/internal/handler/label.go - workspace issue label management; sits adjacent to issue.go (issue CRUD) and issue_metadata.go (issue metadata)
 import (
 	"encoding/json"
 	"errors"

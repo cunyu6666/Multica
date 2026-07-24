@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue reactions (emoji reactions) — add/remove/list reactions with deduplication per user per reaction type
+// [FROM]: Depends on pkg/db/generated for issue_reaction queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/reactions/* endpoints
+// [HERE]: server/internal/handler/issue_reaction.go - issue-level emoji reactions; sits adjacent to reaction.go (comment reactions) and issue.go (issue CRUD)
 import (
 	"encoding/json"
 	"log/slog"

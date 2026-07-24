@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides squadOperatingProtocolHeader system-level briefing prepended to every squad-leader claim, explaining coordinator role and @mention dispatch mechanism
+// [FROM]: Depends on pkg/db/generated for squad membership queries
+// [TO]: Consumed by daemon claim pipeline when a squad leader agent picks up a task
+// [HERE]: server/internal/handler/squad_briefing.go - squad leader protocol injection; sits adjacent to squad.go (squad CRUD) and admission.go (execution admission)
 import (
 	"context"
 	"strings"

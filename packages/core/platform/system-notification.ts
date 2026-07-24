@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides browser Notification API utilities for the web app —
+ *         permission checks, notification display, and click handler
+ *         registration for inbox item banners.
+ * [FROM]: No external package dependencies; pure browser API usage.
+ * [TO]: Consumed by handleInboxNew (realtime inbox sync in core) as the web
+ *       notification path when no desktop API bridge is present.
+ * [HERE]: packages/core/platform/system-notification.ts - Web-native system
+ *         notification bridge (browser Notification API).
+ */
 "use client";
 
 // Native system notification bridge for the WEB app.

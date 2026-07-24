@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides Zustand store for recently visited issues and projects per
+ *        workspace, used for quick-access context selection.
+ * [FROM]: Depends on zustand, zustand/middleware, ../platform/storage,
+ *         ../types
+ * [TO]: Consumed by views/chat/* components, views/layout/* for quick-context
+ *       affordances
+ * [HERE]: packages/core/chat/recent-context-store.ts - Persisted store tracking
+ *         recent issue/project visits per workspace.
+ */
+
 "use client";
 
 import { create } from "zustand";

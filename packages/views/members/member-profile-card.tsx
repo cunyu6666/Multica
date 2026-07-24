@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides a hover-card showing a team member's identity, role, email,
+ *   and their owned agents sorted by 30-day run count.
+ * [FROM]: Depends on @multica/core (types, hooks, agent/member queries,
+ *   avatar-url), @multica/ui (Skeleton, ActorAvatar), and navigation/AppLink.
+ * [TO]: Consumed by issue assignee cells, comment authors, and agent rows
+ *   when hovering on a member avatar.
+ * [HERE]: packages/views/members/member-profile-card.tsx - Human team member
+ *   hover popover mirroring AgentProfileCard's visual structure.
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

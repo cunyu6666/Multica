@@ -1,3 +1,8 @@
+// [WHO]: Provides agent emoji avatar assignment using a curated emoji pool with random generation via crypto/rand
+// [FROM]: Depends on crypto/rand for secure random emoji selection, pkg/db/generated for agent avatar storage
+// [TO]: Consumed by agent.go (create/update fallback avatar) and agent_builder.go (new agent creation)
+// [HERE]: server/internal/handler/agent_avatar.go - emoji avatar utilities for agents; sits adjacent to agent.go (agent CRUD that assigns avatars) and agent_builder.go (agent creation flow)
+
 package handler
 
 import (

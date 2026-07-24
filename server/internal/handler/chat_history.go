@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides paginated chat message history retrieval with cursor-based pagination, loading messages before/after a given cursor for infinite scroll
+// [FROM]: Depends on pkg/db/generated for chat_message queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/chat/messages endpoint
+// [HERE]: server/internal/handler/chat_history.go - cursor-paginated chat history for infinite scroll; sits adjacent to chat.go (message CRUD) and comment.go (issue comments)
+// [WHO]: Provides paginated chat message history retrieval with cursor-based pagination, loading messages before/after a given cursor for infinite scroll
+// [FROM]: Depends on pkg/db/generated for chat_message queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/chat/messages endpoint
+// [HERE]: server/internal/handler/chat_history.go - cursor-paginated chat history for infinite scroll; sits adjacent to chat.go (message CRUD) and comment.go (issue comments)
 import (
 	"context"
 	"errors"

@@ -1,3 +1,8 @@
+// [WHO]: Provides agent builder template CRUD — create/list/get/update templates with default skills, MCP configs, and prompt overrides
+// [FROM]: Depends on internal/dispatch for agent creation, pkg/db/generated for template storage
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agents/builder/* endpoints
+// [HERE]: server/internal/handler/agent_builder.go - interactive agent creation wizard with AI-generated configuration; sits adjacent to agent.go (agent CRUD) and agent_template.go (predefined templates)
+
 package handler
 
 import (

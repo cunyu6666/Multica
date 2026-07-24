@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides workspace-aware storage utilities — the single source of
+ *         truth for active workspace identity (slug + UUID) and a
+ *         workspace-namespaced StorageAdapter for Zustand persist.
+ * [FROM]: Depends on zustand/middleware (StateStorage), types/storage
+ *         (StorageAdapter interface).
+ * [TO]: Consumed by WSProvider (reconnect on slug change), Zustand persist
+ *       stores (workspace-aware storage), layout components (setCurrentWorkspace
+ *       calls), and AuthInitializer (clear on auth failure).
+ * [HERE]: packages/core/platform/workspace-storage.ts - Active workspace
+ *         identity mirror and workspace-scoped storage factory.
+ */
 import type { StateStorage } from "zustand/middleware";
 import type { StorageAdapter } from "../types/storage";
 

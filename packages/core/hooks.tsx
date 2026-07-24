@@ -1,4 +1,10 @@
 "use client";
+/**
+ * [WHO]: Provides useWorkspaceId - a hook that returns the current workspace UUID or throws if outside a workspace route
+ * [FROM]: Depends on ./paths/hooks for useCurrentWorkspace (URL slug + React Query list resolution)
+ * [TO]: Consumed by packages/views/layout/workspace-presence-prefetch.tsx, packages/views/search/search-command.tsx, packages/views/members/member-profile-card.tsx, and re-exported via packages/core/index.ts
+ * [HERE]: packages/core/hooks.tsx - single-purpose hook deriving workspace ID from the paths layer; no longer backed by React Context (WorkspaceIdProvider removed in slug-first refactor)
+ */
 
 import { useCurrentWorkspace } from "./paths/hooks";
 

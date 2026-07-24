@@ -1,3 +1,8 @@
+// [WHO]: Provides agent handlers (ListAgents, CreateAgent, GetAgent, UpdateAgent, ListAgentTasks, ListAgentSkills, GetAgentEnv, UpdateAgentEnv, CreateAgentFromTemplate, CreateAgentBuilderSession) and agent template routes
+// [FROM]: Depends on pkg/agent for agent definitions, internal/runtimeapps for runtime bindings, internal/service for business logic, internal/util for helpers
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agents/* and /api/agent-* endpoints
+// [HERE]: server/internal/handler/agent.go - handles agent CRUD, task/skill listing, environment variable management, template creation, and builder sessions; depends on runtime.go for runtime provisioning and workspace.go for workspace-scoped agent lists
+
 package handler
 
 import (

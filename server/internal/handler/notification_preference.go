@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides user notification preferences CRUD — per-group (system_notifications/mentions/assignments) toggle with validation against validNotifGroups set
+// [FROM]: Depends on pkg/db/generated for notification_preference queries, internal/middleware for user-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/notification-preferences endpoint
+// [HERE]: server/internal/handler/notification_preference.go - user notification settings; sits adjacent to inbox.go (notification reads) and feedback.go (user preferences)
 import (
 	"encoding/json"
 	"errors"

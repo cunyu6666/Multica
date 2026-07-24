@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides LivenessStore interface for tracking short-lived "runtime heartbeated recently" records using Redis TTL keys instead of DB writes on every beat
+// [FROM]: Depends on Redis client for TTL key operations, pkg/db/generated for runtime queries
+// [TO]: Consumed by heartbeat_scheduler.go (heartbeat write routing) and runtime.go (runtime status checks)
+// [HERE]: server/internal/handler/runtime_liveness_store.go - interface for runtime liveness tracking; sits adjacent to runtime_local_skills_redis_store.go (Redis pattern) and heartbeat_scheduler.go (heartbeat routing)
 import (
 	"context"
 	"errors"

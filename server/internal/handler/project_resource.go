@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides project resource links — attach/detach/list external resources (repos, docs, dashboards) to projects for contextual linking
+// [FROM]: Depends on pkg/db/generated for project_resource queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/projects/:projectId/resources/* endpoints
+// [HERE]: server/internal/handler/project_resource.go - external resource linking for projects; sits adjacent to project.go (project CRUD) and github.go (repo integration)
 import (
 	"context"
 	"encoding/json"

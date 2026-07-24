@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides ChatWindow — floating chat panel with session management, agent switching, and message streaming
+ * [FROM]: Depends on @multica/core/chat queries/mutations/stores, @multica/core/api, @multica/ui, editor upload
+ * [TO]: Consumed by DashboardLayout (web + desktop) as the floating chat overlay
+ * [HERE]: packages/views/chat/components/chat-window.tsx - Floating chat window orchestrating sessions, messages, and agent presence
+ */
 "use client";
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";

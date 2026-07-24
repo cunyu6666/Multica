@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides PAT (Personal Access Token) CRUD — create/list/revoke with token hash storage (SHA256), expiry management, and scope-based permissions
+// [FROM]: Depends on pkg/db/generated for personal_access_token queries, internal/auth for token hashing, internal/middleware for user-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /api/me/tokens/* endpoints
+// [HERE]: server/internal/handler/personal_access_token.go - user PAT lifecycle management; sits adjacent to auth.go (authentication) and config.go (client config)
 import (
 	"encoding/json"
 	"errors"

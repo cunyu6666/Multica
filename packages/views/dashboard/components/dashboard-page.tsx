@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides DashboardPage — workspace usage dashboard with cost/token/time/task KPIs, charts, and agent leaderboard
+ * [FROM]: Depends on @multica/core/dashboard queries, @multica/ui charts/number-flow, i18n, project/agent queries
+ * [TO]: Consumed by /{slug}/dashboard route in web and desktop
+ * [HERE]: packages/views/dashboard/components/dashboard-page.tsx - Workspace analytics dashboard with daily/weekly dimensions
+ */
 "use client";
 
 import { useMemo, useState } from "react";

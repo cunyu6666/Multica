@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides the "My Account" settings tab with editable profile name,
+ *   description, and avatar upload, with auto-save and length validation.
+ * [FROM]: Depends on @multica/ui (Input, Textarea), @multica/core/auth (auth
+ *   store), @multica/core/api, avatar-upload-control, and settings-layout.
+ * [TO]: Consumed by SettingsPage as the "profile" tab content.
+ * [HERE]: packages/views/settings/components/account-tab.tsx - User profile
+ *   editing surface with optimistic auto-save and avatar upload.
+ */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";

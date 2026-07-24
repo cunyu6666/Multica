@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides a single inbox notification row with avatar, display title,
+ *   status icon, unread indicator, time-ago, and archive/unarchive action.
+ * [FROM]: Depends on @multica/core/types, issue status/priority components,
+ *   actor-avatar, inbox-detail-label, inbox-display, and i18n.
+ * [TO]: Consumed by InboxList (virtualized) as the row renderer.
+ * [HERE]: packages/views/inbox/components/inbox-list-item.tsx - Individual
+ *   inbox notification row with hover archive action and unread badge.
+ */
 "use client";
 
 import { StatusIcon } from "../../issues/components";

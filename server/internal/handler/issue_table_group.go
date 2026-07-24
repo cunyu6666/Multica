@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue table grouping — returns grouped issue rows by a specified column (status/assignee/label) for kanban/grouped views
+// [FROM]: Depends on pkg/db/generated for issue queries with ORDER BY grouping, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/table/group endpoint
+// [HERE]: server/internal/handler/issue_table_group.go - grouped issue table view; sits adjacent to issue_table_rows.go (flat rows) and issue_table_facets.go (filter facets)
 import (
 	"context"
 	"encoding/base64"

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides reserved workspace slug list loaded from embedded reserved_slugs.json, blocking slugs that collide with frontend routes or platform names
+// [FROM]: Depends on embed.FS for reserved_slugs.json embedding, internal/middleware for workspace creation validation
+// [TO]: Consumed by workspace.go (slug validation during workspace creation) and onboarding.go (workspace setup)
+// [HERE]: server/internal/handler/workspace_reserved_slugs.go - slug collision prevention; sits adjacent to workspace.go (workspace CRUD) and reserved_slugs.json (embedded slug list)
 import (
 	_ "embed"
 	"encoding/json"

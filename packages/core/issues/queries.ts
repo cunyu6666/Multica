@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides React Query query options, key factories, and sort helpers for issues (list, detail, grouped, table, flat views, timeline, reactions, subscribers, etc.)
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types, ./config
+ * [TO]: Consumed by views/components that render issue lists, boards, tables, detail pages, and by mutations.ts, ws-updaters.ts, cache-coordinator.ts, cache-helpers.ts
+ * [HERE]: packages/core/issues/queries.ts - React Query query option factories and query key definitions for all issue-related server state
+ */
 import {
   infiniteQueryOptions,
   keepPreviousData,

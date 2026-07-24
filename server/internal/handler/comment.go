@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides issue comment CRUD with rich text sanitization, mention resolution, decision tracking (approve/request_changes), and reconciliation for VCS-synced comments
+// [FROM]: Depends on pkg/db/generated for comment queries, internal/middleware for authz, internal/service for trigger evaluation, internal/events for broadcast
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/comments/* endpoints
+// [HERE]: server/internal/handler/comment.go - issue comment CRUD with mentions and VCS reconciliation; sits adjacent to issue.go (issue CRUD) and chat.go (chat messages)
+// [WHO]: Provides issue comment CRUD with rich text sanitization, mention resolution, decision tracking (approve/request_changes), and reconciliation for VCS-synced comments
+// [FROM]: Depends on pkg/db/generated for comment queries, internal/middleware for authz, internal/service for trigger evaluation, internal/events for broadcast
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/issues/:issueId/comments/* endpoints
+// [HERE]: server/internal/handler/comment.go - issue comment CRUD with mentions and VCS reconciliation; sits adjacent to issue.go (issue CRUD) and chat.go (chat messages)
 import (
 	"context"
 	"encoding/json"

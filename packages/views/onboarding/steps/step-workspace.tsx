@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the workspace creation/resume step (Step 2) with name/slug
+ *   fields, URL preview, issue prefix preview, existing-workspace picker,
+ *   and a side panel showing what the workspace sidebar will look like.
+ * [FROM]: Depends on @multica/core (workspace mutations, config store,
+ *   utils, paths), @multica/ui (Button, Input, Label, scroll-fade),
+ *   workspace/slug helpers, auth, DragStrip, and onboarding sub-components.
+ * [TO]: Consumed by OnboardingFlow at the "workspace" step; also handles
+ *   the DISABLE_WORKSPACE_CREATION gate for self-hosted instances.
+ * [HERE]: packages/views/onboarding/steps/step-workspace.tsx - Workspace
+ *   naming, slug validation, and resume-or-create flow with side preview.
+ */
 "use client";
 
 import { type ReactNode, useRef, useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides WebSocket event handlers that patch React Query caches for issue create, update, delete, labels, metadata, and properties changes
+ * [FROM]: Depends on @tanstack/react-query, ./queries, ./cache-coordinator, ./cache-helpers, ./delete-cache, ../labels/queries, ../projects/queries, ../types
+ * [TO]: Consumed by the WebSocket event dispatch layer to apply real-time server events to the local query cache
+ * [HERE]: packages/core/issues/ws-updaters.ts - WebSocket event handlers for issue cache invalidation and patching
+ */
 import type { QueryClient } from "@tanstack/react-query";
 import { issueKeys } from "./queries";
 import { labelKeys } from "../labels/queries";

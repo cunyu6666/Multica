@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the runtime connection step (Step 3, desktop) with agent
+ *   CLI discovery, runtime selection, and an educational aside panel showing
+ *   what a runtime does.
+ * [FROM]: Depends on @multica/core (runtimes queries/helpers, types),
+ *   @multica/ui (Button, scroll-fade), DragStrip, StepHeader,
+ *   RuntimeAsidePanel, useRuntimePicker, provider-logo, and i18n.
+ * [TO]: Consumed by OnboardingFlow at the "runtime" step on desktop; web
+ *   routes to StepPlatformFork instead.
+ * [HERE]: packages/views/onboarding/steps/step-runtime-connect.tsx - Desktop
+ *   runtime discovery and selection with live daemon polling.
+ */
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides agent-scoped local skill CRUD (list/get/create/update/delete) with skill file tree management and skill enable/disable toggles
+// [FROM]: Depends on pkg/db/generated for agent_skill queries, internal/skill for skill validation, pkg/skillbundle for skill classification
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agents/:agentId/skills/* endpoints and daemon claim wire
+// [HERE]: server/internal/handler/agent_runtime_skills.go - agent-scoped skills that override/augment workspace skills; sits adjacent to skill.go (workspace skill CRUD) and runtime_local_skills.go (daemon-dispatched skills)
 import (
 	"encoding/json"
 	"log/slog"

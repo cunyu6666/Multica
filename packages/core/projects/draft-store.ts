@@ -1,3 +1,16 @@
+/**
+ * [WHO]: Provides a Zustand persist store for project creation/edit drafts (title,
+ *        description, status, priority, lead, dates) with workspace-aware storage
+ *        and auto-rehydration on workspace switch
+ * [FROM]: Depends on zustand, zustand/middleware (persist, createJSONStorage),
+ *        ../types (ProjectStatus, ProjectPriority),
+ *        ../platform/workspace-storage, ../platform/storage
+ * [TO]: Consumed by project create/edit dialogs that need to preserve form state
+ *        across navigation or accidental closes
+ * [HERE]: packages/core/projects/draft-store.ts - Zustand persist store for
+ *         project draft form state with workspace-scoped localStorage
+ */
+
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import type { ProjectStatus, ProjectPriority } from "../types";

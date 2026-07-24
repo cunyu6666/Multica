@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides React Query mutations for chat (send, edit, delete messages;
+ *        session CRUD; pin/unpin agents; archive; draft-restore consume).
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../hooks, ./queries,
+ *         ../logger, ../types
+ * [TO]: Consumed by views/chat/* components,
+ *       packages/views/agents/components/agent-creation-studio
+ * [HERE]: packages/core/chat/mutations.ts - Chat mutation hooks with optimistic
+ *         updates and rollback on failure.
+ */
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { useWorkspaceId } from "../hooks";

@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides agent invocation permission model (MUL-3963) with two gates: canViewAgent for visibility and canInvokeAgent for execution, resolving workspace/member/team targets
+// [FROM]: Depends on pkg/db/generated for agent and invocation target queries, internal/util for UUID resolution
+// [TO]: Consumed by admission.go (invoke gate), comment.go (mention dispatch), and issue.go (assign-trigger)
+// [HERE]: server/internal/handler/agent_permission.go - permission checks for agent visibility and invocation; sits adjacent to agent_access.go (target allow-list) and admission.go (execution admission)
 import (
 	"context"
 	"fmt"

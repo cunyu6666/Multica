@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides workspace storage cleanup utilities — removes all
+ *         workspace-scoped persist keys when a workspace is deleted or the
+ *         user logs out.
+ * [FROM]: Depends on types/storage (StorageAdapter interface).
+ * [TO]: Consumed by workspace delete/logout flows in apps/web and apps/desktop
+ *       to purge durable storage for a removed workspace slug.
+ * [HERE]: packages/core/platform/storage-cleanup.ts - Workspace-scoped storage
+ *         key registry and bulk removal utility.
+ */
 import type { StorageAdapter } from "../types/storage";
 
 /**

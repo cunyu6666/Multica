@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides date formatting utilities for issues (start_date / due_date conversion between date-only strings and Date objects)
+ * [FROM]: None (pure functions, no React/DOM dependencies)
+ * [TO]: Consumed by views/components with calendar pickers, date displays, and Gantt chart day-bucketing; shared with mobile
+ * [HERE]: packages/core/issues/date.ts - Date-only string formatting and parsing utilities for issue calendar fields
+ */
 // Issue start_date / due_date are calendar days, not instants: the pickers
 // offer no time-of-day input, so "Mar 1" must mean Mar 1 for every viewer
 // regardless of timezone. They are transported as a date-only "YYYY-MM-DD"

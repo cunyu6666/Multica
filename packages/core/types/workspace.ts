@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides workspace and membership type definitions — Workspace,
+ *         Member, User, MemberWithUser, and Invitation.
+ * [FROM]: No intra-package type dependencies; this is a leaf type module.
+ * [TO]: Consumed by workspace queries/mutations, member views, workspace
+ *         settings, auth initialization, and WS event payloads
+ *         (workspace:updated, member:added/updated/removed, invitation:*).
+ * [HERE]: packages/core/types/workspace.ts - Workspace, member, user, and
+ *         invitation type definitions for the identity and access domain.
+ */
 export type MemberRole = "owner" | "admin" | "member";
 
 export interface WorkspaceRepo {

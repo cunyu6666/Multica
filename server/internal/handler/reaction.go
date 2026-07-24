@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides comment/issue reaction CRUD — add/remove/list reactions with emoji validation, per-user-per-reaction deduplication, and reaction count aggregation
+// [FROM]: Depends on pkg/db/generated for reaction queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/reactions/* endpoints
+// [HERE]: server/internal/handler/reaction.go - reaction management for comments and issues; sits adjacent to comment.go (comment reactions) and issue_reaction.go (issue reactions)
 import (
 	"encoding/json"
 	"log/slog"

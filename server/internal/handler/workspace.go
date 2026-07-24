@@ -1,3 +1,8 @@
+// [WHO]: Provides workspace handlers (ListWorkspaces, CreateWorkspace, GetWorkspace, UpdateWorkspace, DeleteWorkspace, ListWorkspaceInvitations) and workspace-related analytics (agent task snapshots, working agents, activity, run counts) and chat pinned agents/history/thread
+// [FROM]: Depends on internal/middleware for request-scoped auth, internal/service for business logic, internal/analytics for event tracking, internal/util for helpers
+// [TO]: Consumed by server/cmd/server routes for /workspaces/* and various /api/* workspace-scoped endpoints
+// [HERE]: server/internal/handler/workspace.go - handles workspace CRUD, invitations, cross-agent analytics, and workspace-scoped chat history; serves as the container that agent.go, issue.go, chat.go, and runtime.go all scope their resources to
+
 package handler
 
 import (

@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the onboarding welcome step (Step 0) — an editorial two-
+ *   column hero with wordmark, headline, lede, CTA buttons, and a stack of
+ *   mock issue cards illustrating human/agent collaboration.
+ * [FROM]: Depends on @multica/ui (Button, cn), @multica/core (issue configs,
+ *   types), DragStrip, issue status/priority icons, provider-logo, and i18n.
+ * [TO]: Consumed by OnboardingFlow as the entry-point step; also shown to
+ *   returning users who have workspaces (with a skip button).
+ * [HERE]: packages/views/onboarding/steps/step-welcome.tsx - Product intro
+ *   hero with responsive two-column layout and mock activity illustration.
+ */
 "use client";
 
 import { useState } from "react";

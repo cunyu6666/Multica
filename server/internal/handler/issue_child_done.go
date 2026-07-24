@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides child issue completion propagation — when all children of a parent issue reach done status, automatically transitions the parent issue
+// [FROM]: Depends on pkg/db/generated for issue queries, internal/service for issue status transitions, internal/events for broadcast
+// [TO]: Consumed by issue.go (child status changes) and service/issue.go (parent completion evaluation)
+// [HERE]: server/internal/handler/issue_child_done.go - parent auto-complete on all children done; sits adjacent to issue.go (issue CRUD) and issue_trigger.go (trigger evaluation)
 import (
 	"context"
 	"fmt"

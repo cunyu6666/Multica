@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the unified Settings page with vertical/horizontal tab
+ *   navigation for account-level and workspace-level configuration groups.
+ * [FROM]: Depends on @multica/ui (Tabs, tabs components), @multica/core (paths,
+ *   navigation), and per-tab components (AccountTab, PreferencesTab, etc.).
+ * [TO]: Consumed by apps/web (Next.js route handler) and apps/desktop
+ *   (react-router-dom route) via the navigation adapter.
+ * [HERE]: packages/views/settings/components/settings-page.tsx - Top-level
+ *   settings shell routing account and workspace tabs through a single
+ *   Radix Tabs instance with URL-synced active tab.
+ */
 "use client";
 
 import React from "react";

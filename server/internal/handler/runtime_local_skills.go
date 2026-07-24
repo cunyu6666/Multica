@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides local skill list/import request management — frontend creates requests, daemon claims them on heartbeat, daemon reports results back
+// [FROM]: Depends on pkg/db/generated for local_skill_request queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/local-skills/* endpoints and daemon heartbeat pipeline
+// [HERE]: server/internal/handler/runtime_local_skills.go - daemon-dispatched local skill listing; sits adjacent to runtime_local_skills_redis_store.go (Redis dispatch) and skill.go (workspace skills)
 import (
 	"context"
 	"encoding/json"

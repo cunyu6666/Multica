@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides generateUUID, createSafeId, createRequestId, and isImeComposing - pure utility functions for ID generation and IME composition detection
+ * [FROM]: Depends on globalThis.crypto for secure random bytes; no external packages
+ * [TO]: Consumed by packages/core/api/client.ts (createRequestId), packages/views/editor/extensions/file-upload.ts (createSafeId), packages/views/agents/components/tabs/custom-args-tab.tsx (createSafeId), apps/desktop/src/renderer/src/stores/tab-store.ts (createSafeId), and many view components for isImeComposing
+ * [HERE]: packages/core/utils.ts - framework-agnostic utilities; neighbors logger.ts (structured logging), hooks.tsx (React hooks) occupy distinct layers of the core package
+ */
+
 export function generateUUID(): string {
   const cryptoObj = globalThis.crypto;
 

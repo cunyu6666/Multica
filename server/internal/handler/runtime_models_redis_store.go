@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides Redis-backed implementation of ModelListStore with the same distributed dispatch pattern as runtime_local_skills_redis_store
+// [FROM]: Depends on Redis client for distributed locks and TTL keys, pkg/db/generated for fallback queries
+// [TO]: Consumed by runtime_models.go (model request resolution) and daemon heartbeat pipeline (claim routing)
+// [HERE]: server/internal/handler/runtime_models_redis_store.go - Redis dispatch store for model lists; sits adjacent to runtime_models.go (request handlers) and runtime_local_skills_redis_store.go (same Redis pattern)
 import (
 	"context"
 	"encoding/json"

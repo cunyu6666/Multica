@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides React Query mutations for label CRUD (create, update, delete) and
+ *        issue/resource label attachment/detachment with optimistic updates that
+ *        also invalidate denormalized issue caches on settle
+ * [FROM]: Depends on @tanstack/react-query, ../api, ./queries (labelKeys),
+ *        ../hooks (useWorkspaceId), ../issues/ws-updaters, ../issues/queries, ../types
+ * [TO]: Consumed by label management views, issue detail label pickers, and
+ *        agent/skill detail pages for attaching/removing labels
+ * [HERE]: packages/core/labels/mutations.ts - React Query mutations for label CRUD
+ *         and attachment/detachment with optimistic patching and issue cache invalidation
+ */
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { labelKeys } from "./queries";

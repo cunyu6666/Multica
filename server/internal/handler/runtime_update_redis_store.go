@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides Redis-backed implementation of UpdateStore with TTL keys and distributed locking matching the local skills store pattern
+// [FROM]: Depends on Redis client for distributed locks and TTL keys, pkg/db/generated for fallback queries
+// [TO]: Consumed by runtime_update.go (update request resolution) and daemon heartbeat pipeline (claim routing)
+// [HERE]: server/internal/handler/runtime_update_redis_store.go - Redis dispatch store for CLI updates; sits adjacent to runtime_update.go (request handlers) and runtime_local_skills_redis_store.go (same Redis pattern)
 import (
 	"context"
 	"encoding/json"

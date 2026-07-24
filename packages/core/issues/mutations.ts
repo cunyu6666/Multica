@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides React Query mutation hooks for issues (create, update, delete, batch) and timeline mutations (comment CRUD, reactions, subscribers)
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types, ./queries, ./cache-coordinator, ./cache-helpers, ./delete-cache, ./timeline-sort, ../hooks, ../chat/recent-context-store, ./stores
+ * [TO]: Consumed by views/components that trigger issue create/update/delete actions, comment interactions, and batch operations
+ * [HERE]: packages/core/issues/mutations.ts - React Query mutation hooks for issue CRUD, batch operations, and timeline interactions with optimistic updates
+ */
 import { useState, useCallback } from "react";
 import { hashKey, useMutation, useQueryClient, type QueryKey } from "@tanstack/react-query";
 import { api } from "../api";

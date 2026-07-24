@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides member revocation via revokeAndRemoveMember — archives runtimes, pins, cancels in-flight tasks when a member leaves a workspace
+// [FROM]: Depends on pkg/db/generated for runtime/pin/task queries, internal/middleware for workspace admin authz, internal/events for broadcast
+// [TO]: Consumed by workspace.go (member removal) and invitation.go (invite revocation)
+// [HERE]: server/internal/handler/workspace_revoke.go - workspace member removal with cleanup; sits adjacent to workspace.go (workspace CRUD) and invitation.go (invite management)
 import (
 	"context"
 	"log/slog"

@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides Composio integration CRUD (MUL-3720 Stage 2 MVP) — connect/disconnect/list connected accounts and trigger Composio tool executions
+// [FROM]: Depends on pkg/composio for Composio REST API SDK, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/composio/* endpoints
+// [HERE]: server/internal/handler/integrations_composio.go - Composio tool integration; sits adjacent to github.go (VCS integration) and slack.go (messaging integration)
+// [WHO]: Provides Composio integration CRUD (MUL-3720 Stage 2 MVP) — connect/disconnect/list connected accounts and trigger Composio tool executions
+// [FROM]: Depends on pkg/composio for Composio REST API SDK, pkg/db/generated for integration storage, internal/middleware for authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/integrations/composio/* endpoints
+// [HERE]: server/internal/handler/integrations_composio.go - Composio tool integration; sits adjacent to github.go (VCS integration) and slack.go (messaging integration)
 import (
 	"context"
 	"encoding/json"

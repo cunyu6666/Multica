@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides React Query query options and cache-key helpers for chat sessions,
+ *        messages, pinned agents, pending tasks, and draft restores.
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types/events, ../types/chat
+ * [TO]: Consumed by views/chat/* components, packages/core/realtime/use-realtime-sync,
+ *       packages/core/projects/mutations, packages/core/issues/mutations
+ * [HERE]: packages/core/chat/queries.ts - Query options, cache keys, and merge helpers
+ *         for the chat domain.
+ */
+
 import { infiniteQueryOptions, queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type { TaskMessagePayload } from "../types/events";

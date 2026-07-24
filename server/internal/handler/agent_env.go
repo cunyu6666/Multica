@@ -1,3 +1,8 @@
+// [WHO]: Provides per-agent environment variable CRUD (create/list/get/delete) with secret masking in list responses
+// [FROM]: Depends on pkg/db/generated for agent_env_var queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/agents/:agentId/env/* endpoints and daemon claim wire
+// [HERE]: server/internal/handler/agent_env.go - agent-scoped secret environment variables; sits adjacent to agent.go (agent CRUD) and agent_runtime_skills.go (agent-scoped resources)
+
 package handler
 
 import (

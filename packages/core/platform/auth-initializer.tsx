@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the AuthInitializer React component — handles boot-time
+ *         authentication hydration (cookie and token modes), config fetching,
+ *         analytics setup, and workspace list seeding into React Query.
+ * [FROM]: Depends on react, @tanstack/react-query, api, auth, analytics,
+ *         config, workspace/queries, logger, platform/storage,
+ *         platform/workspace-storage, platform/types, types/storage, types.
+ * [TO]: Consumed by CoreProvider (core-provider.tsx) and any app shell that
+ *       needs auth initialization without the full provider tree.
+ * [HERE]: packages/core/platform/auth-initializer.tsx - Auth boot component
+ *         that hydrates user identity, app config, and workspace list on mount.
+ */
 "use client";
 
 import { useEffect, type ReactNode } from "react";

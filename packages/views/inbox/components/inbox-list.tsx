@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides a scrollable, virtualized inbox notification list using
+ *   react-virtuoso, with an archive entry footer and empty-state fallbacks.
+ * [FROM]: Depends on react-virtuoso, @multica/core/types, i18n,
+ *   InboxListItem, and virtuoso-seed helper.
+ * [TO]: Consumed by InboxPage as the left-panel list component.
+ * [HERE]: packages/views/inbox/components/inbox-list.tsx - Virtualized row
+ *   list shared by mobile and desktop inbox layouts.
+ */
 "use client";
 
 import { useCallback, useMemo, useState } from "react";

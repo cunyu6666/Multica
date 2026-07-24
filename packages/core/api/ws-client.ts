@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides WSClient — a WebSocket transport with typed event dispatch,
+ *        exponential backoff reconnect with jitter, auth negotiation (token/cookie),
+ *        and client identity signaling via query parameters
+ * [FROM]: Depends on ../types/events for WSMessage/WSEventType, ../logger for
+ *        debug/warn/info output
+ * [TO]: Consumed by packages/core/realtime/ (realtime sync via on/onAny),
+ *        packages/views/platform/ (desktop/web WS wiring and reconnect handling)
+ * [HERE]: packages/core/api/ws-client.ts - WebSocket client with reconnect and event routing
+ */
+
 import type { WSMessage, WSEventType } from "../types/events";
 import { type Logger, noopLogger } from "../logger";
 

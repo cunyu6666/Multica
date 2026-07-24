@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the Projects listing page with table (compact) and card
+ *   (comfortable) views, column visibility toggles, multi-dimensional
+ *   filters (status, priority, lead), sort, pin/unpin, and batch delete.
+ * [FROM]: Depends on @multica/core (project queries/store, pins, auth,
+ *   hooks, paths, workspace queries), @multica/ui (list-grid, dropdown,
+ *   popover, dialog, skeleton, checkbox, switch, tooltip, button, input),
+ *   navigation, actor-avatar, hover-check, and project sub-components.
+ * [TO]: Consumed by apps/web and apps/desktop at the /:slug/projects route.
+ * [HERE]: packages/views/projects/components/projects-page.tsx - Full-
+ *   featured project collection page with dual view modes and batch toolbar.
+ */
 "use client";
 
 import { useCallback, useMemo, useState, type MouseEvent } from "react";

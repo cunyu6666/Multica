@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the Agents listing page with a virtualized grid, column
+ *   visibility toggles, multi-dimensional filters, sort, batch operations,
+ *   and scope tabs (Mine / All / Archived).
+ * [FROM]: Depends on @multica/core (agent queries, presence/activity hooks,
+ *   agents view store, auth, paths), @multica/ui (list-grid, skeleton,
+ *   tooltip, checkbox), navigation, and agent sub-components.
+ * [TO]: Consumed by apps/web and apps/desktop at the /:slug/agents route.
+ * [HERE]: packages/views/agents/components/agents-page.tsx - Full-featured
+ *   agent collection page with virtualization, filtering, and batch actions.
+ */
 "use client";
 
 import { useCallback, useMemo, useRef, useState } from "react";

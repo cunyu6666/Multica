@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides React Query query options for inbox notifications (list, archived,
+ *        unread summary), plus helper utilities for deduplication, grouping, and
+ *        cross-workspace unread detection
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types (InboxItem, InboxWorkspaceUnread)
+ * [TO]: Consumed by inbox views (packages/views/inbox/), workspace switcher unread dot,
+ *        and any component that reads inbox data or computes unread counts
+ * [HERE]: packages/core/inbox/queries.ts - React Query query options and pure helpers
+ *         for inbox notifications, with issue-based deduplication logic
+ */
+
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { api } from "../api";
 import type { InboxItem, InboxWorkspaceUnread } from "../types";

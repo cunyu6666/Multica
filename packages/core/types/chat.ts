@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides chat domain type definitions — ChatSession, ChatMessage,
+ *         pending tasks, draft restores, and related response shapes.
+ * [FROM]: Depends on types/agent (AgentTask), types/attachment
+ *         (Attachment, via dynamic import).
+ * [TO]: Consumed by chat queries/mutations, chat views, WS event payloads
+ *         (chat:message, chat:done, chat:cancel_finalized), and the chat
+ *         Zustand store.
+ * [HERE]: packages/core/types/chat.ts - Chat session, message, and task
+ *         type definitions for the conversational AI domain.
+ */
 import type { AgentTask } from "./agent";
 
 /** A user's pinned "quick agent" for the Chat list top bar. */

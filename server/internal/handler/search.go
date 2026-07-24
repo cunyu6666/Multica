@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides issue and project full-text search using LOWER(col) LIKE queries with searchStatementTimeout Postgres-level timeout to prevent runaway queries
+// [FROM]: Depends on pkg/db/generated for issue/project queries, internal/middleware for workspace-scoped authz
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/search endpoint
+// [HERE]: server/internal/handler/search.go - workspace full-text search; sits adjacent to issue.go (issue queries) and dashboard.go (workspace overview)
 import (
 	"context"
 	"errors"

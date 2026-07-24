@@ -1,3 +1,17 @@
+/**
+ * [WHO]: Provides the Create/Duplicate Agent dialog with identity fields
+ *   (name, description, avatar), runtime/model selection, access control
+ *   (legacy visibility or MUL-3963 permission model), instructions editor,
+ *   and skill attachment.
+ * [FROM]: Depends on @multica/core (API, hooks, types, feature flags,
+ *   workspace queries, agents constants), @multica/ui (Dialog, Button,
+ *   Input, Checkbox, Label), avatar-upload-control, actor-avatar, and
+ *   agent sub-components (ModelDropdown, RuntimePicker, etc.).
+ * [TO]: Consumed by the Agents page toolbar "New Agent" button and the
+ *   squad member add flow.
+ * [HERE]: packages/views/agents/components/create-agent-dialog.tsx - Full-
+ *   form agent creation and duplication dialog with squad-join follow-up.
+ */
 "use client";
 
 import { useState } from "react";

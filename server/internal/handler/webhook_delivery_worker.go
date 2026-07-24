@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides background worker for async webhook delivery queue processing with exponential backoff retry and dead-letter handling
+// [FROM]: Depends on webhook_delivery.go for delivery logic, pkg/db/generated for delivery status tracking
+// [TO]: Consumed by server startup for background webhook queue processing
+// [HERE]: server/internal/handler/webhook_delivery_worker.go - async webhook delivery worker; sits adjacent to webhook_delivery.go (delivery management) and webhook_rate_limiter.go (rate limiting)
 import (
 	"context"
 	"encoding/json"

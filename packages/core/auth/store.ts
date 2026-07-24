@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides the Zustand-based auth store factory (createAuthStore) with login/logout
+ *        flows, user identity management, token persistence (localStorage + cookie modes),
+ *        and analytics integration
+ * [FROM]: Depends on zustand, ../types (User, StorageAdapter), ../analytics,
+ *        ../api/client (ApiClient, ApiError), ../platform/workspace-storage
+ * [TO]: Consumed by packages/core/auth/index.ts (re-exports via useAuthStore singleton),
+ *        app-level bootstrapping (registerAuthStore), and platform/workspace-storage
+ * [HERE]: packages/core/auth/store.ts - Zustand auth store factory for login state,
+ *        user identity, and token management across cookie and token auth modes
+ */
+
 import { create } from "zustand";
 import type { User, StorageAdapter } from "../types";
 import { identify as identifyAnalytics, resetAnalytics } from "../analytics";

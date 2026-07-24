@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides HeartbeatScheduler abstraction that decides how runtime heartbeat requests reach the database (direct DB write vs Redis TTL key batching)
+// [FROM]: Depends on pkg/db/generated for runtime queries, pkg/featureflag for heartbeat mode flag, internal/redis (if available) for TTL key storage
+// [TO]: Consumed by daemon.go (heartbeat processing) and runtime.go (runtime status updates)
+// [HERE]: server/internal/handler/heartbeat_scheduler.go - heartbeat write strategy abstraction; sits adjacent to runtime.go (runtime lifecycle) and runtime_liveness_store.go (liveness tracking)
+// [WHO]: Provides HeartbeatScheduler abstraction that decides how runtime heartbeat requests reach the database (direct DB write vs Redis TTL key batching)
+// [FROM]: Depends on pkg/db/generated for runtime queries, pkg/featureflag for heartbeat mode flag, internal/redis (if available) for TTL key storage
+// [TO]: Consumed by daemon.go (heartbeat processing) and runtime.go (runtime status updates)
+// [HERE]: server/internal/handler/heartbeat_scheduler.go - heartbeat write strategy abstraction; sits adjacent to runtime.go (runtime lifecycle) and runtime_liveness_store.go (liveness tracking)
 import (
 	"context"
 	"log/slog"

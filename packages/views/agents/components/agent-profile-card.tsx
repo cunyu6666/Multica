@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides a hover-card showing an agent's identity, availability,
+ *   runtime health, model, skills, and owner — the agent counterpart to
+ *   MemberProfileCard.
+ * [FROM]: Depends on @multica/core (agent queries, presence, runtimes,
+ *   paths, avatar-url), @multica/ui (Skeleton, ActorAvatar), navigation,
+ *   visibility-badge, and runtime health helpers.
+ * [TO]: Consumed by issue assignee cells, agent mentions, and chat agent
+ *   pickers when hovering on an agent avatar.
+ * [HERE]: packages/views/agents/components/agent-profile-card.tsx - Agent
+ *   hover popover with availability, runtime, model, skills, and owner rows.
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

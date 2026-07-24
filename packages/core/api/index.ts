@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides API client singleton (ApiClient), schema parsing utilities (parseWithFallback),
+ *        WebSocket client (WSClient), and singleton accessor (api/getApi/setApiInstance)
+ * [FROM]: Depends on ./client for ApiClient/ApiError, ./schema for Zod-based parsing with fallbacks,
+ *        ./ws-client for WebSocket transport, ./schemas for error body validation
+ * [TO]: Consumed by packages/core/auth/store.ts (ApiClient), packages/core/issues/ (API calls),
+ *        packages/core/agents/ (API calls), and any module making HTTP/WS requests
+ */
+
 export {
   ApiClient,
   ApiError,

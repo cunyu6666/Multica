@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides ListRow and DraggableListRow — issue list/table row with sortable DnD support
+ * [FROM]: Depends on @dnd-kit/sortable, @multica/core/types, navigation AppLink, view store, selection context
+ * [TO]: Consumed by list-view and table-view issue list surfaces
+ * [HERE]: packages/views/issues/components/list-row.tsx - Issue row component for list/table views with drag sorting
+ */
 "use client";
 
 import { memo, type Ref } from "react";

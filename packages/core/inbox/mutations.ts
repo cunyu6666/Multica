@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides React Query mutations for inbox operations (mark read, archive,
+ *        unarchive, batch archive actions) with optimistic updates and rollback
+ * [FROM]: Depends on @tanstack/react-query, ../api, ./queries (inboxKeys),
+ *        ../hooks (useWorkspaceId), ../types (InboxItem)
+ * [TO]: Consumed by inbox views (packages/views/inbox/) for notification read/archive
+ *        actions, and workspace switcher unread badge updates
+ * [HERE]: packages/core/inbox/mutations.ts - React Query mutations for inbox
+ *         mark-read, archive, unarchive, and batch archive operations
+ */
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { inboxKeys } from "./queries";

@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides in-memory rpcResponseCapture for WS RPC reuse, allowing daemon WebSocket requests to delegate to existing HTTP handlers without network round-trips
+// [FROM]: Depends on internal/daemonws for WebSocket message framing, handler.go for writeJSON and route resolution
+// [TO]: Consumed by daemon_ws.go (WebSocket message dispatcher) for routing RPC calls to HTTP handler logic
+// [HERE]: server/internal/handler/daemon_rpc.go - RPC response capture for WebSocket handler delegation; sits adjacent to daemon.go (connection lifecycle) and daemon_ws.go (WebSocket framing)
+// [WHO]: Provides in-memory rpcResponseCapture for WS RPC reuse, allowing daemon WebSocket requests to delegate to existing HTTP handlers without network round-trips
+// [FROM]: Depends on internal/daemonws for WebSocket message framing, handler.go for writeJSON and route resolution
+// [TO]: Consumed by daemon_ws.go (WebSocket message dispatcher) for routing RPC calls to HTTP handler logic
+// [HERE]: server/internal/handler/daemon_rpc.go - RPC response capture for WebSocket handler delegation; sits adjacent to daemon.go (connection lifecycle) and daemon_ws.go (WebSocket framing)
 import (
 	"bytes"
 	"context"

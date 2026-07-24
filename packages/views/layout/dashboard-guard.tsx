@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides DashboardGuard — shared auth/workspace gate for dashboard layouts
+ * [FROM]: Depends on @multica/core/auth, useDashboardGuard hook
+ * [TO]: Consumed by web/Desktop dashboard layout shells (apps/web, apps/desktop)
+ * [HERE]: packages/views/layout/dashboard-guard.tsx - Renders children only after auth + workspace resolved
+ */
 "use client";
 
 import type { ReactNode } from "react";

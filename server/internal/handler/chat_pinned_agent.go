@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides user quick-agent bar pin management (max 5 pins), returning ChatPinnedAgentResponse with agent metadata for the chat input agent selector
+// [FROM]: Depends on pkg/db/generated for pinned_agent queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/chat/pinned-agents/* endpoints
+// [HERE]: server/internal/handler/chat_pinned_agent.go - user-scoped agent pin preferences; sits adjacent to chat.go (chat session management) and agent.go (agent metadata)
+// [WHO]: Provides user quick-agent bar pin management (max 5 pins), returning ChatPinnedAgentResponse with agent metadata for the chat input agent selector
+// [FROM]: Depends on pkg/db/generated for pinned_agent queries, internal/middleware for authz context
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/chat/pinned-agents/* endpoints
+// [HERE]: server/internal/handler/chat_pinned_agent.go - user-scoped agent pin preferences; sits adjacent to chat.go (chat session management) and agent.go (agent metadata)
 import (
 	"encoding/json"
 	"net/http"

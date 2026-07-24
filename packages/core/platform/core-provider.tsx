@@ -1,3 +1,17 @@
+/**
+ * [WHO]: Provides the CoreProvider React component — the root platform wrapper
+ *         that bootstraps QueryProvider, WSProvider, AuthInitializer, i18n, and
+ *         the freeze watchdog for both web and desktop apps.
+ * [FROM]: Depends on api/client, diagnostics/freeze-watchdog, api, auth, chat,
+ *         i18n/react, realtime, provider, logger, platform/storage,
+ *         platform/auth-initializer, platform/types, types/storage,
+ *         client-usage, shortcuts/platform.
+ * [TO]: Consumed by apps/web and apps/desktop as the top-level provider in
+ *       their app shells.
+ * [HERE]: packages/core/platform/core-provider.tsx - Root platform provider
+ *         orchestrating all cross-cutting infrastructure (API, auth, WS, i18n,
+ *         query, diagnostics) into a single mount point.
+ */
 "use client";
 
 import { useEffect, useMemo } from "react";

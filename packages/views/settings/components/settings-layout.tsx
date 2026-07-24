@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides layout primitives (SettingsTab, SettingsSection,
+ *   SettingsCard, SettingsRow, SettingsSaveState) used by every settings
+ *   tab to render consistent headers, sections, form rows, and save-state
+ *   indicators.
+ * [FROM]: Depends on @multica/ui (Card, cn) and lucide-react icons.
+ * [TO]: Consumed by all settings tab components (AccountTab, PreferencesTab,
+ *   IssueTab, ChatTab, etc.) and the settings-page orchestrator.
+ * [HERE]: packages/views/settings/components/settings-layout.tsx - Shared
+ *   layout components for settings tab content surfaces.
+ */
 import type { ReactNode } from "react";
 import { AlertCircle, Check, Loader2 } from "lucide-react";
 import { Card, CardContent } from "@multica/ui/components/ui/card";

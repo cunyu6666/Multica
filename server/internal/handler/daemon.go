@@ -1,5 +1,13 @@
 package handler
 
+// [WHO]: Provides daemon WebSocket connection lifecycle, registering/unregistering runtime connections with the DaemonHub for real-time command dispatch
+// [FROM]: Depends on internal/daemonws for WebSocket transport, internal/hub for connection management, pkg/db/generated for runtime tracking
+// [TO]: Consumed by server/cmd/server WebSocket upgrade for /daemon/connect endpoint
+// [HERE]: server/internal/handler/daemon.go - daemon connection management; sits adjacent to daemon_ws.go (WebSocket framing) and daemon_rpc.go (RPC over WebSocket)
+// [WHO]: Provides daemon WebSocket connection lifecycle, registering/unregistering runtime connections with the DaemonHub for real-time command dispatch
+// [FROM]: Depends on internal/daemonws for WebSocket transport, internal/hub for connection management, pkg/db/generated for runtime tracking
+// [TO]: Consumed by server/cmd/server WebSocket upgrade for /daemon/connect endpoint
+// [HERE]: server/internal/handler/daemon.go - daemon connection management; sits adjacent to daemon_ws.go (WebSocket framing) and daemon_rpc.go (RPC over WebSocket)
 import (
 	"bytes"
 	"context"

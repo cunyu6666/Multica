@@ -1,3 +1,8 @@
+// [WHO]: Provides agent invocation allow-list management (MUL-3963) — add/remove/list targets with AgentInvocationTargetDTO wire shape for workspace/member/team-scoped agent access control
+// [FROM]: Depends on internal/util for UUID parsing, pkg/db/generated for agent_invocation_target queries
+// [TO]: Consumed by agent_permission.go (invoke gate checks) and UI for agent access configuration
+// [HERE]: server/internal/handler/agent_access.go - CRUD for agent invocation targets; sits adjacent to agent_permission.go (permission checks that consume these targets) and agent.go (agent lifecycle)
+
 package handler
 
 import (

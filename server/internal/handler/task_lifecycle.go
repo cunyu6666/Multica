@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides agent task lifecycle transitions — claim/start/complete/fail/cancel with state machine validation, result persistence, and event broadcasting
+// [FROM]: Depends on internal/service/task.go for task business logic, pkg/db/generated for task queries, internal/events for broadcast
+// [TO]: Consumed by daemon RPC pipeline (daemon_rpc.go) for task state transitions
+// [HERE]: server/internal/handler/task_lifecycle.go - daemon-driven task state transitions; sits adjacent to task.go (task business logic) and daemon_rpc.go (daemon RPC)
 import (
 	"encoding/json"
 	"errors"

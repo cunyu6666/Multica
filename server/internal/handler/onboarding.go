@@ -1,5 +1,9 @@
 package handler
 
+// [WHO]: Provides workspace onboarding flow — creates initial agents, starter issues, and demo projects for new workspace setup
+// [FROM]: Depends on pkg/db/generated for workspace/agent/issue creation, internal/middleware for workspace authz, pkg/agent for agent CLI invocation
+// [TO]: Consumed by server/cmd/server routes for /workspaces/:id/onboarding/* endpoints
+// [HERE]: server/internal/handler/onboarding.go - new workspace starter content generation; sits adjacent to workspace.go (workspace creation) and agent.go (agent provisioning)
 import (
 	"encoding/json"
 	"log/slog"
