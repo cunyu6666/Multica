@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides optimistic mutation hook for updating agent Composio toolkit allowlist
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../hooks, ../types, ../workspace/queries
+ * [TO]: Consumed by agent settings MCP tab for toolkit allowlist management
+ * [HERE]: packages/core/agents/use-update-agent-allowlist.ts - agent allowlist mutation hook
+ */
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { useWorkspaceId } from "../hooks";

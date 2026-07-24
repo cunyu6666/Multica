@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides async resolvers and query options for runtime local skill discovery and import
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types
+ * [TO]: Consumed by runtime local skill import panel and capability views
+ * [HERE]: packages/core/runtimes/local-skills.ts - async skill discovery/import with polling
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type {

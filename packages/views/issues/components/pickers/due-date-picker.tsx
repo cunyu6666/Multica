@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the due date picker wrapping DateOnlyPicker with issue update integration
+ * [FROM]: Depends on @multica/core/types, ../../../common/date-only-picker, ../../../i18n
+ * [TO]: Consumed by issue detail sidebars and inline edit surfaces for due date changes
+ * [HERE]: packages/views/issues/components/pickers/due-date-picker.tsx - DueDatePicker with defaultOpen for progressive disclosure
+ */
 "use client";
 
 import { CalendarDays } from "lucide-react";

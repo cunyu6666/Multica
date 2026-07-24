@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a navigable issue chip wrapping IssueChip in an AppLink for mention contexts
+ * [FROM]: Depends on ../../navigation, @multica/core/paths, @multica/core/issues/stores, ./issue-chip
+ * [TO]: Consumed by editor mention NodeViews and chat context anchors
+ * [HERE]: packages/views/issues/components/issue-mention-card.tsx - IssueMentionCard with new-tab preference support
+ */
 "use client";
 
 import { AppLink } from "../../navigation";

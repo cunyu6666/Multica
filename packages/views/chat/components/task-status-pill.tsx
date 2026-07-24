@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a live status pill showing agent task progress and stage during chat runs
+ * [FROM]: Depends on @multica/core/agents, @multica/core/types, ../lib/format, ../../i18n
+ * [TO]: Consumed by chat-message-list.tsx to show running task status inline
+ * [HERE]: packages/views/chat/components/task-status-pill.tsx - TaskStatusPill with live elapsed timer and stage labels
+ */
 "use client";
 
 import { useEffect, useRef, useState } from "react";

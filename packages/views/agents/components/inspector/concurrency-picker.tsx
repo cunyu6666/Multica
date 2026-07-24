@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides ConcurrencyPicker — an inline popover for setting an
+ *   agent's max concurrent task count (1-50).
+ * [FROM]: Depends on @multica/ui (Button, Input), PropertyPicker, chip
+ *   styling, and i18n.
+ * [TO]: Consumed by agent inspector for concurrency configuration.
+ * [HERE]: packages/views/agents/components/inspector/concurrency-picker.tsx -
+ *   Max concurrency picker for agent task limits.
+ */
 "use client";
 
 import { useEffect, useState } from "react";

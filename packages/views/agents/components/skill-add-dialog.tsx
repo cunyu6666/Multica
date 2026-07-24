@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides SkillAddDialog — a dialog for attaching workspace skills
+ *   to an agent with multi-select and explicit confirm.
+ * [FROM]: Depends on @multica/core (API, hooks, workspace queries, types),
+ *   @multica/ui (Dialog, Button), SkillPickerList, and i18n.
+ * [TO]: Consumed by agent detail skills tab for adding skills to an agent.
+ * [HERE]: packages/views/agents/components/skill-add-dialog.tsx - Dialog
+ *   for attaching workspace skills to an agent.
+ */
 "use client";
 
 import { useMemo, useState } from "react";

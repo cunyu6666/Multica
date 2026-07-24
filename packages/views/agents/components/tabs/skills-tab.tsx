@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the Skills tab for agent detail — workspace skills list
+ *   with skill counts, runtime-local skills, task-failure skill hints, and
+ *   add/remove operations.
+ * [FROM]: Depends on @multica/core (API, hooks, runtimes, workspace queries,
+ *   types), @multica/ui (Badge, Button, Dialog, Skeleton, Switch, Tabs),
+ *   navigation, task-transcript, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Skills tab content.
+ * [HERE]: packages/views/agents/components/tabs/skills-tab.tsx - Agent
+ *   skills management with workspace and runtime-local skill views.
+ */
 "use client";
 
 import { useState } from "react";

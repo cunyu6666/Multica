@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides agent activity hooks, map builders, and activity window summarization
+ * [FROM]: Depends on react, @tanstack/react-query, ../types, ../workspace/queries, ./queries
+ * [TO]: Consumed by agent list sparklines and agent detail activity panels
+ * [HERE]: packages/core/agents/use-agent-activity.ts - agent activity hooks and batch derivations
+ */
 "use client";
 
 import { useMemo } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Resolves current user's workspace membership (role, member record, loading state)
+ * [FROM]: Depends on react, @tanstack/react-query, ../auth, ../types, ../workspace/queries
+ * [TO]: Consumed by permission hooks and any view that needs current user role
+ * [HERE]: packages/core/permissions/use-current-member.ts - current member resolver hook
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

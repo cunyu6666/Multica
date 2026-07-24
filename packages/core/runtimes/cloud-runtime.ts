@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides types, query keys, and mutations for cloud runtime node management
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by cloud runtime management views
+ * [HERE]: packages/core/runtimes/cloud-runtime.ts - cloud runtime node CRUD
+ */
 import { queryOptions, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 

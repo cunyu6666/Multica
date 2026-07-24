@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the generic PropertyPicker popover shell with search, keyboard nav, and deferred popup support
+ * [FROM]: Depends on @multica/ui, @multica/core/utils, ../../../i18n
+ * [TO]: Consumed by all specific pickers (status, priority, assignee, label, etc.) as the base dropdown shell
+ * [HERE]: packages/views/issues/components/pickers/property-picker.tsx - PropertyPicker, PickerItem, PickerSection, PickerEmpty with IME-aware keyboard navigation
+ */
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";

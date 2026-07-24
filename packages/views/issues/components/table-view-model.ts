@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the table view model with display row types, group rows, and export logic for issue tables
+ * [FROM]: Depends on @multica/core/issues/stores/view-store, @multica/core/types
+ * [TO]: Consumed by table-view.tsx for rendering issue table rows and groups
+ * [HERE]: packages/views/issues/components/table-view-model.ts - Issue table display row types, calculation models, and export integrity validation
+ */
 import { propertyIdFromViewKey } from "@multica/core/issues/stores/view-store";
 import type {
   TableCalculation,

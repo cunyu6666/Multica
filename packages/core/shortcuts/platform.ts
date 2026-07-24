@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides shortcut platform/runtime detection (macOS/Windows/Linux, web/desktop)
+ * with configurable overrides for desktop bridge injection.
+ * [FROM]: No internal dependencies
+ * [TO]: Consumed by shortcut definitions, store, and platform config providers
+ * [HERE]: packages/core/shortcuts/platform.ts - Platform and runtime detection for shortcuts
+ */
 export type ShortcutPlatform = "macos" | "windows" | "linux" | "unknown";
 
 /** Where shortcut handling runs: a browser tab or the Electron renderer. */

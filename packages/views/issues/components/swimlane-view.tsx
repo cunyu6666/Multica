@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the swimlane view with drag-and-drop rows grouped by status within custom property lanes
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues, @multica/core/issues/stores, @multica/ui, @dnd-kit, react-virtuoso, ./list-row, ./use-drag-settle, ../../i18n
+ * [TO]: Consumed by issues-page.tsx as the swimlane view mode
+ * [HERE]: packages/views/issues/components/swimlane-view.tsx - SwimlaneView with DnD collision detection and virtualized rows
+ */
 "use client";
 
 import { memo, useState, useCallback, useMemo, useEffect, useRef } from "react";

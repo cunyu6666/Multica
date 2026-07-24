@@ -16,6 +16,12 @@
  * loaded yet renders a stable type icon and a type label, never a wrong or
  * empty identity, and never borrows the Issues icon.
  */
+/**
+ * [WHO]: Provides tab presentation resolution (icon + title) from TabSubject and entity data
+ * [FROM]: Depends on ../types (IssueStatus), ./route-icons, ./tab-subject
+ * [TO]: Consumed by desktop tab bar views for rendering tab visuals and titles
+ * [HERE]: packages/core/paths/tab-presentation.ts - tab icon/title presentation resolver
+ */
 import type { IssueStatus } from "../types";
 import {
   WORKSPACE_PAGES,

@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides a hook for debouncing drag-settle state after DnD operations complete
+ * [FROM]: Depends on React hooks
+ * [TO]: Consumed by list-view.tsx and board-view.tsx to delay state commits until drag animations settle
+ * [HERE]: packages/views/issues/components/use-drag-settle.ts - useDragSettle hook for post-drag state stabilization
+ */
+"use client";
+
 import {
   useCallback,
   useEffect,

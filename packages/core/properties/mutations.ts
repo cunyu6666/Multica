@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides mutations for property CRUD and issue property set/unset
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../hooks, ./queries, ../issues/ws-updaters, ../issues/cache-helpers, ../issues/cache-coordinator, ../types
+ * [TO]: Consumed by property settings views and issue property editors
+ * [HERE]: packages/core/properties/mutations.ts - property CRUD and issue property mutations
+ */
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { propertyKeys } from "./queries";

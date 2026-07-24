@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for Composio toolkits and connections
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by Composio integration settings and agent MCP config
+ * [HERE]: packages/core/composio/queries.ts - Composio query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

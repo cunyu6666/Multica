@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides PR CI status, mergeability, and diff stats derivation from GitHub API snapshot
+ * [FROM]: Depends on ../types (GitHubPullRequestChecksConclusion, GitHubPullRequestChecksRollup, etc.)
+ * [TO]: Consumed by PR sidebar and issue detail views for PR card rendering
+ * [HERE]: packages/core/github/pull-request-status.ts - PR status derivation (CI + mergeability)
+ */
 import type {
   GitHubPullRequestChecksConclusion,
   GitHubPullRequestChecksRollup,

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the empty state shown when a chat has no messages yet, with agent avatar and description
+ * [FROM]: Depends on @multica/core/types, ../../common/actor-avatar, ../../i18n
+ * [TO]: Consumed by chat-page.tsx when currentSession has no messages
+ * [HERE]: packages/views/chat/components/chat-empty-state.tsx - EmptyState component for chats with no messages
+ */
 "use client";
 
 import type { Agent } from "@multica/core/types";

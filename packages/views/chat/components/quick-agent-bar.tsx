@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a horizontal bar of pinned agents for quick chat switching
+ * [FROM]: Depends on @multica/core/chat, @multica/core/hooks, @multica/core/types, @multica/ui, ../../common/actor-avatar, ./new-chat-button, ../../i18n
+ * [TO]: Consumed by ChatThreadList for the pinned agents quick-access row
+ * [HERE]: packages/views/chat/components/quick-agent-bar.tsx - QuickAgentBar with pinned agent avatars and context menus
+ */
 "use client";
 
 import { useMemo } from "react";

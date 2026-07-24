@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides AccessPicker — a draft-first access editor for agent
+ *   permission mode, invocation targets, and visibility with member/team
+ *   selection and Composio allowlist awareness.
+ * [FROM]: Depends on @multica/core/types, @multica/core/agents, @multica/ui
+ *   (Button, Checkbox), actor-avatar, chip styling, and i18n.
+ * [TO]: Consumed by agent detail inspector, creation studio, and batch
+ *   toolbar for permission configuration.
+ * [HERE]: packages/views/agents/components/inspector/access-picker.tsx -
+ *   Draft-based agent access/permission editor.
+ */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";

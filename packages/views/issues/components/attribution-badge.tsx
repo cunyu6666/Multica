@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the attribution badge showing who an agent run is accountable to (MUL-4302)
+ * [FROM]: Depends on @multica/core/types, @multica/ui, @multica/ui/lib, ../../i18n
+ * [TO]: Consumed by execution-log-section and other surfaces needing agent-run provenance display
+ * [HERE]: packages/views/issues/components/attribution-badge.tsx - AttributionBadge with source tooltip and fallback caution
+ */
 "use client";
 
 import type { TaskAttribution } from "@multica/core/types";

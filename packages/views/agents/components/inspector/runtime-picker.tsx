@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides a two-level runtime picker for agent settings — machine
+ *   level then runtime level, with provider logos, machine grouping, and
+ *   "mine"/"all" filtering.
+ * [FROM]: Depends on @multica/core/types, actor-avatar, provider-logo,
+ *   runtime-machines helpers, @multica/ui (Label), PropertyPicker, chip
+ *   styling, and i18n.
+ * [TO]: Consumed by agent inspector for runtime selection.
+ * [HERE]: packages/views/agents/components/inspector/runtime-picker.tsx -
+ *   Two-level machine→runtime picker for agent settings.
+ */
 "use client";
 
 import { useMemo, useState } from "react";

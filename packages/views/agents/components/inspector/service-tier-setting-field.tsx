@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides ServiceTierSettingField — a full-width service-tier
+ *   picker for Codex agents, using the model's live catalog for available
+ *   tiers.
+ * [FROM]: Depends on @multica/core/runtimes (model queries), @multica/core/types,
+ *   PropertyPicker, SettingsRow, chip styling, and i18n.
+ * [TO]: Consumed by agent inspector for service-tier configuration on
+ *   Codex agents.
+ * [HERE]: packages/views/agents/components/inspector/service-tier-setting-field.tsx -
+ *   Service tier selection field for agent models.
+ */
 "use client";
 
 import { useState, type ReactNode } from "react";

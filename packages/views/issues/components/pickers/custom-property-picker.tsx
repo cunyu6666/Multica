@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the value editor and picker for custom properties on issues
+ * [FROM]: Depends on @multica/core/types, @multica/core/properties, @multica/core/issues/date, @multica/ui, ./property-picker, ../../../i18n
+ * [TO]: Consumed by issue detail sidebars and inline edit surfaces for custom property values
+ * [HERE]: packages/views/issues/components/pickers/custom-property-picker.tsx - CustomPropertyPicker with type-specific editors (text, number, date, select)
+ */
 "use client";
 
 import { useEffect, useState } from "react";

@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides ModelPicker — an inline model picker for the agent
+ *   inspector, fetching supported models from the runtime and rendering
+ *   inside a PropertyPicker.
+ * [FROM]: Depends on @multica/core/runtimes (model queries), @multica/ui
+ *   (Input, Label), PropertyPicker, chip styling, and i18n.
+ * [TO]: Consumed by agent inspector overview for model selection.
+ * [HERE]: packages/views/agents/components/inspector/model-picker.tsx -
+ *   Inline model picker for agent inspector settings.
+ */
 "use client";
 
 import { useMemo, useState } from "react";

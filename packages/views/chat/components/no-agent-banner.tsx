@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a banner shown when the workspace has no agent the user can chat with
+ * [FROM]: Depends on ../../i18n
+ * [TO]: Consumed by chat-page.tsx as a disabled banner above the chat input
+ * [HERE]: packages/views/chat/components/no-agent-banner.tsx - NoAgentBanner component for workspaces without chat agents
+ */
 "use client";
 
 import { Bot } from "lucide-react";

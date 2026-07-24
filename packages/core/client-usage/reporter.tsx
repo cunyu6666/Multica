@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides ClientUsageReporter component for daily active user reporting
+ * [FROM]: Depends on react, ../api, ../auth, ../types/storage, ../platform/types, ./install-id
+ * [TO]: Consumed by platform bootstrap for DAU tracking
+ * [HERE]: packages/core/client-usage/reporter.tsx - best-effort daily usage reporter
+ */
 "use client";
 
 import { useCallback, useEffect, useRef } from "react";

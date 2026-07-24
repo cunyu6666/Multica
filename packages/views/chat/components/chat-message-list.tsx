@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the virtualized message list with conductor-style fold for assistant tool-use timelines
+ * [FROM]: Depends on @multica/core/chat, @multica/ui, @multica/ui/hooks, ../../rich-content, ../../rich-content/scroll-root, ../../i18n, ../lib/format
+ * [TO]: Consumed by chat-page.tsx to render chat messages with collapsible tool-call groups
+ * [HERE]: packages/views/chat/components/chat-message-list.tsx - ChatMessageList with Virtuoso virtualization and timeline folding
+ */
 "use client";
 
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";

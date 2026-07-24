@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the unified end-of-column footer for infinite-scrolled issue surfaces
+ * [FROM]: Depends on ../../i18n, ./infinite-scroll-sentinel
+ * [TO]: Consumed by board-view.tsx, list-view.tsx, swimlane-view.tsx for load-more pagination
+ * [HERE]: packages/views/issues/components/list-load-more-footer.tsx - ListLoadMoreFooter with error/retry/sentinel/no-more states
+ */
 "use client";
 
 import { useT } from "../../i18n";

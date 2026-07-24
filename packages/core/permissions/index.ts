@@ -1,4 +1,10 @@
 /**
+ * [WHO]: Public API barrel for permissions module (types, rules, hooks)
+ * [FROM]: Depends on ./types, ./rules, ./use-resource-permissions
+ * [TO]: Consumed by views across the app for permission checks
+ * [HERE]: packages/core/permissions/index.ts - public permissions API surface
+ */
+/**
  * Public API for the permissions module.
  *
  * Exports only what the views currently consume. The full pure-rule set lives

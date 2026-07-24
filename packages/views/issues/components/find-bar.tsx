@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the floating find-in-page bar for the issue detail page
+ * [FROM]: Depends on @multica/ui, ../hooks/use-in-page-find, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx as the search overlay when find.open
+ * [HERE]: packages/views/issues/components/find-bar.tsx - FindBar for in-page text search with match navigation
+ */
 "use client";
 
 import type { KeyboardEvent } from "react";

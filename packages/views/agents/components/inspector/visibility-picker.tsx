@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides VisibilityPicker — an interactive popover for changing
+ *   agent visibility (private/workspace) or falls back to read-only
+ *   VisibilityBadge when not editable.
+ * [FROM]: Depends on @multica/core/agents (visibility constants),
+ *   @multica/core/types, PropertyPicker, VisibilityBadge, chip styling.
+ * [TO]: Consumed by agent inspector for visibility configuration.
+ * [HERE]: packages/views/agents/components/inspector/visibility-picker.tsx -
+ *   Interactive visibility picker for agent access scope.
+ */
 "use client";
 
 import { useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for VCS connections
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by VCS integration views and settings
+ * [HERE]: packages/core/vcs/queries.ts - VCS connection query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

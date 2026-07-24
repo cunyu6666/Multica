@@ -3,6 +3,12 @@
 // time-bucketed flavors lets the UI distinguish "just lost — likely
 // transient" from "long gone — needs attention" with no schema change.
 
+/**
+ * [WHO]: Derives user-facing runtime health state from raw server fields (status + last_seen_at)
+ * [FROM]: Depends on ../types (AgentRuntime), ./types (RuntimeHealth)
+ * [TO]: Consumed by useRuntimeHealth hook and runtime status indicators
+ * [HERE]: packages/core/runtimes/derive-health.ts - health state derivation logic
+ */
 import type { AgentRuntime } from "../types";
 import type { RuntimeHealth } from "./types";
 

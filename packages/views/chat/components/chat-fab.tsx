@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the floating action button (FAB) for toggling the chat overlay
+ * [FROM]: Depends on @multica/core/chat, @multica/core/hooks, @multica/ui, ../../i18n
+ * [TO]: Consumed by floating-chat.tsx as the toggle button for the chat window
+ * [HERE]: packages/views/chat/components/chat-fab.tsx - ChatFab component with unread indicator and tooltip
+ */
 "use client";
 
 import { MessageCircle } from "lucide-react";

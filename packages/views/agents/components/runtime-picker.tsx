@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides RuntimePicker — a popover-based runtime selector with
+ *   search, machine grouping, and per-member access filtering for agent
+ *   runtime assignment.
+ * [FROM]: Depends on @multica/core/runtimes, provider-logo, actor-avatar,
+ *   @multica/ui (Popover, Label), runtime-machines helpers, and i18n.
+ * [TO]: Consumed by agent creation/edit forms, creation studio, and any
+ *   surface needing runtime selection.
+ * [HERE]: packages/views/agents/components/runtime-picker.tsx - Runtime
+ *   picker with machine grouping and access filtering.
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

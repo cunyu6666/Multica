@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a compact, presentation-only issue chip with status icon, identifier, and title
+ * [FROM]: Depends on @multica/core/issues/queries, @multica/core/hooks, ./status-icon, ../../i18n
+ * [TO]: Consumed by mention cards, editor NodeViews, and other surfaces needing inline issue references
+ * [HERE]: packages/views/issues/components/issue-chip.tsx - IssueChip as the single source of truth for issue mention display
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

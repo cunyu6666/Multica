@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the priority picker with ordered list and check state
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues/config, ../priority-icon, ../../../common/deferred-popup, ./property-picker, ../../../i18n
+ * [TO]: Consumed by batch-action-toolbar.tsx, issue detail sidebars, and inline edit surfaces
+ * [HERE]: packages/views/issues/components/pickers/priority-picker.tsx - PriorityPicker with deferred popup and defaultOpen support
+ */
 "use client";
 
 import { useState } from "react";

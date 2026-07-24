@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides McpServerDialog — a form/JSON dual-mode editor for adding
+ *   or editing MCP servers with stdio/http transport, env vars, headers,
+ *   and extras.
+ * [FROM]: Depends on @multica/core/types, @multica/ui (Dialog, Button,
+ *   Input, Label, Switch, Tabs, Textarea, toast), mcp-config-model,
+ *   and i18n.
+ * [TO]: Consumed by MCP config tab for adding/editing MCP servers.
+ * [HERE]: packages/views/agents/components/tabs/mcp-server-dialog.tsx -
+ *   MCP server add/edit dialog with form and raw JSON modes.
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

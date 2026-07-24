@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for agent tasks, presence, templates, and working agents
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types
+ * [TO]: Consumed by agent list, agent detail, presence hooks, and working-agent surfaces
+ * [HERE]: packages/core/agents/queries.ts - agent task snapshot and activity query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type {

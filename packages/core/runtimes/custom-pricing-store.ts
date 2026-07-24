@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides global Zustand store for custom model pricing (user-supplied rates)
+ * [FROM]: Depends on zustand, ../platform/storage
+ * [TO]: Consumed by cost estimation helpers in views/runtimes/utils.ts
+ * [HERE]: packages/core/runtimes/custom-pricing-store.ts - persisted custom pricing store
+ */
 "use client";
 
 import { create } from "zustand";

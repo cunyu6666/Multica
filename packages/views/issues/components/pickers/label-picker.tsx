@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the label picker with create, attach, detach, and draft modes
+ * [FROM]: Depends on @multica/core/types, @multica/core/hooks, @multica/core/paths, @multica/core/labels, @multica/ui, ../../../labels/label-chip, ../../../navigation, ./property-picker, ../../../i18n
+ * [TO]: Consumed by issue detail sidebars and create-issue dialog for label management
+ * [HERE]: packages/views/issues/components/pickers/label-picker.tsx - LabelPicker with draft mode for pre-creation label selection
+ */
 "use client";
 
 import { useMemo, useRef, useState } from "react";

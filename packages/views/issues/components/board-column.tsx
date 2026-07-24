@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the kanban board column component with droppable area, status heading, and draggable cards
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues, @multica/ui, @dnd-kit, @multica/core/issues/stores, ./status-heading, ./board-card, ./list-row, ../../common/actor-avatar, ../../i18n, ../../platform
+ * [TO]: Consumed by board-view.tsx as individual status/assignee columns
+ * [HERE]: packages/views/issues/components/board-column.tsx - BoardColumn with DnD integration, virtualization, and scroll restoration
+ */
 "use client";
 
 import { memo, useCallback, useMemo, useState, type ReactNode } from "react";

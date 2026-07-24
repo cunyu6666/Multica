@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides mutations for runtime delete, update, and cascade archive+delete
+ * [FROM]: Depends on @tanstack/react-query, ../api, ./queries, ../workspace/queries, ../agents/queries
+ * [TO]: Consumed by runtime management dialogs and cascade delete flows
+ * [HERE]: packages/core/runtimes/mutations.ts - runtime mutation hooks
+ */
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { runtimeKeys } from "./queries";

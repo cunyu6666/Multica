@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides a stacked bar sparkline SVG rendering agent activity
+ *   buckets with success/failure dimensions in a single compact shape.
+ * [FROM]: None beyond React — pure SVG rendering with CSS variable colors.
+ * [TO]: Consumed by the activity tab for agent performance visualization.
+ * [HERE]: packages/views/agents/components/sparkline.tsx - SVG sparkline
+ *   for agent activity throughput and failure rate.
+ */
 "use client";
 
 interface ActivityBucketLike {

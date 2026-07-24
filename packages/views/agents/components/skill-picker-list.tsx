@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides SkillPickerList — a searchable, togglable list of skill
+ *   summary rows with selected indicators for skill selection surfaces.
+ * [FROM]: Depends on @multica/core/types (SkillSummary), @multica/ui
+ *   (Checkbox, Input, utils), and i18n.
+ * [TO]: Consumed by SkillAddDialog and SkillMultiSelect for skill picking
+ *   in both attach and create flows.
+ * [HERE]: packages/views/agents/components/skill-picker-list.tsx -
+ *   Shared skill list with search, selection, and indicator rendering.
+ */
 "use client";
 
 import { useState } from "react";

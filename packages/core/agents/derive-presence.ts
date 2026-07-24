@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Pure derivation of agent presence (availability + workload) from raw server data
+ * [FROM]: Depends on ../runtimes/derive-health, ../types, ./types
+ * [TO]: Consumed by useAgentPresence hooks, presence map builders, and runtime views
+ * [HERE]: packages/core/agents/derive-presence.ts - agent presence derivation (availability + workload)
+ */
 // Pure derivation of an agent's user-facing presence from raw server data.
 // The back-end stores facts (which tasks exist, their statuses, the runtime
 // last_seen_at); the front-end translates them into two orthogonal

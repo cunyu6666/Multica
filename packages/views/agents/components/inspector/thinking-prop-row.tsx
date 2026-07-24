@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides ThinkingPropRow — a conditional thinking level row for
+ *   the agent inspector that hides when the model has no supported levels
+ *   and no persisted value, surfacing only relevant reasoning controls.
+ * [FROM]: Depends on @multica/core/runtimes, PropRow, SettingsRow, i18n,
+ *   and ThinkingPicker.
+ * [TO]: Consumed by agent inspector overview for reasoning-level display.
+ * [HERE]: packages/views/agents/components/inspector/thinking-prop-row.tsx -
+ *   Conditional thinking-level row for agent inspector.
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

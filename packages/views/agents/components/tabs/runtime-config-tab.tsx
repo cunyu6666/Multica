@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides RuntimeConfigTab — an Openclaw runtime configuration
+ *   editor with routing mode, host/port, token, TLS, and gateway options
+ *   for agents running on the Openclaw runtime.
+ * [FROM]: Depends on @multica/core/agents (config parsing/serialization),
+ *   @multica/core/types, @multica/ui (Button, Input, Label, Switch, toast),
+ *   and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Runtime Config tab content.
+ * [HERE]: packages/views/agents/components/tabs/runtime-config-tab.tsx -
+ *   Openclaw runtime configuration editor for agents.
+ */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";

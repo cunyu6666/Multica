@@ -17,6 +17,12 @@
  * `Record<RouteIconName, LucideIcon>` type makes a missing component a compile
  * error.
  */
+/**
+ * [WHO]: Defines workspace navigation pages, route icons, and icon resolution
+ * [FROM]: No external dependencies (pure types and config)
+ * [TO]: Consumed by sidebar nav, tab presentation, and tab subject resolution
+ * [HERE]: packages/core/paths/route-icons.ts - nav page registry and icon resolver
+ */
 
 /** Every icon name a nav page or a tab type-icon can resolve to. */
 export type RouteIconName =

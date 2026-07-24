@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides workspace presence prefetch hook to warm agent/runtime/task/squad caches
+ * [FROM]: Depends on @tanstack/react-query, ../workspace/queries, ../runtimes/queries, ./queries
+ * [TO]: Consumed by workspace layouts to pre-warm presence and @mention data
+ * [HERE]: packages/core/agents/use-workspace-presence-prefetch.ts - presence cache warmup hook
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

@@ -1,5 +1,10 @@
 /**
- * Format an elapsed seconds value as `Ns` (under a minute) or `Nm Ms`
+ * [WHO]: Provides time formatting helpers for elapsed durations used by chat status indicators
+ * [FROM]: No internal dependencies (pure utility)
+ * [TO]: Consumed by task-status-pill.tsx and chat-message-list for elapsed time display
+ * [HERE]: packages/views/chat/lib/format.ts - formatElapsedSecs and formatElapsedMs for consistent time display
+ */
+
  * (over a minute). Drops the seconds part when the remainder is 0 to
  * keep round-minute readings short ("3m" rather than "3m 0s"). Shared
  * by the live StatusPill timer and the persistent assistant-message

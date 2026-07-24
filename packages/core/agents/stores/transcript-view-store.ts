@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides transcript display preferences (sort, filter, density) for agent
+ * run transcripts with persistence and legacy migration.
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage
+ * [TO]: Consumed by agent transcript viewer and detail panels
+ * [HERE]: packages/core/agents/stores/transcript-view-store.ts - Transcript display preferences
+ */
 "use client";
 
 import { create } from "zustand";

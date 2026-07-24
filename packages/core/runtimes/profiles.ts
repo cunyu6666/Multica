@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides query keys and mutations for runtime profile CRUD
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types/agent, ./queries
+ * [TO]: Consumed by runtime profile management views
+ * [HERE]: packages/core/runtimes/profiles.ts - runtime profile CRUD layer
+ */
 import { queryOptions, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api";
 import { ApiError } from "../api";

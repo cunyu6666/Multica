@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides skills list view preferences (sort, columns, filters) with
+ * workspace-aware persistence and session-scoped selection.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by skills list page and filter components
+ * [HERE]: packages/core/skills/stores/view-store.ts - Skills list view store
+ */
 "use client";
 
 import { create } from "zustand";

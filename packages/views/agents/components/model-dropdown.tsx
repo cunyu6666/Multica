@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides ModelDropdown — a searchable, creatable model picker
+ *   that fetches the supported-model catalog from the selected runtime.
+ * [FROM]: Depends on @multica/core/runtimes (model queries, types),
+ *   @multica/ui (Popover, Input, Label), and i18n.
+ * [TO]: Consumed by agent creation/edit forms, creation studio, and any
+ *   surface needing per-runtime model selection.
+ * [HERE]: packages/views/agents/components/model-dropdown.tsx - Runtime-
+ *   aware model selection dropdown with discovery and custom input.
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

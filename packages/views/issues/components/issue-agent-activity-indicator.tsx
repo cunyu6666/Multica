@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a compact agent activity badge for dense scrolling lists with hover content
+ * [FROM]: Depends on @multica/core/agents, @multica/core/types, @multica/ui/lib, @multica/ui/lib/avatar-size, ../../agents/components, ../surface/activity, ../../i18n
+ * [TO]: Consumed by inbox rows, issue rows, and board cards to show active agent tasks
+ * [HERE]: packages/views/issues/components/issue-agent-activity-indicator.tsx - IssueAgentActivityIndicator with elevated dwell threshold
+ */
 "use client";
 
 import { memo, useCallback, useMemo } from "react";

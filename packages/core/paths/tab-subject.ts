@@ -13,6 +13,12 @@
  * Chat) rides in the query string, so it is parsed too — the URL is the single
  * source of truth for what a tab has open, including which item.
  */
+/**
+ * [WHO]: Parses workspace tab URLs into semantic TabSubject types (page, issue, actor, etc.)
+ * [FROM]: Depends on ./route-icons
+ * [TO]: Consumed by desktop tab bar for identity resolution and tab presentation
+ * [HERE]: packages/core/paths/tab-subject.ts - URL-to-subject parser for tabs
+ */
 import { pageForSegment, type WorkspacePageKey } from "./route-icons";
 
 export type TabActorType = "agent" | "member" | "squad";

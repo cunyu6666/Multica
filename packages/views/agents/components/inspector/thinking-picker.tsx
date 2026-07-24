@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides ThinkingPicker — a per-agent reasoning/effort picker
+ *   that renders supported levels for the current model, with "Follow CLI
+ *   config" for empty-string override sentinel.
+ * [FROM]: Depends on @multica/core/types, @multica/ui (Label),
+ *   PropertyPicker, chip styling, and i18n.
+ * [TO]: Consumed by agent inspector thinking-prop-row for reasoning level
+ *   selection.
+ * [HERE]: packages/views/agents/components/inspector/thinking-picker.tsx -
+ *   Reasoning/effort level picker for thinking-capable models.
+ */
 "use client";
 
 import { useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the central chat controller hook managing sessions, messages, sending, and lifecycle
+ * [FROM]: Depends on @multica/core/chat, @multica/core/api, @multica/core/hooks, @multica/core/agents, ../../editor/use-editor-upload, ../../issues/components
+ * [TO]: Consumed by chat-page.tsx and floating-chat window for all chat operations
+ * [HERE]: packages/views/chat/components/use-chat-controller.ts - useChatController hook owning session management, message sending, and agent lifecycle
+ */
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";

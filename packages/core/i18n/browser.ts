@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Browser-only i18n entry point (exports cookie adapter factory)
+ * [FROM]: Depends on ./browser-cookie-adapter
+ * [TO]: Consumed by web platform bootstrap for locale adapter
+ * [HERE]: packages/core/i18n/browser.ts - browser-restricted i18n entry
+ */
 // Browser-only entry: anything that touches `document` / `navigator` /
 // `window` lives here, so accidental imports from RSC, Edge middleware, or
 // nodejs proxy.ts crash at the import site instead of at first call.

@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides CustomArgsTab — an editor for agent custom arguments
+ *   with add/edit/delete inline operations and agent-apply confirmation.
+ * [FROM]: Depends on @multica/core/types, @multica/core/utils, @multica/ui
+ *   (Button, Input), toast, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Custom Args tab content.
+ * [HERE]: packages/views/agents/components/tabs/custom-args-tab.tsx -
+ *   Custom argument management for agent CLI invocation args.
+ */
 "use client";
 
 import { useEffect, useRef, useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides an IntersectionObserver-based sentinel that fires once per visibility transition
+ * [FROM]: Depends on React, lucide-react
+ * [TO]: Consumed by list-load-more-footer.tsx and other infinite scroll surfaces
+ * [HERE]: packages/views/issues/components/infinite-scroll-sentinel.tsx - InfiniteScrollSentinel with loading guard and label
+ */
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";

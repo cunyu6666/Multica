@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides long-task observer for detecting and reporting client freezes
+ * [FROM]: Depends on ../analytics
+ * [TO]: Consumed by platform bootstrap for performance monitoring
+ * [HERE]: packages/core/diagnostics/freeze-watchdog.ts - client freeze detection via PerformanceObserver
+ */
 // Client freeze watchdog — shared by web and desktop.
 //
 // Installs a long-task observer in the main thread. A "long task" is any

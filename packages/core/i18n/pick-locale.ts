@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides locale matching and selection using user choice and system preferences
+ * [FROM]: Depends on @formatjs/intl-localematcher, ./types
+ * [TO]: Consumed by i18n initialization and locale selection logic
+ * [HERE]: packages/core/i18n/pick-locale.ts - locale matching and selection
+ */
 import { match } from "@formatjs/intl-localematcher";
 import {
   DEFAULT_LOCALE,

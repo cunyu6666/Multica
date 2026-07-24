@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for runtime list and usage reports
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by runtime views, usage dashboards, and health hooks
+ * [HERE]: packages/core/runtimes/queries.ts - runtime query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

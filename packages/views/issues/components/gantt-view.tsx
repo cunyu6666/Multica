@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the Gantt chart view with date-axis timeline bars for issue start/due dates
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues, @multica/core/issues/stores, @multica/core/projects, @multica/ui, ../../navigation, ../../common/actor-avatar, ../../projects, ./status-icon, ./priority-icon, ../utils/sort, ../../i18n
+ * [TO]: Consumed by issues-page.tsx as the Gantt view mode
+ * [HERE]: packages/views/issues/components/gantt-view.tsx - GanttView with UTC-day-aligned date axis and sortable issue bars
+ */
 "use client";
 
 import { useEffect, useMemo, useRef } from "react";

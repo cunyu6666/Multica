@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Defines permission types (PermissionContext, Decision, DecisionReason) and builder helpers
+ * [FROM]: Depends on ../types (MemberRole)
+ * [TO]: Consumed by rules.ts, use-resource-permissions.ts, and permission consumers
+ * [HERE]: packages/core/permissions/types.ts - permission decision types and builders
+ */
 import type { MemberRole } from "../types";
 
 /**

@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides VisibilityBadge — a read-only visibility indicator showing
+ *   an agent's visibility (Private/Workspace) with icon and optional label.
+ * [FROM]: Depends on @multica/core/types (AgentVisibility), @multica/ui
+ *   (Tooltip components), lucide-react, and i18n.
+ * [TO]: Consumed by agent list rows, detail inspector (non-managers),
+ *   hover cards, and any surface showing agent visibility without editing.
+ * [HERE]: packages/views/agents/components/visibility-badge.tsx - Read-only
+ *   visibility badge with tooltip for agent surfaces.
+ */
 "use client";
 
 import { Globe, Lock } from "lucide-react";

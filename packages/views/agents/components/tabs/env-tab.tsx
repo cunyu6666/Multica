@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides EnvTab — an environment variable editor for agents with
+ *   add/edit/delete key-value pairs, reveal/obfuscate toggle, and bulk
+ *   save.
+ * [FROM]: Depends on @multica/core (API, types), @multica/ui (Button, Input,
+ *   toast), and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Env tab content.
+ * [HERE]: packages/views/agents/components/tabs/env-tab.tsx - Environment
+ *   variable editor for agent custom env configuration.
+ */
 "use client";
 
 import { useCallback, useEffect, useState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides utilities for collecting and sorting thread replies from the timeline parent_id graph
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues/timeline-sort
+ * [TO]: Consumed by CommentCard and ResolvedThreadBar for consistent thread rendering
+ * [HERE]: packages/views/issues/components/thread-utils.ts - collectThreadReplies and sortThreadReplies for chronological thread walks
+ */
 import type { TimelineEntry } from "@multica/core/types";
 import { sortTimelineEntriesAsc } from "@multica/core/issues/timeline-sort";
 

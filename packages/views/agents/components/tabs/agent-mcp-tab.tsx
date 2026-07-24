@@ -1,3 +1,15 @@
+/**
+ * [WHO]: Provides AgentMcpTab — a creator-only MCP tab letting the agent
+ *   owner select which Composio connections the agent may mount as MCP
+ *   servers, with allowlist management and sharing warnings.
+ * [FROM]: Depends on @multica/core (agents composio hooks, config, paths,
+ *   composio queries, feature flags), @multica/ui (Checkbox), Composio
+ *   toolkit logo, navigation, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the MCP integrations tab for
+ *   Composio MCP server selection.
+ * [HERE]: packages/views/agents/components/tabs/agent-mcp-tab.tsx -
+ *   Composio MCP connection selection tab for agent owners.
+ */
 "use client";
 
 import { useMemo } from "react";

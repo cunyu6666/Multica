@@ -12,6 +12,13 @@
  *  - Zero runtime deps means this module is safe in Node (tests) and browsers
  */
 
+/**
+ * [WHO]: Provides centralized URL path builders for workspace-scoped and global routes
+ * [FROM]: No external dependencies (pure functions)
+ * [TO]: Consumed by navigation adapters, auth resolvers, and all path-building consumers
+ * [HERE]: packages/core/paths/paths.ts - URL path builder with workspace scope
+ */
+
 const encode = (id: string) => encodeURIComponent(id);
 
 function workspaceScoped(slug: string) {

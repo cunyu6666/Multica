@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides feedback form draft persistence with workspace-aware storage.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by feedback form components
+ * [HERE]: packages/core/feedback/draft-store.ts - Feedback draft persistence
+ */
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { createWorkspaceAwareStorage, registerForWorkspaceRehydration } from "../platform/workspace-storage";

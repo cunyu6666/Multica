@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a hook to check if the active agent's runtime supports project context injection
+ * [FROM]: Depends on @multica/core/runtimes
+ * [TO]: Consumed by use-chat-controller.ts to gate project description injection in chat sends
+ * [HERE]: packages/views/chat/components/use-chat-project-context-support.ts - useChatProjectContextSupport checking runtime version compatibility
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

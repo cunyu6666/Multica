@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Defines GitHubSettings interface and derives settings from workspace JSONB
+ * [FROM]: Depends on ../types (Workspace)
+ * [TO]: Consumed by GitHub integration settings views and use-github-settings hook
+ * [HERE]: packages/core/github/settings.ts - GitHub settings derivation
+ */
 import type { Workspace } from "../types";
 
 export interface GitHubSettings {

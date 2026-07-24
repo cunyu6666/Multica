@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides YAML frontmatter parser for skill content
+ * [FROM]: Depends on yaml
+ * [TO]: Consumed by skill views and skill content processors
+ * [HERE]: packages/core/skills/frontmatter.ts - skill frontmatter extraction and parsing
+ */
 import { parse as parseYaml } from "yaml";
 
 // Keeping the trailing newline inside the capture group matters: yaml's `|`

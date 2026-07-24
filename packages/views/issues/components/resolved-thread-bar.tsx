@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a compact bar for collapsed resolved threads showing count and authors
+ * [FROM]: Depends on @multica/core/types, @multica/ui, @multica/core/workspace/hooks, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx as a placeholder for resolved thread roots
+ * [HERE]: packages/views/issues/components/resolved-thread-bar.tsx - ResolvedThreadBar with author list and expand action
+ */
 import { CheckCircle2, ChevronRight } from "lucide-react";
 import { useActorName } from "@multica/core/workspace/hooks";
 import { Card } from "@multica/ui/components/ui/card";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a Linear-style quick-jump rail for comment threads on the issue detail page
+ * [FROM]: Depends on @multica/core/types, @multica/ui, @multica/core/workspace/hooks, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx as a scroll-position minimap alongside the comment timeline
+ * [HERE]: packages/views/issues/components/thread-minimap.tsx - ThreadMinimap with hover-magnified tick marks and preview card
+ */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { TimelineEntry } from "@multica/core/types";
 import { useActorName } from "@multica/core/workspace/hooks";

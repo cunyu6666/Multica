@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides a compact status heading with icon and count for column headers
+ * [FROM]: Depends on @multica/core/types, ./status-icon, ../../i18n
+ * [TO]: Consumed by board-column.tsx, list-view.tsx, and swimlane-view.tsx as column headers
+ * [HERE]: packages/views/issues/components/status-heading.tsx - StatusHeading with status icon and item count
+ */
 import type { IssueStatus } from "@multica/core/types";
 import { StatusIcon } from "./status-icon";
 import { useT } from "../../i18n";

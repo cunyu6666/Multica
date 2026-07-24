@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the spreadsheet-style table view with tanstack table, DnD row reordering, and inline editing
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues, @multica/core/issues/stores, @multica/ui, @dnd-kit, react-virtuoso, ./list-row, ./use-drag-settle, ./status-heading, ./list-load-more-footer, ../../i18n
+ * [TO]: Consumed by issues-page.tsx as the table view mode
+ * [HERE]: packages/views/issues/components/table-view.tsx - TableView with tanstack/react-table and virtualized DnD rows
+ */
 "use client";
 
 import {

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the kanban board view with drag-and-drop columns grouped by assignee
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues, @multica/core/issues/stores, @multica/ui, @dnd-kit, ../surface, ./pickers, ./board-column, ../../i18n
+ * [TO]: Consumed by issues-page.tsx as the board view mode
+ * [HERE]: packages/views/issues/components/board-view.tsx - BoardView with DnD context, column grouping, and hidden columns panel
+ */
 "use client";
 
 import { useState, useCallback, useMemo, useEffect, useRef, memo } from "react";

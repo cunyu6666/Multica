@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides timeline splitting and copy text extraction for chat message clipboard
+ * [FROM]: Depends on @multica/core/types, @multica/core/chat
+ * [TO]: Consumed by chat-message-list.tsx for the Copy button clipboard content
+ * [HERE]: packages/views/chat/lib/copy-text.ts - splitTimeline and extractCopyText for fold-aware message copying
+ */
 import type { ChatMessage } from "@multica/core/types";
 import type { ChatTimelineItem } from "@multica/core/chat";
 

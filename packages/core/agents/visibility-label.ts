@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides visibility label, description, and tooltip mappings for agents
+ * [FROM]: Depends on ../types (AgentVisibility)
+ * [TO]: Consumed by agent list rows, detail pages, and visibility badges
+ * [HERE]: packages/core/agents/visibility-label.ts - agent visibility display text
+ */
 import type { AgentVisibility } from "../types";
 
 /**

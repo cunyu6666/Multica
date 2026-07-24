@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for GitHub installations and PRs
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by GitHub integration views and PR sidebar
+ * [HERE]: packages/core/github/queries.ts - GitHub query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

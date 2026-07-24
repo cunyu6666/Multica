@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides CLI version gating helpers for quick-create, handoff notes, and project context
+ * [FROM]: No external dependencies
+ * [TO]: Consumed by quick-create modal, assignment handoff, and runtime views
+ * [HERE]: packages/core/runtimes/cli-version.ts - daemon CLI version gates and checks
+ */
+
+/**
  * Frontend mirror of the server's MinQuickCreateCLIVersion gate. The
  * agent-create flow (Quick Create modal) requires the daemon's bundled
  * multica CLI to be at least this version — older daemons either

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the confirmation dialog for terminating a running agent task
+ * [FROM]: Depends on @multica/ui/components/ui/alert-dialog, ../../i18n
+ * [TO]: Consumed by issue-agent-header-chip.tsx and execution-log-section.tsx for task cancellation
+ * [HERE]: packages/views/issues/components/terminate-task-confirm-dialog.tsx - TerminateTaskConfirmDialog with disabled-while-terminating guard
+ */
 "use client";
 
 import {

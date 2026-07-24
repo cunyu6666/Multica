@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides installation-scoped UUID creation and retrieval
+ * [FROM]: Depends on ../types/storage
+ * [TO]: Consumed by ClientUsageReporter and analytics identity
+ * [HERE]: packages/core/client-usage/install-id.ts - install ID generator and storage
+ */
 import type { StorageAdapter } from "../types/storage";
 
 const INSTALL_ID_KEY = "multica_install_id";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides per-resource permission hooks (useAgentPermissions, useSkillPermissions)
+ * [FROM]: Depends on react, ../types, ./use-current-member, ./rules, ./types
+ * [TO]: Consumed by agent and skill views for permission-gated affordances
+ * [HERE]: packages/core/permissions/use-resource-permissions.ts - resource-level permission hooks
+ */
 "use client";
 
 import type { Agent, Skill } from "../types";

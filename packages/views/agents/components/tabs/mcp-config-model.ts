@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides MCP config model utilities — listing, upserting, and
+ *   removing managed MCP servers from a config document with container
+ *   (mcpServers/mcp) and transport detection.
+ * [FROM]: None beyond basic TypeScript primitives.
+ * [TO]: Consumed by MCP config tab and MCP server dialog for managing
+ *   MCP server configurations.
+ * [HERE]: packages/views/agents/components/tabs/mcp-config-model.ts -
+ *   MCP server config model manipulation utilities.
+ */
 export type McpConfigContainer = "mcpServers" | "mcp";
 
 export type ManagedMcpServer = {

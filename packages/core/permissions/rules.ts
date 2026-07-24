@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides pure permission rules mirroring Go backend gates (agent, skill, comment, runtime, workspace)
+ * [FROM]: Depends on ../types, ./types
+ * [TO]: Consumed by use-resource-permissions hooks and test suites
+ * [HERE]: packages/core/permissions/rules.ts - pure permission rule functions
+ */
 import type {
   Agent,
   Comment,

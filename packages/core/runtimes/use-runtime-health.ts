@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides derived runtime health status hook (online/recently_lost/offline)
+ * [FROM]: Depends on react, @tanstack/react-query, ./queries, ./derive-health, ./types
+ * [TO]: Consumed by runtime status badges and agent presence indicators
+ * [HERE]: packages/core/runtimes/use-runtime-health.ts - health derivation hook with periodic re-eval
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

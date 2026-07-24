@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the main issues listing page with view switching and surface header
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues/stores, ../../layout/page-header, ../../i18n, ../surface/issue-surface, ./issues-header
+ * [TO]: Consumed by apps/web/app and desktop router as the Issues route
+ * [HERE]: packages/views/issues/components/issues-page.tsx - IssuesPage with IssuesSurfaceHeader and view mode support
+ */
 "use client";
 
 import { ListTodo } from "lucide-react";

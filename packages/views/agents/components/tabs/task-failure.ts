@@ -1,3 +1,11 @@
+/**
+ * [WHO]: Provides human-readable labels for the backend task failure reason
+ *   enum, surfaced in the agent detail Recent Work tab.
+ * [FROM]: Depends on @multica/core/types (TaskFailureReason).
+ * [TO]: Consumed by the activity tab for displaying failure context.
+ * [HERE]: packages/views/agents/components/tabs/task-failure.ts - Task
+ *   failure reason label mapping.
+ */
 import type { TaskFailureReason } from "@multica/core/types";
 
 // Human-readable copy for the back-end task failure reason enum. Surfaced

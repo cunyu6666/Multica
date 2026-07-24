@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the workspace-level "agents working" chip with agent avatar stack and popover
+ * [FROM]: Depends on @multica/core/agents, @multica/core/hooks, @multica/ui, @multica/core/types, ../../agents/components, ../../common/actor-avatar, ../../i18n
+ * [TO]: Consumed by issues header to show how many agents are active in the workspace
+ * [HERE]: packages/views/issues/components/workspace-agent-working-chip.tsx - WorkspaceAgentWorkingChip with presence indicators and mine-relation badges
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

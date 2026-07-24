@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Server-safe i18n entry point (zero React/DOM imports)
+ * [FROM]: Depends on ./types, ./pick-locale, ./browser-cookie-adapter
+ * [TO]: Consumed by proxy.ts, RSC, Edge middleware, and nodejs middleware
+ * [HERE]: packages/core/i18n/index.ts - server-safe i18n types and locale matching
+ */
 // Server-safe i18n entry: zero React imports + zero DOM/document/navigator
 // access anywhere in this transitive graph. Safe to import from proxy.ts /
 // RSC / Edge / nodejs middleware.

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Derives effective agent access scope (workspace/specific-people/owner-only) from permission fields
+ * [FROM]: Depends on ../types (AgentPermissionMode, AgentInvocationTarget)
+ * [TO]: Consumed by agent list views and bulk access change dialogs
+ * [HERE]: packages/core/agents/effective-access.ts - access scope derivation
+ */
 import type { AgentInvocationTarget, AgentPermissionMode } from "../types";
 
 /**

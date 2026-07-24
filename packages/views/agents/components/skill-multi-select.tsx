@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides SkillMultiSelect — a collapsible multi-select wrapper for
+ *   skill selection in the create-agent form.
+ * [FROM]: Depends on @multica/core (hooks, workspace queries), @multica/ui
+ *   (Button), SkillPickerList, and i18n.
+ * [TO]: Consumed by AgentCreationStudio and other forms needing skill
+ *   multi-selection.
+ * [HERE]: packages/views/agents/components/skill-multi-select.tsx -
+ *   Collapsible multi-select for skill attachment in forms.
+ */
 "use client";
 
 import { useState } from "react";

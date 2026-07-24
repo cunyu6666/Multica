@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the "Hidden columns" side panel for kanban-style views (board and swimlane)
+ * [FROM]: Depends on @multica/core/types, @multica/ui, @multica/core/issues/stores, ./status-icon, ../../i18n
+ * [TO]: Consumed by board-view.tsx and swimlane-view.tsx to show issues in hidden statuses
+ * [HERE]: packages/views/issues/components/hidden-columns-panel.tsx - HiddenColumnsPanel as single source of truth for hidden status chrome
+ */
 "use client";
 
 import { Eye, MoreHorizontal } from "lucide-react";

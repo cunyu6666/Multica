@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the Activity tab for agent detail — performance summary
+ *   sparkline, recent work list with issue links, failure reasons, task
+ *   snapshots, and transcript access.
+ * [FROM]: Depends on @multica/core (API, hooks, paths, queries, types,
+ *   agents), @multica/ui (Badge, Button, Dialog, Skeleton, Switch, tooltip),
+ *   actor-avatar, sparkline, task-transcript, navigation, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Activity tab content.
+ * [HERE]: packages/views/agents/components/tabs/activity-tab.tsx - Agent
+ *   activity and performance visualization tab.
+ */
 "use client";
 
 import type { ReactNode } from "react";

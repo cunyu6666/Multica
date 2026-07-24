@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides file upload hook with size validation, in-flight tracking, and dual URL resolution
+ * [FROM]: Depends on react, ../api/client, ../types, ../types/attachment-url, ../constants/upload
+ * [TO]: Consumed by editors, comment composers, and avatar upload surfaces
+ * [HERE]: packages/core/hooks/use-file-upload.ts - file upload hook with CDN/durable URL handling
+ */
 "use client";
 
 import { useState, useCallback } from "react";

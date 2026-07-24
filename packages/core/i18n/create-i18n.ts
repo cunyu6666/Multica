@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Creates i18next instances configured for a locale and resources
+ * [FROM]: Depends on i18next, react-i18next, ./types
+ * [TO]: Consumed by React i18n entry point and server-side i18n initialization
+ * [HERE]: packages/core/i18n/create-i18n.ts - i18next instance factory
+ */
 import i18next, { type i18n as I18n } from "i18next";
 import { initReactI18next } from "react-i18next";
 import type { LocaleResources, SupportedLocale } from "./types";

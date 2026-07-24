@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides InstructionsTab — a markdown instructions editor for
+ *   agents with auto-save and dirty tracking.
+ * [FROM]: Depends on @multica/core/types, @multica/ui (Button, Textarea),
+ *   and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Instructions tab content.
+ * [HERE]: packages/views/agents/components/tabs/instructions-tab.tsx -
+ *   Agent instructions markdown editor with save.
+ */
 "use client";
 
 import { useEffect, useState } from "react";

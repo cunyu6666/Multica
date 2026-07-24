@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides three-state workspace agent availability hook (loading/none/available)
+ * [FROM]: Depends on react, @tanstack/react-query, ../hooks, ../auth, ../workspace/queries, ../permissions
+ * [TO]: Consumed by chat entry points and agent dropdown gates
+ * [HERE]: packages/core/agents/use-workspace-agent-availability.ts - workspace-level agent availability gate
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

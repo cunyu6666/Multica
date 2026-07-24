@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the status icon component with pie-wedge fill and center icon for issue statuses
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues/config
+ * [TO]: Consumed by status-heading, pickers, and other surfaces needing status visuals
+ * [HERE]: packages/views/issues/components/status-icon.tsx - StatusIcon with pie-fill geometry and center icon support
+ */
 import type { IssueStatus } from "@multica/core/types";
 import { STATUS_CONFIG } from "@multica/core/issues/config";
 

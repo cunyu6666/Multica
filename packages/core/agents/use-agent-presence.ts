@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides single-agent and workspace-wide presence detail hooks (availability + workload)
+ * [FROM]: Depends on react, @tanstack/react-query, ../workspace/queries, ../runtimes/queries, ./queries, ./derive-presence, ./types
+ * [TO]: Consumed by agent list rows, detail pages, and runtime sub-views
+ * [HERE]: packages/core/agents/use-agent-presence.ts - agent presence hooks with periodic tick
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

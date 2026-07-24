@@ -1,3 +1,9 @@
+/**
+ * [WHO]: React-only i18n entry point (depends on react-i18next)
+ * [FROM]: Depends on ./create-i18n, ./provider, ./adapter-context, ./user-locale-sync
+ * [TO]: Consumed by client-side app bootstrap and i18n provider trees
+ * [HERE]: packages/core/i18n/react.ts - React i18n entry (client-only)
+ */
 // React-only i18n entry: depends on react-i18next, which calls
 // React.createContext() at module load. Importing this from a non-client
 // context (RSC / proxy.ts) will crash with "createContext is not a function"

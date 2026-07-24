@@ -1,4 +1,11 @@
 /**
+ * [WHO]: Provides a small circular progress ring for done/total ratios
+ * [FROM]: No external dependencies (pure SVG component)
+ * [TO]: Consumed by various surfaces needing inline progress indicators
+ * [HERE]: packages/views/issues/components/progress-ring.tsx - ProgressRing with open ring and fill arc states
+ */
+
+/**
  * Tiny circular progress ring. Renders an open ring when in-progress and
  * fills to a solid arc when complete.
  */

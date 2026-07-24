@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides GitHub settings hook derived from current workspace settings
+ * [FROM]: Depends on react, ../paths, ./settings
+ * [TO]: Consumed by GitHub integration views and PR sidebar visibility gates
+ * [HERE]: packages/core/github/use-github-settings.ts - GitHub settings hook
+ */
 "use client";
 
 import { useMemo } from "react";

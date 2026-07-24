@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides cross-workspace tab navigation state with workspace-aware persistence,
+ * tracking last visited paths and workspace switching history.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by platform adapters, navigation providers, and tab management
+ * [HERE]: packages/core/navigation/store.ts - Navigation state store
+ */
 "use client";
 
 import { create } from "zustand";

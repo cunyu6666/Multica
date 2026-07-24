@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the reply input for issue comments with editor, file upload, and comment-trigger chips
+ * [FROM]: Depends on ../../editor, @multica/ui, @multica/core/types, @multica/core/shortcuts, @multica/core/issues/stores, ./comment-trigger-chips, ../hooks/use-comment-trigger-preview, ../../i18n
+ * [TO]: Consumed by comment-card.tsx for threaded reply composition
+ * [HERE]: packages/views/issues/components/reply-input.tsx - ReplyInput with ContentEditor, draft persistence, and submit gate
+ */
 "use client";
 
 import { useRef, useState, useCallback, useEffect } from "react";

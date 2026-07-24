@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides user-customizable keyboard shortcut bindings with persistence
+ * and legacy shortcut format migration.
+ * [FROM]: Depends on zustand, zustand/middleware, platform/storage, ./definitions
+ * [TO]: Consumed by shortcut handler hooks and settings UI
+ * [HERE]: packages/core/shortcuts/store.ts - Shortcut customization store
+ */
 "use client";
 
 import { create } from "zustand";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides workspace slug context, provider, and path builder hooks
+ * [FROM]: Depends on react, @tanstack/react-query, ../types, ../workspace/queries, ./paths
+ * [TO]: Consumed by platform layers (web layout, desktop route layout) and shared path consumers
+ * [HERE]: packages/core/paths/hooks.tsx - workspace slug context and path hooks
+ */
 "use client";
 
 import { createContext, use, type ReactNode } from "react";

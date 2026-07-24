@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides React context and hooks for locale adapter injection
+ * [FROM]: Depends on react, ./types
+ * [TO]: Consumed by platform i18n provider and locale-aware components
+ * [HERE]: packages/core/i18n/adapter-context.tsx - locale adapter React context
+ */
 "use client";
 
 import { createContext, use, type ReactNode } from "react";

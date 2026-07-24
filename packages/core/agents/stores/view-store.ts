@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides agents list view preferences (scope, sort, columns, filters)
+ * with workspace-aware persistence and session-scoped selection.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage, effective-access
+ * [TO]: Consumed by agents list page and filter components
+ * [HERE]: packages/core/agents/stores/view-store.ts - Agents list view store
+ */
 "use client";
 
 import { create } from "zustand";

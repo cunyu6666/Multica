@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides shortcut action definitions, chord parsing, formatting, and
+ * event matching utilities for keyboard shortcut handling.
+ * [FROM]: Depends on ./platform
+ * [TO]: Consumed by shortcut store, handlers, and UI components
+ * [HERE]: packages/core/shortcuts/definitions.ts - Shortcut action IDs and chord utilities
+ */
 import {
   getShortcutPlatform,
   getShortcutRuntime,

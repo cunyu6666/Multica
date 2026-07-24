@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the priority icon component with bar-based and none variants
+ * [FROM]: Depends on @multica/core/types, @multica/core/issues/config
+ * [TO]: Consumed by priority-picker, issue rows, and other surfaces needing priority visual
+ * [HERE]: packages/views/issues/components/priority-icon.tsx - PriorityIcon with configurable bar count and inherit color mode
+ */
 import type { IssuePriority } from "@multica/core/types";
 import { PRIORITY_CONFIG } from "@multica/core/issues/config";
 

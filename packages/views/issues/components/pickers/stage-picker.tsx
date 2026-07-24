@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the stage picker with dynamic option range covering current, max sibling, and next stage
+ * [FROM]: Depends on @multica/core/types, ./property-picker, ../../../i18n
+ * [TO]: Consumed by issue detail sidebars and parent issue surfaces for stage assignment
+ * [HERE]: packages/views/issues/components/pickers/stage-picker.tsx - StagePicker with stageOptions and maxSiblingStage helpers
+ */
 "use client";
 
 import { useState } from "react";

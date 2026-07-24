@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the right-panel agent run log with active/past runs, task details, and termination
+ * [FROM]: Depends on @multica/core/api, @multica/core/issues/queries, @multica/core/types, @multica/ui, ../../common/actor-avatar, ../../agents/components, ../surface/activity, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx right sidebar to list all agent runs for an issue
+ * [HERE]: packages/views/issues/components/execution-log-section.tsx - ExecutionLogSection with active runs, past runs toggle, and task details
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

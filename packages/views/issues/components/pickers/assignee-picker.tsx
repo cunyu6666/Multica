@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the assignee picker with agent/member/squad sections and canAssignAgent gate
+ * [FROM]: Depends on @multica/core/types, @multica/core/permissions, @multica/core/workspace/queries, @multica/ui, @multica/core/auth, ../../../common/actor-avatar, ../../../common/deferred-popup, ./property-picker, ../../../i18n, ../../../editor/extensions/pinyin-match
+ * [TO]: Consumed by batch-action-toolbar.tsx, issue actions, and inline edit surfaces
+ * [HERE]: packages/views/issues/components/pickers/assignee-picker.tsx - AssigneePicker with agent permission checks and grouped options
+ */
 "use client";
 
 import { useMemo, useState } from "react";

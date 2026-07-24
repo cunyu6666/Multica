@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the scrollable thread list with session grouping, pinning, and unread indicators
+ * [FROM]: Depends on @multica/core/chat, @multica/core/hooks, @multica/ui, ../../i18n
+ * [TO]: Consumed by chat-page.tsx left rail and floating-chat window for session browsing
+ * [HERE]: packages/views/chat/components/chat-thread-list.tsx - ChatThreadList with grouped session list
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

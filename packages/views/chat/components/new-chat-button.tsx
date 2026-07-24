@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the agent picker for starting a new chat with grouped My agents / Others list
+ * [FROM]: Depends on @multica/core/types, @multica/ui, ../../common/actor-avatar, ../../issues/components/pickers/property-picker, ../../editor/extensions/pinyin-match, ../../i18n
+ * [TO]: Consumed by chat-page.tsx NewChatButton and floating-chat window for agent selection
+ * [HERE]: packages/views/chat/components/new-chat-button.tsx - AgentPicker and NewChatButton for selecting an agent to start a chat
+ */
 "use client";
 
 import React, { useMemo, useState } from "react";

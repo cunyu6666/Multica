@@ -1,3 +1,10 @@
+/**
+ * [WHO]: Provides squads list view preferences (scope, sort, columns) with
+ * workspace-aware persistence. No filters since squad list is small.
+ * [FROM]: Depends on zustand, zustand/middleware, workspace-storage, platform/storage
+ * [TO]: Consumed by squads list page and filter components
+ * [HERE]: packages/core/squads/stores/view-store.ts - Squads list view store
+ */
 "use client";
 
 import { create } from "zustand";

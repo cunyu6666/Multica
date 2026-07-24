@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides async resolver and query options for runtime model discovery
+ * [FROM]: Depends on @tanstack/react-query, ../api, ../types/agent
+ * [TO]: Consumed by model picker in runtime settings and agent configuration
+ * [HERE]: packages/core/runtimes/models.ts - runtime model discovery with polling
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 import type { RuntimeModelsResult } from "../types/agent";

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides invisible drag handles for resizing the floating chat window (left, top, corner)
+ * [FROM]: Depends on React pointer events
+ * [TO]: Consumed by floating-chat.tsx ChatWindow for resizable borders
+ * [HERE]: packages/views/chat/components/chat-resize-handles.tsx - ChatResizeHandles with pointer-drag zones
+ */
 "use client";
 
 import React from "react";

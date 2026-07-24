@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Checks whether a runtime provider supports MCP config
+ * [FROM]: No dependencies
+ * [TO]: Consumed by agent settings MCP config tab visibility
+ * [HERE]: packages/core/agents/mcp-support.ts - MCP provider support check
+ */
 // The set of runtime providers whose backend reads `agent.mcp_config` and
 // forwards MCP servers to the underlying CLI. The MCP config tab is hidden
 // for every other provider so a user can't save a value the runtime will

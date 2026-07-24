@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the attachment/add dropdown menu for chat input (files, issues, projects)
+ * [FROM]: Depends on @multica/core/types, @multica/ui, ../../projects/components/project-icon, ../../i18n
+ * [TO]: Consumed by chat-input.tsx as the "+" button dropdown
+ * [HERE]: packages/views/chat/components/chat-add-menu.tsx - ChatAddMenu with file picker, issue, and project attachment options
+ */
 "use client";
 
 import { useRef } from "react";

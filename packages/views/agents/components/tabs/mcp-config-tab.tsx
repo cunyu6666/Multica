@@ -1,3 +1,14 @@
+/**
+ * [WHO]: Provides the MCP Config tab for agent detail — managed MCP server
+ *   list with add/edit/delete dialogs, runtime capabilities check, and
+ *   config persistence.
+ * [FROM]: Depends on @multica/core/runtimes, @multica/core/types,
+ *   @multica/ui (AlertDialog, Badge, Button, Tabs, toast), mcp-config-model,
+ *   mcp-server-dialog, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the MCP tab content.
+ * [HERE]: packages/views/agents/components/tabs/mcp-config-tab.tsx -
+ *   Managed MCP server configuration tab for agents.
+ */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

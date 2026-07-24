@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Defines derived runtime health type (online/recently_lost/offline/about_to_gc)
+ * [FROM]: No dependencies
+ * [TO]: Consumed by useRuntimeHealth hook and runtime status badges
+ * [HERE]: packages/core/runtimes/types.ts - runtime health enum type
+ */
 // Derived "health" type for runtimes — the user-facing state we display
 // in lists, cards, and tooltips. The raw server field is binary (online /
 // offline + last_seen_at); this enum splits the offline state into three

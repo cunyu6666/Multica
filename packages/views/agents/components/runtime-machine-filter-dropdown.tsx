@@ -10,6 +10,17 @@ import {
 import type { RuntimeMachine, RuntimeMachineSection } from "../../runtimes/components/runtime-machines";
 import { useT } from "../../i18n";
 
+/**
+ * [WHO]: Provides RuntimeMachineFilterDropdown — a dropdown next to the
+ *   search input for filtering agents by runtime machine, grouping machines
+ *   by section (Local / Remote / Cloud).
+ * [FROM]: Depends on @multica/ui (Button, DropdownMenu), runtime-machines
+ *   types, and i18n.
+ * [TO]: Consumed by AgentsPage toolbar for machine-scoped filtering.
+ * [HERE]: packages/views/agents/components/runtime-machine-filter-dropdown.tsx -
+ *   Runtime machine filter dropdown for agent list.
+ */
+
 // ---------------------------------------------------------------------------
 // Runtime machine filter — dropdown next to the search input. The trigger
 // shows the active machine's title (or "All runtimes"); the menu groups

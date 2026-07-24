@@ -1,3 +1,12 @@
+/**
+ * [WHO]: Provides SkillAttach — an inline "+ Attach" chip trigger that
+ *   opens the SkillAddDialog for attaching workspace skills to an agent.
+ * [FROM]: Depends on @multica/core (hooks, workspace queries, types),
+ *   @multica/ui, SkillAddDialog, and i18n.
+ * [TO]: Consumed by agent inspector skills row for quick skill attachment.
+ * [HERE]: packages/views/agents/components/inspector/skill-attach.tsx -
+ *   Inline attach trigger for adding skills to an agent.
+ */
 "use client";
 
 import { useState } from "react";

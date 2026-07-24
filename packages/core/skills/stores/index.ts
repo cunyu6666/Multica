@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Re-exports skills view store with scopes, sort, columns, and filters.
+ * [FROM]: Depends on ./view-store
+ * [TO]: Consumed by skills list page and filter components
+ * [HERE]: packages/core/skills/stores/index.ts - Skills view store barrel
+ */
 export {
   useSkillsViewStore,
   DEFAULT_HIDDEN_COLUMNS,

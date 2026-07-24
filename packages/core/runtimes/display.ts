@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides runtime display name/label helpers and provider display name mapping
+ * [FROM]: Depends on ../types (AgentRuntime)
+ * [TO]: Consumed by runtime list views, agent detail pages, and anywhere runtime names render
+ * [HERE]: packages/core/runtimes/display.ts - runtime display name and label helpers
+ */
 import type { AgentRuntime } from "../types";
 
 /**

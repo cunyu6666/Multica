@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Defines agent presence and workload derived types (AgentAvailability, Workload, AgentPresenceDetail)
+ * [FROM]: No dependencies
+ * [TO]: Consumed by derive-presence, use-agent-presence, and agent list presence indicators
+ * [HERE]: packages/core/agents/types.ts - derived agent presence and workload types
+ */
 // Derived presence types for agents — the user-facing state we display
 // across the UI (list dots, hover cards, status lines). Computed in the
 // front-end from raw server data (agent + runtime + recent tasks); the

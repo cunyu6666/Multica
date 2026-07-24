@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for property list
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by property settings views and issue property consumers
+ * [HERE]: packages/core/properties/queries.ts - property query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

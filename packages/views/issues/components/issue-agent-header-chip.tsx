@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the per-issue "agent working" chip in the detail header with active task popover
+ * [FROM]: Depends on @multica/ui, @multica/core/workspace/hooks, @multica/ui/lib, @multica/core/api, @multica/core/issues/queries, @multica/core/types, ../../agents/components, ./execution-log-section, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx header to show live agent activity
+ * [HERE]: packages/views/issues/components/issue-agent-header-chip.tsx - IssueAgentHeaderChip with active task rows and popover
+ */
 "use client";
 
 import { memo, useMemo } from "react";

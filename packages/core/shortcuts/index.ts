@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Re-exports shortcut utilities, definitions, and platform helpers.
+ * [FROM]: Depends on ./platform, ./definitions, ./store
+ * [TO]: Consumed by views and platform layers that handle keyboard shortcuts
+ * [HERE]: packages/core/shortcuts/index.ts - Shortcuts barrel exports
+ */
 export {
   SHORTCUT_ACTIONS,
   SHORTCUT_ACTION_BY_ID,

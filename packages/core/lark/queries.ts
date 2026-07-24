@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides query keys and query options for Lark bot installations.
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by Lark integration views and settings pages
+ * [HERE]: packages/core/lark/queries.ts - Lark installation query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

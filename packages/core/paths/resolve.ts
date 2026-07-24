@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides post-auth destination resolver and onboarding status hook
+ * [FROM]: Depends on ../types, ../auth, ./paths
+ * [TO]: Consumed by auth callback flows and onboarding gate logic
+ * [HERE]: packages/core/paths/resolve.ts - post-auth routing resolver
+ */
 import type { Workspace } from "../types";
 import { useAuthStore } from "../auth";
 import { paths } from "./paths";

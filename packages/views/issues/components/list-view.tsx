@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the list view with DnD reordering, accordion groups, and virtualized rows
+ * [FROM]: Depends on @multica/ui, @dnd-kit, react-virtuoso, @multica/core/issues/stores, @multica/core/types, ./list-row, ./use-drag-settle, ./status-heading, ./list-load-more-footer, ../../i18n
+ * [TO]: Consumed by issues-page.tsx as the list view mode
+ * [HERE]: packages/views/issues/components/list-view.tsx - ListView with accordion groups and DnD row reordering
+ */
 "use client";
 
 import { memo, useState, useCallback, useMemo, useEffect, useRef } from "react";

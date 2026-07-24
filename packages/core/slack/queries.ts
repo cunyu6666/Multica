@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides TanStack Query keys and options for Slack installations
+ * [FROM]: Depends on @tanstack/react-query, ../api
+ * [TO]: Consumed by Slack integration settings and realtime sync
+ * [HERE]: packages/core/slack/queries.ts - Slack installation query layer
+ */
 import { queryOptions } from "@tanstack/react-query";
 import { api } from "../api";
 

@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the comment card component with editing, deletion, reactions, and thread expansion
+ * [FROM]: Depends on @multica/core/types, @multica/ui, @multica/core/workspace/hooks, @multica/ui/lib, ../../common/actor-avatar, ../../i18n, ./thread-utils
+ * [TO]: Consumed by issue-detail.tsx for rendering individual comments and replies in the timeline
+ * [HERE]: packages/views/issues/components/comment-card.tsx - CommentCard with full CRUD, reactions, and nested reply rendering
+ */
 "use client";
 
 import { memo, useCallback, useEffect, useRef, useState, type ReactNode } from "react";

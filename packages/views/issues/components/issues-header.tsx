@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the issues page header with view switching, sorting, filtering, and hidden columns
+ * [FROM]: Depends on @multica/ui, @multica/core/issues/stores, @multica/ui/components/ui, ../../i18n
+ * [TO]: Consumed by issues-page.tsx and board-view.tsx as the surface header
+ * [HERE]: packages/views/issues/components/issues-header.tsx - IssuesHeader with view mode toggles, sort menu, and filter controls
+ */
 "use client";
 
 import { useMemo, useState } from "react";

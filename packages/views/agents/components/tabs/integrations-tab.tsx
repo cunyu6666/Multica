@@ -1,3 +1,13 @@
+/**
+ * [WHO]: Provides IntegrationsTab — external channel bind points (Lark,
+ *   Slack) for agents with bind buttons, connection status, and coming-soon
+ *   states.
+ * [FROM]: Depends on @multica/core (auth, hooks, lark, slack, workspace
+ *   queries), settings tab components, and i18n.
+ * [TO]: Consumed by AgentDetailPage as the Integrations tab content.
+ * [HERE]: packages/views/agents/components/tabs/integrations-tab.tsx -
+ *   External channel integration tab for agent binding.
+ */
 "use client";
 
 import { useQuery } from "@tanstack/react-query";

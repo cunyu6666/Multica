@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides OpenClaw runtime config schema, parser, serializer, and equality check
+ * [FROM]: No external dependencies
+ * [TO]: Consumed by agent configuration forms for OpenClaw provider settings
+ * [HERE]: packages/core/agents/openclaw-runtime-config.ts - OpenClaw runtime_config typed schema
+ */
 // OpenClaw-specific `runtime_config` schema (issue #3260).
 //
 // Stored under `agent.runtime_config` as freeform JSONB; only meaningful for

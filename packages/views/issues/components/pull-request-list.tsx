@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Provides the PR list component with CI status, mergeability, and check details for issues
+ * [FROM]: Depends on @multica/core/github, @multica/core/types, @multica/ui, ../../i18n
+ * [TO]: Consumed by issue-detail.tsx to display linked pull requests with status badges
+ * [HERE]: packages/views/issues/components/pull-request-list.tsx - PullRequestList with derived checks/merge status and stats expansion
+ */
 "use client";
 
 import { useState } from "react";

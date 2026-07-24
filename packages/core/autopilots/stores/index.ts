@@ -1,3 +1,9 @@
+/**
+ * [WHO]: Re-exports autopilots view store with scopes, sort, columns, and filters.
+ * [FROM]: Depends on ./view-store
+ * [TO]: Consumed by autopilots list page and filter components
+ * [HERE]: packages/core/autopilots/stores/index.ts - Autopilots view store barrel
+ */
 export {
   useAutopilotsViewStore,
   AUTOPILOT_SCOPES,
