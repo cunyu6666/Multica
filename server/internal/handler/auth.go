@@ -1,3 +1,8 @@
+// [WHO]: Provides authentication handlers (SendCode, VerifyCode, GetMe, UpdateMe, GoogleLogin, IssueCliToken, Logout) and user lifecycle helpers
+// [FROM]: Depends on internal/auth for JWT/token management, internal/analytics for event tracking, github.com/golang-jwt/jwt/v5 for token issuance
+// [TO]: Consumed by server/cmd/server routes for /auth/* endpoints and /api/me
+// [HERE]: server/internal/handler/auth.go - handles email verification, OAuth login, CLI token issuance, user profile read/write; works alongside chat.go and workspace.go which rely on the identity it establishes
+
 package handler
 
 import (
